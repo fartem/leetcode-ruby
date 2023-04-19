@@ -7,12 +7,16 @@ AllCops:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
-
 Style/Copyright:
+  Enabled: false
+Style/DisableCopsWithinSourceCodeDirective:
   Enabled: false
 
 Bundler/GemComment:
   Enabled: false
 
-Style/DisableCopsWithinSourceCodeDirective:
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
   Enabled: false
