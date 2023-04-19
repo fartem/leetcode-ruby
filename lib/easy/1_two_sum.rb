@@ -10,8 +10,7 @@ def two_sum(nums, target)
   # rubocop:disable Style/CombinableLoops, Style/MissingElse
   nums.each_with_index do |num, i|
     diff = target - num
-    has_pair = numbers.key?(diff)
-    if has_pair
+    if numbers.key?(diff)
       uniq = numbers[diff].reject { |index| index == i }
       return [i, uniq.first] unless uniq.empty?
     end
