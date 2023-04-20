@@ -17,6 +17,10 @@ Bundler/GemComment:
 
 Metrics/AbcSize:
   Enabled: false
-
 Metrics/MethodLength:
+  Enabled: false
+
+Naming/PredicateName:
+  Enabled: false
+Naming/MethodParameterName:
   Enabled: false
