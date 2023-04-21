@@ -11,6 +11,8 @@ Style/Copyright:
   Enabled: false
 Style/DisableCopsWithinSourceCodeDirective:
   Enabled: false
+Style/StringHashKeys:
+  Enabled: false
 
 Bundler/GemComment:
   Enabled: false
