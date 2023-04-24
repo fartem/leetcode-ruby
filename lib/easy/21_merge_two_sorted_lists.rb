@@ -9,15 +9,15 @@ def merge_two_lists(list1, list2)
 
   min = list1.val > list2.val ? list2 : list1
   max = list1.val > list2.val ? list1 : list2
-  result = ListNode.new(min.val)
+  result = ::ListNode.new(min.val)
   min = min.next
   head = result
   while !min.nil? && !max.nil?
     if min.val > max.val
-      result.next = ListNode.new(max.val)
+      result.next = ::ListNode.new(max.val)
       max = max.next
     else
-      result.next = ListNode.new(min.val)
+      result.next = ::ListNode.new(min.val)
       min = min.next
     end
     result = result.next

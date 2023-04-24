@@ -11,10 +11,10 @@ class ListNode
   def self.from_array(values)
     return if values.empty?
 
-    list = ListNode.new(values.first)
+    list = ::ListNode.new(values.first)
     head = list
     values.drop(1).each do |value|
-      list.next = ListNode.new(value)
+      list.next = ::ListNode.new(value)
       list = list.next
     end
     head

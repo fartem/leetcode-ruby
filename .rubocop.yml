@@ -30,3 +30,6 @@ Naming/PredicateName:
   Enabled: false
 Naming/MethodParameterName:
   Enabled: false
+
+Lint/UnderscorePrefixedVariableName:
+  Enabled: false
