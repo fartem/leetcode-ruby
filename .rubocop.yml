@@ -23,8 +23,13 @@ Metrics/MethodLength:
   Enabled: false
 Metrics/CyclomaticComplexity:
   Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
 
 Naming/PredicateName:
   Enabled: false
 Naming/MethodParameterName:
+  Enabled: false
+
+Lint/UnderscorePrefixedVariableName:
   Enabled: false
