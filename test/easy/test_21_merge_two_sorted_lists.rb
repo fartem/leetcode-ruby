@@ -1,7 +1,7 @@
 require_relative '../../lib/easy/21_merge_two_sorted_lists'
 require 'minitest/autorun'
 
-class ValidParenthesesTest < Minitest::Test
+class MergeTwoSortedListsTest < Minitest::Test
   def test_default
     merge_two_lists(
       ListNode.from_array([1, 2, 4]),
