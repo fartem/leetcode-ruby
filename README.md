@@ -21,3 +21,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 20. Valid Parentheses                   | [Link](https://leetcode.com/problems/valid-parentheses/)                   | [Link](./lib/easy/20_valid_parentheses.rb)                   |
 | 21. Merge Two Sorted Lists              | [Link](https://leetcode.com/problems/merge-two-sorted-lists/)              | [Link](./lib/easy/21_merge_two_sorted_lists.rb)              |
 | 26. Remove Duplicates from Sorted Array | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [Link](./lib/easy/26_remove_duplicates_from_sorted_array.rb) |
+| 27. Remove Element                      | [Link](https://leetcode.com/problems/remove-element/)                      | [Link](./lib/easy/27_remove_element.rb)                      |
