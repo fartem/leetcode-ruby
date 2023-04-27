@@ -13,6 +13,10 @@ Style/DisableCopsWithinSourceCodeDirective:
   Enabled: false
 Style/StringHashKeys:
   Enabled: false
+Style/CombinableLoops:
+  Enabled: false
+MissingElse:
+  Enabled: false
 
 Bundler/GemComment:
   Enabled: false
