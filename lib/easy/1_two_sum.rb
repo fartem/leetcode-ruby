@@ -7,7 +7,6 @@ def two_sum(nums, target)
     numbers.key?(num) ? numbers[num] << i : numbers[num] = [i]
   end
 
-  # rubocop:disable Style/CombinableLoops, Style/MissingElse
   nums.each_with_index do |num, i|
     diff = target - num
     if numbers.key?(diff)
@@ -15,5 +14,4 @@ def two_sum(nums, target)
       return [i, uniq.first] unless uniq.empty?
     end
   end
-  # rubocop:enable Style/CombinableLoops, Style/MissingElse
 end
