@@ -23,3 +23,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 26. Remove Duplicates from Sorted Array                | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)                | [Link](./lib/easy/26_remove_duplicates_from_sorted_array.rb)                |
 | 27. Remove Element                                     | [Link](https://leetcode.com/problems/remove-element/)                                     | [Link](./lib/easy/27_remove_element.rb)                                     |
 | 28. Find the Index of the First Occurrence in a String | [Link](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | [Link](./lib/easy/28_find_the_index_of_the_first_occurrence_in_a_string.rb) |
+| 35. Search Insert Position                             | [Link](https://leetcode.com/problems/search-insert-position/)                             | [Link](./lib/easy/35_search_insert_position.rb)                             |
