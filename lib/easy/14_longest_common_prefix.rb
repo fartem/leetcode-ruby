@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # @param {String[]} strs
 # @return {String}
 def longest_common_prefix(strs)

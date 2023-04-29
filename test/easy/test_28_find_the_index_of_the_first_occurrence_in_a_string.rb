@@ -3,7 +3,7 @@ require 'minitest/autorun'
 
 class FindTheIndexOfTheFirstOccurrenceInAStringTest < Minitest::Test
   def test_default
-    str_str('sadbutsad', 'sad') == 0
-    str_str('leetcode', 'leeto') == -1
+    assert str_str('sadbutsad', 'sad') == 0
+    assert str_str('leetcode', 'leeto') == -1
   end
 end

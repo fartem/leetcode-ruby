@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 # LinkedList implementation for this project
 class ListNode
   # @param val {Integer}
-  # @param _next {ListNode}
-  def initialize(val = 0, _next = nil)
+  # @param nxt {ListNode}
+  def initialize(val = 0, nxt = nil)
     @val = val
-    @next = _next
+    @next = nxt
   end
 
   # @param values {Array}

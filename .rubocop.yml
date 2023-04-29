@@ -5,11 +5,7 @@ AllCops:
   Exclude:
     - 'test/**/test_*.rb'
 
-Style/FrozenStringLiteralComment:
-  Enabled: false
 Style/Copyright:
-  Enabled: false
-Style/DisableCopsWithinSourceCodeDirective:
   Enabled: false
 Style/StringHashKeys:
   Enabled: false
@@ -33,7 +29,4 @@ Metrics/PerceivedComplexity:
 Naming/PredicateName:
   Enabled: false
 Naming/MethodParameterName:
-  Enabled: false
-
-Lint/UnderscorePrefixedVariableName:
   Enabled: false
