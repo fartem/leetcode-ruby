@@ -26,3 +26,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 35. Search Insert Position                             | [Link](https://leetcode.com/problems/search-insert-position/)                             | [Link](./lib/easy/35_search_insert_position.rb)                             |
 | 58. Length of Last Word                                | [Link](https://leetcode.com/problems/length-of-last-word/)                                | [Link](./lib/easy/58_length_of_last_word.rb)                                |
 | 66. Plus One                                           | [Link](https://leetcode.com/problems/plus-one/)                                           | [Link](./lib/easy/66_plus_one.rb)                                           |
+| 67. Add Binary                                         | [Link](https://leetcode.com/problems/add-binary/)                                         | [Link](./lib/easy/67_add_binary.rb)                                         |
