@@ -24,3 +24,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 27. Remove Element                                     | [Link](https://leetcode.com/problems/remove-element/)                                     | [Link](./lib/easy/27_remove_element.rb)                                     |
 | 28. Find the Index of the First Occurrence in a String | [Link](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | [Link](./lib/easy/28_find_the_index_of_the_first_occurrence_in_a_string.rb) |
 | 35. Search Insert Position                             | [Link](https://leetcode.com/problems/search-insert-position/)                             | [Link](./lib/easy/35_search_insert_position.rb)                             |
+| 58. Length of Last Word                                | [Link](https://leetcode.com/problems/length-of-last-word/)                                | [Link](./lib/easy/58_length_of_last_word.rb)                                |
