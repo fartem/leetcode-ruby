@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # @param {String} a
 # @param {String} b
 # @return {String}
