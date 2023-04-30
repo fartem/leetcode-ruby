@@ -27,3 +27,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 58. Length of Last Word                                | [Link](https://leetcode.com/problems/length-of-last-word/)                                | [Link](./lib/easy/58_length_of_last_word.rb)                                |
 | 66. Plus One                                           | [Link](https://leetcode.com/problems/plus-one/)                                           | [Link](./lib/easy/66_plus_one.rb)                                           |
 | 67. Add Binary                                         | [Link](https://leetcode.com/problems/add-binary/)                                         | [Link](./lib/easy/67_add_binary.rb)                                         |
+| 69. Sqrt(x)                                            | [Link](https://leetcode.com/problems/sqrtx/)                                              | [Link](./lib/easy/69_sqrtx.rb)                                              |
