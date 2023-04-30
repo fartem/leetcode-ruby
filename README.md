@@ -29,3 +29,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 67. Add Binary                                         | [Link](https://leetcode.com/problems/add-binary/)                                         | [Link](./lib/easy/67_add_binary.rb)                                         |
 | 69. Sqrt(x)                                            | [Link](https://leetcode.com/problems/sqrtx/)                                              | [Link](./lib/easy/69_sqrtx.rb)                                              |
 | 70. Climbing Stairs                                    | [Link](https://leetcode.com/problems/climbing-stairs/)                                    | [Link](./lib/easy/70_climbing_stairs.rb)                                    |
+| 83. Remove Duplicates from Sorted List                 | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)                 | [Link](./lib/easy/83_remove_duplicates_from_sorted_list.rb)                 |
