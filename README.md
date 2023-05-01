@@ -33,3 +33,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 88. Merge Sorted Array                                 | [Link](https://leetcode.com/problems/merge-sorted-array/)                                 | [Link](./lib/easy/88_merge_sorted_array.rb)                                 |
 | 94. Binary Tree Inorder Traversal                      | [Link](https://leetcode.com/problems/binary-tree-inorder-traversal/)                      | [Link](./lib/easy/94_binary_tree_inorder_traversal.rb)                      |
 | 100. Same Tree                                         | [Link](https://leetcode.com/problems/same-tree/)                                          | [Link](./lib/easy/100_same_tree.rb)                                         |
+| 101. Symmetric Tree                                    | [Link](https://leetcode.com/problems/symmetric-tree/)                                     | [Link](./lib/easy/101_symmetric_tree.rb)                                    |
