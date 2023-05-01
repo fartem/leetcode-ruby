@@ -26,7 +26,7 @@ class MaximumDepthOfBinaryTreeTest < ::Minitest::Test
         ::TreeNode.new(
           1,
           nil,
-          ::TreeNode.new(2),
+          ::TreeNode.new(2)
         )
       )
     )
