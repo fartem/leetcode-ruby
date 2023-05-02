@@ -35,3 +35,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 100. Same Tree                                         | [Link](https://leetcode.com/problems/same-tree/)                                          | [Link](./lib/easy/100_same_tree.rb)                                         |
 | 101. Symmetric Tree                                    | [Link](https://leetcode.com/problems/symmetric-tree/)                                     | [Link](./lib/easy/101_symmetric_tree.rb)                                    |
 | 104. Maximum Depth of Binary Tree                      | [Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/)                       | [Link](./lib/easy/104_maximum_depth_of_binary_tree.rb)                      |
+| 108. Convert Sorted Array to Binary Search Tree        | [Link](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)         | [Link](./lib/easy/108_convert_sorted_array_to_binary_search_tree.rb)        |
