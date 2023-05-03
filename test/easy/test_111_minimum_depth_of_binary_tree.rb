@@ -23,7 +23,6 @@ class MinimumDepthOfBinaryTreeTest < ::Minitest::Test
     assert_equal(
       5,
       min_depth(
-
         ::TreeNode.new(
           2,
           nil,
