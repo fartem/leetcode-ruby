@@ -41,3 +41,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 112. Path Sum                                          | [Link](https://leetcode.com/problems/path-sum/)                                           | [Link](./lib/easy/112_path_sum.rb)                                          |
 | 118. Pascal's Triangle                                 | [Link](https://leetcode.com/problems/pascals-triangle/)                                   | [Link](./lib/easy/118_pascals_triangle.rb)                                  |
 | 119. Pascal's Triangle II                              | [Link](https://leetcode.com/problems/pascals-triangle-ii/)                                | [Link](./lib/easy/119_pascals_triangle_ii.rb)                               |
+| 121. Best Time to Buy and Sell Stock                   | [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                    | [Link](./lib/easy/121_best_time_to_buy_and_sell_stock.rb)                   |
