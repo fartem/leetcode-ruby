@@ -2,7 +2,7 @@
 
 # @param {String} s
 # @return {Boolean}
-def is_palindrome(s)
+def is_valid_palindrome(s)
   prepared_str = s.downcase.delete(' ').gsub(/[^0-9a-z ]/i, '')
   p = prepared_str.length - 1
   result = true

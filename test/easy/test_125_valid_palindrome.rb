@@ -5,8 +5,8 @@ require 'minitest/autorun'
 
 class ValidPalindromeTest < ::Minitest::Test
   def test_default
-    assert(is_palindrome('A man, a plan, a canal: Panama'))
-    assert(!is_palindrome('race a car'))
-    assert(is_palindrome(' '))
+    assert(is_valid_palindrome('A man, a plan, a canal: Panama'))
+    assert(!is_valid_palindrome('race a car'))
+    assert(is_valid_palindrome(' '))
   end
 end
