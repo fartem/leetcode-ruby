@@ -44,3 +44,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 121. Best Time to Buy and Sell Stock                   | [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                    | [Link](./lib/easy/121_best_time_to_buy_and_sell_stock.rb)                   |
 | 125. Valid Palindrome                                  | [Link](https://leetcode.com/problems/valid-palindrome/)                                   | [Link](./lib/easy/125_valid_palindrome.rb)                                  |
 | 136. Single Number                                     | [Link](https://leetcode.com/problems/single-number/)                                      | [Link](./lib/easy/136_single_number.rb)                                     |
+| 141. Linked List Cycle                                 | [Link](https://leetcode.com/problems/linked-list-cycle/)                                  | [Link](./lib/easy/141_linked_list_cycle.rb)                                 |
