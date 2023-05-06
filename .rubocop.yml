@@ -9,7 +9,7 @@ Style/StringHashKeys:
   Enabled: false
 Style/CombinableLoops:
   Enabled: false
-MissingElse:
+Style/MissingElse:
   Enabled: false
 
 Bundler/GemComment:
