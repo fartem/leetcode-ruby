@@ -22,18 +22,13 @@ class ListNode
     head
   end
 
-  # @param other {LinkedList}
-  def ==(other)
-    are_equals(self, other)
-  end
+  # @param first {ListNode}
+  # @param second {ListNode}
+  def self.are_equals(first, second)
+    return true if first.nil? && second.nil?
+    return false if first.nil? || second.nil?
 
-  # @param curr {ListNode}
-  # @param other {ListNode}
-  def are_equals(curr, other)
-    return true if curr.nil? && other.nil?
-    return false if curr.nil? || other.nil?
-
-    curr.val == other.val && are_equals(curr.next, other.next)
+    first.val == second.val && are_equals(first.next, second.next)
   end
 
   attr_accessor :val, :next

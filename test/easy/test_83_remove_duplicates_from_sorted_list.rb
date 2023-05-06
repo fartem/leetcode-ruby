@@ -6,13 +6,17 @@ require 'minitest/autorun'
 
 class RemoveDuplicatesFromSortedListTest < ::Minitest::Test
   def test_default
-    assert_equal(
-      ::ListNode.from_array([1, 2]),
-      delete_duplicates(::ListNode.from_array([1, 1, 2]))
+    assert(
+      ::ListNode.are_equals(
+        ::ListNode.from_array([1, 2]),
+        delete_duplicates(::ListNode.from_array([1, 1, 2]))
+      )
     )
-    assert_equal(
-      ::ListNode.from_array([1, 2, 3]),
-      delete_duplicates(::ListNode.from_array([1, 1, 2, 3, 3]))
+    assert(
+      ::ListNode.are_equals(
+        ::ListNode.from_array([1, 2, 3]),
+        delete_duplicates(::ListNode.from_array([1, 1, 2, 3, 3]))
+      )
     )
   end
 end
