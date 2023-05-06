@@ -13,7 +13,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 ### Easy
 
 | Name                                                   | Link to LeetCode                                                                          | Link to solution                                                            |
-|--------------------------------------------------------|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | 1. Two Sum                                             | [Link](https://leetcode.com/problems/two-sum/)                                            | [Link](./lib/easy/1_two_sum.rb)                                             |
 | 9. Palindrome Number                                   | [Link](https://leetcode.com/problems/palindrome-number/)                                  | [Link](./lib/easy/9_palindrome_number.rb)                                   |
 | 13. Roman to Integer                                   | [Link](https://leetcode.com/problems/roman-to-integer/)                                   | [Link](./lib/easy/13_roman_to_integer.rb)                                   |
@@ -43,3 +43,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 119. Pascal's Triangle II                              | [Link](https://leetcode.com/problems/pascals-triangle-ii/)                                | [Link](./lib/easy/119_pascals_triangle_ii.rb)                               |
 | 121. Best Time to Buy and Sell Stock                   | [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                    | [Link](./lib/easy/121_best_time_to_buy_and_sell_stock.rb)                   |
 | 125. Valid Palindrome                                  | [Link](https://leetcode.com/problems/valid-palindrome/)                                   | [Link](./lib/easy/125_valid_palindrome.rb)                                  |
+| 136. Single Number                                     | [Link](https://leetcode.com/problems/single-number/)                                      | [Link](./lib/easy/136_single_number.rb)                                     |
