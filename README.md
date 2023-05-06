@@ -13,7 +13,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 ### Easy
 
 | Name                                                   | Link to LeetCode                                                                          | Link to solution                                                            |
-| ------------------------------------------------------ | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+|--------------------------------------------------------|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | 1. Two Sum                                             | [Link](https://leetcode.com/problems/two-sum/)                                            | [Link](./lib/easy/1_two_sum.rb)                                             |
 | 9. Palindrome Number                                   | [Link](https://leetcode.com/problems/palindrome-number/)                                  | [Link](./lib/easy/9_palindrome_number.rb)                                   |
 | 13. Roman to Integer                                   | [Link](https://leetcode.com/problems/roman-to-integer/)                                   | [Link](./lib/easy/13_roman_to_integer.rb)                                   |
@@ -45,3 +45,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 125. Valid Palindrome                                  | [Link](https://leetcode.com/problems/valid-palindrome/)                                   | [Link](./lib/easy/125_valid_palindrome.rb)                                  |
 | 136. Single Number                                     | [Link](https://leetcode.com/problems/single-number/)                                      | [Link](./lib/easy/136_single_number.rb)                                     |
 | 141. Linked List Cycle                                 | [Link](https://leetcode.com/problems/linked-list-cycle/)                                  | [Link](./lib/easy/141_linked_list_cycle.rb)                                 |
+| 144. Binary Tree Preorder Traversal                    | [Link](https://leetcode.com/problems/binary-tree-preorder-traversal/)                     | [Link](./lib/easy/144_binary_tree_preorder_traversal.rb)                    |
