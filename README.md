@@ -47,3 +47,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 141. Linked List Cycle                                 | [Link](https://leetcode.com/problems/linked-list-cycle/)                                  | [Link](./lib/easy/141_linked_list_cycle.rb)                                 |
 | 144. Binary Tree Preorder Traversal                    | [Link](https://leetcode.com/problems/binary-tree-preorder-traversal/)                     | [Link](./lib/easy/144_binary_tree_preorder_traversal.rb)                    |
 | 145. Binary Tree Postorder Traversal                   | [Link](https://leetcode.com/problems/binary-tree-postorder-traversal/)                    | [Link](./lib/easy/145_binary_tree_postorder_traversal.rb)                   |
+| 160. Intersection of Two Linked Lists                  | [Link](https://leetcode.com/problems/intersection-of-two-linked-lists/)                   | [Link](./lib/easy/160_intersection_of_two_linked_lists.rb)                  |
