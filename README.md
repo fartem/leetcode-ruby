@@ -50,3 +50,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 160. Intersection of Two Linked Lists                  | [Link](https://leetcode.com/problems/intersection-of-two-linked-lists/)                   | [Link](./lib/easy/160_intersection_of_two_linked_lists.rb)                  |
 | 168. Excel Sheet Column Title                          | [Link](https://leetcode.com/problems/excel-sheet-column-title/)                           | [Link](./lib/easy/168_excel_sheet_column_title.rb)                          |
 | 169. Majority Element                                  | [Link](https://leetcode.com/problems/majority-element/)                                   | [Link](./lib/easy/169_majority_element.rb)                                  |
+| 171. Excel Sheet Column Number                         | [Link](https://leetcode.com/problems/excel-sheet-column-number/)                          | [Link](./lib/easy/171_excel_sheet_column_number.rb)                         |
