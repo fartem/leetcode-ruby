@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative '../test_helper'
 require_relative '../../lib/easy/119_pascals_triangle_ii'
 require 'minitest/autorun'
 

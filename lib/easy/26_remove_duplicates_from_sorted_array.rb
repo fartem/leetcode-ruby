@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 # @param {Integer[]} nums
 # @return {Integer}
 def remove_duplicates(nums)

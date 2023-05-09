@@ -2,6 +2,7 @@ AllCops:
   DisplayCopNames: true
   EnabledByDefault: true
   TargetRubyVersion: 3.0
+  SuggestExtensions: false
 
 Style/Copyright:
   Enabled: false

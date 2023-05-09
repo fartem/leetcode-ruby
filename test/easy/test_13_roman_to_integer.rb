@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative '../test_helper'
 require_relative '../../lib/easy/13_roman_to_integer'
 require 'minitest/autorun'
 

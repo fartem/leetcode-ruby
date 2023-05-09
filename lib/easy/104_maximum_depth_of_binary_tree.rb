@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/maximum-depth-of-binary-tree/
 # @param {TreeNode} root
 # @return {Integer}
 def max_depth(root)

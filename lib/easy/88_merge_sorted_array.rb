@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/merge-sorted-array/
 # @param {Integer[]} nums1
 # @param {Integer} m
 # @param {Integer[]} nums2

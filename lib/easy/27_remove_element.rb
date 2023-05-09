@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/remove-element/
 # @param {Integer[]} nums
 # @param {Integer} val
 # @return {Integer}

@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/climbing-stairs/
 # @param {Integer} n
 # @return {Integer}
 def climb_stairs(n)

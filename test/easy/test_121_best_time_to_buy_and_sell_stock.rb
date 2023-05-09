@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative '../test_helper'
 require_relative '../../lib/easy/121_best_time_to_buy_and_sell_stock'
 require 'minitest/autorun'
 

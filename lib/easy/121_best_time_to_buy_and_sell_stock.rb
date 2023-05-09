@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 # @param {Integer[]} prices
 # @return {Integer}
 def max_profit(prices)

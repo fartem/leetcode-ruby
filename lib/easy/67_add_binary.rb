@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/add-binary/
 # @param {String} a
 # @param {String} b
 # @return {String}

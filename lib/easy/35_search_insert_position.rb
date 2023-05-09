@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/search-insert-position/
 # @param {Integer[]} nums
 # @param {Integer} target
 # @return {Integer}

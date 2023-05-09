@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative '../test_helper'
 require_relative '../../lib/easy/104_maximum_depth_of_binary_tree'
 require_relative '../../lib/common/binary_tree'
 require 'minitest/autorun'

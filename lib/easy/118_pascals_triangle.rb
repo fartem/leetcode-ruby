@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/pascals-triangle/
 # @param {Integer} num_rows
 # @return {Integer[][]}
 def generate(num_rows)

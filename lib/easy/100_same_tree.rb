@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/same-tree/
 # @param {TreeNode} p
 # @param {TreeNode} q
 # @return {Boolean}

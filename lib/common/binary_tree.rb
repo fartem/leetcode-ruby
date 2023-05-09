@@ -16,6 +16,10 @@ class TreeNode
     are_equals(self, other)
   end
 
+  attr_accessor :val, :left, :right
+
+  private
+
   # @param curr {TreeNode}
   # @param other {TreeNode}
   def are_equals(curr, other)
@@ -27,6 +31,4 @@ class TreeNode
     right_eq = are_equals(curr.right, other.right)
     curr_eq && left_eq && right_eq
   end
-
-  attr_accessor :val, :left, :right
 end

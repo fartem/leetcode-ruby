@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/intersection-of-two-linked-lists/
 # @param {ListNode} head_a
 # @param {ListNode} head_b
 # @return {ListNode}
