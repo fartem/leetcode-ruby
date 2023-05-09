@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/valid-palindrome/
 # @param {String} s
 # @return {Boolean}
 def is_valid_palindrome(s)

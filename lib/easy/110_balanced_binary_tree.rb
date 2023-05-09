@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/balanced-binary-tree/
 # @param {TreeNode} root
 # @return {Boolean}
 def is_balanced(root)

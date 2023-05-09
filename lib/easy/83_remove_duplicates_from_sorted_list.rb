@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 # @param {ListNode} head
 # @return {ListNode}
 def delete_duplicates(head)

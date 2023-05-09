@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative '../test_helper'
 require_relative '../../lib/easy/145_binary_tree_postorder_traversal'
 require_relative '../../lib/common/binary_tree'
 require 'minitest/autorun'

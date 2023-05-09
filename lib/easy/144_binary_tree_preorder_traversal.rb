@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/binary-tree-preorder-traversal/
 # @param {TreeNode} root
 # @return {Integer[]}
 def preorder_traversal(root)

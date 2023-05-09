@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/plus-one/
 # @param {Integer[]} digits
 # @return {Integer[]}
 def plus_one(digits)

@@ -2,6 +2,7 @@
 
 require_relative '../common/binary_tree'
 
+# https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 # @param {Integer[]} nums
 # @return {TreeNode}
 def sorted_array_to_bst(nums)

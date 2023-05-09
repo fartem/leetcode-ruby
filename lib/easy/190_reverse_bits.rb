@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/reverse-bits/
 # @param {Integer} n, a positive integer
 # @return {Integer}
 def reverse_bits(n)

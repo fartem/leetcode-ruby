@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative '../test_helper'
 require_relative '../../lib/easy/168_excel_sheet_column_title'
 require 'minitest/autorun'
 

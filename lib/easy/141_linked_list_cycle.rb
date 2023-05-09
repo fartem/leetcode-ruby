@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/linked-list-cycle/
 # @param {ListNode} head
 # @return {Boolean}
 def has_cycle(head)

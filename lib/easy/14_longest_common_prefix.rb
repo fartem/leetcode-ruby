@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/longest-common-prefix/
 # @param {String[]} strs
 # @return {String}
 def longest_common_prefix(strs)

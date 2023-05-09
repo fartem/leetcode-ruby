@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative '../test_helper'
 require_relative '../../lib/easy/26_remove_duplicates_from_sorted_array'
 require 'minitest/autorun'
 

@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative '../test_helper'
 require_relative '../../lib/easy/21_merge_two_sorted_lists'
 require 'minitest/autorun'
 
