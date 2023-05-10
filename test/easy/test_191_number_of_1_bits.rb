@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative '../test_helper'
 require_relative '../../lib/easy/191_number_of_1_bits'
 require 'minitest/autorun'
 
