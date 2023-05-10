@@ -19,7 +19,8 @@ class RemoveLinkedListElementsTest < ::Minitest::Test
     assert_nil(
       remove_elements(
         ::ListNode.from_array(
-          [7, 7, 7, 7]),
+          [7, 7, 7, 7]
+        ),
         7
       )
     )
