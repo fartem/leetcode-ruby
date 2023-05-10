@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/remove-linked-list-elements/
 # @param {ListNode} head
 # @param {Integer} val
 # @return {ListNode}
