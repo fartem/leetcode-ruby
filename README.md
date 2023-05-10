@@ -53,3 +53,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 171. Excel Sheet Column Number                         | [Link](https://leetcode.com/problems/excel-sheet-column-number/)                          | [Link](./lib/easy/171_excel_sheet_column_number.rb)                         |
 | 190. Reverse Bits                                      | [Link](https://leetcode.com/problems/reverse-bits/)                                       | [Link](./lib/easy/190_reverse_bits.rb)                                      |
 | 191. Number of 1 Bits                                  | [Link](https://leetcode.com/problems/number-of-1-bits/)                                   | [Link](./lib/easy/191_number_of_1_bits.rb)                                  |
+| 202. Happy Number                                      | [Link](https://leetcode.com/problems/happy-number/)                                       | [Link](./lib/easy/202_happy_number.rb)                                      |
