@@ -55,3 +55,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 191. Number of 1 Bits                                  | [Link](https://leetcode.com/problems/number-of-1-bits/)                                   | [Link](./lib/easy/191_number_of_1_bits.rb)                                  |
 | 202. Happy Number                                      | [Link](https://leetcode.com/problems/happy-number/)                                       | [Link](./lib/easy/202_happy_number.rb)                                      |
 | 203. Remove Linked List Elements                       | [Link](https://leetcode.com/problems/remove-linked-list-elements/)                        | [Link](./lib/easy/203_remove_linked_list_elements.rb)                       |
+| 205. Isomorphic Strings                                | [Link](https://leetcode.com/problems/isomorphic-strings/)                                 | [Link](./lib/easy/205_isomorphic_strings.rb)                                |
