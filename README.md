@@ -58,3 +58,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 205. Isomorphic Strings                                | [Link](https://leetcode.com/problems/isomorphic-strings/)                                 | [Link](./lib/easy/205_isomorphic_strings.rb)                                |
 | 206. Reverse Linked List                               | [Link](https://leetcode.com/problems/reverse-linked-list/)                                | [Link](./lib/easy/206_reverse_linked_list.rb)                               |
 | 217. Contains Duplicate                                | [Link](https://leetcode.com/problems/contains-duplicate/)                                 | [Link](./lib/easy/217_contains_duplicate.rb)                                |
+| 219. Contains Duplicate II                             | [Link](https://leetcode.com/problems/contains-duplicate-ii/)                              | [Link](./lib/easy/219_contains_duplicate_ii.rb)                             |
