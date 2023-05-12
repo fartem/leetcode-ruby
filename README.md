@@ -56,3 +56,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 202. Happy Number                                      | [Link](https://leetcode.com/problems/happy-number/)                                       | [Link](./lib/easy/202_happy_number.rb)                                      |
 | 203. Remove Linked List Elements                       | [Link](https://leetcode.com/problems/remove-linked-list-elements/)                        | [Link](./lib/easy/203_remove_linked_list_elements.rb)                       |
 | 205. Isomorphic Strings                                | [Link](https://leetcode.com/problems/isomorphic-strings/)                                 | [Link](./lib/easy/205_isomorphic_strings.rb)                                |
+| 206. Reverse Linked List                               | [Link](https://leetcode.com/problems/reverse-linked-list/)                                | [Link](./lib/easy/206_reverse_linked_list.rb)                               |
