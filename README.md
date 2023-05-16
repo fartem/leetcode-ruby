@@ -61,3 +61,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 219. Contains Duplicate II                             | [Link](https://leetcode.com/problems/contains-duplicate-ii/)                              | [Link](./lib/easy/219_contains_duplicate_ii.rb)                             |
 | 225. Implement Stack using Queues                      | [Link](https://leetcode.com/problems/implement-stack-using-queues/)                       | [Link](./lib/easy/225_implement_stack_using_queues.rb)                      |
 | 226. Invert Binary Tree                                | [Link](https://leetcode.com/problems/invert-binary-tree/)                                 | [Link](./lib/easy/226_invert_binary_tree.rb)                                |
+| 228. Summary Ranges                                    | [Link](https://leetcode.com/problems/symmary-ranges/)                                     | [Link](./lib/easy/228_summary_ranges.rb)                                    |
