@@ -62,3 +62,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 225. Implement Stack using Queues                      | [Link](https://leetcode.com/problems/implement-stack-using-queues/)                       | [Link](./lib/easy/225_implement_stack_using_queues.rb)                      |
 | 226. Invert Binary Tree                                | [Link](https://leetcode.com/problems/invert-binary-tree/)                                 | [Link](./lib/easy/226_invert_binary_tree.rb)                                |
 | 228. Summary Ranges                                    | [Link](https://leetcode.com/problems/symmary-ranges/)                                     | [Link](./lib/easy/228_summary_ranges.rb)                                    |
+| 231. Power of Two                                      | [Link](https://leetcode.com/problems/power-of-two/)                                       | [Link](./lib/easy/231_power_of_two.rb)                                      |
