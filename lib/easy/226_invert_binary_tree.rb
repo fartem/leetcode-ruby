@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/invert-binary-tree/
 # @param {TreeNode} root
 # @return {TreeNode}
 def invert_tree(root)
