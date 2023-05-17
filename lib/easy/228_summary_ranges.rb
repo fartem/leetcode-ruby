@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/summary-ranges/
 # @param {Integer[]} nums
 # @return {String[]}
 def summary_ranges(nums)
