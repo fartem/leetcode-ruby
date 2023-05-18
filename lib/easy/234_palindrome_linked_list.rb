@@ -3,7 +3,7 @@
 # https://leetcode.com/problems/palindrome-linked-list/
 # @param {ListNode} head
 # @return {Boolean}
-def is_palindrome_2(head)
+def is_palindrome_ll(head)
   slow = head
   fast = head
 
