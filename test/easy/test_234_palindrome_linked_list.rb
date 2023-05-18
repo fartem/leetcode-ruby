@@ -7,7 +7,7 @@ require 'minitest/autorun'
 
 class PalindromeLinkedListTest < ::Minitest::Test
   def test_default
-    assert(is_palindrome(::ListNode.from_array([1, 2, 2, 1])))
-    assert(!is_palindrome(::ListNode.from_array([1, 2])))
+    assert(is_palindrome_2(::ListNode.from_array([1, 2, 2, 1])))
+    assert(!is_palindrome_2(::ListNode.from_array([1, 2])))
   end
 end
