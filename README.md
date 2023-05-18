@@ -64,3 +64,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 228. Summary Ranges                                    | [Link](https://leetcode.com/problems/symmary-ranges/)                                     | [Link](./lib/easy/228_summary_ranges.rb)                                    |
 | 231. Power of Two                                      | [Link](https://leetcode.com/problems/power-of-two/)                                       | [Link](./lib/easy/231_power_of_two.rb)                                      |
 | 232. Implement Queue using Stacks                      | [Link](https://leetcode.com/problems/implement-queue-using-stacks/)                       | [Link](./lib/easy/232_implement_queue_using_stacks.rb)                      |
+| 234. Palindrome Linked List                            | [Link](https://leetcode.com/problems/palindrome-linked-list/)                             | [Link](./lib/easy/234_palindrome_linked_list.rb)                            |
