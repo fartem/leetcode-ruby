@@ -10,4 +10,3 @@ class ValidAnagramTest < ::Minitest::Test
     assert(!is_anagram('rat', 'car'))
   end
 end
-
