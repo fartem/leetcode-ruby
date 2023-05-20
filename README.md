@@ -66,3 +66,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 232. Implement Queue using Stacks                      | [Link](https://leetcode.com/problems/implement-queue-using-stacks/)                       | [Link](./lib/easy/232_implement_queue_using_stacks.rb)                      |
 | 234. Palindrome Linked List                            | [Link](https://leetcode.com/problems/palindrome-linked-list/)                             | [Link](./lib/easy/234_palindrome_linked_list.rb)                            |
 | 242. Valid Anagram                                     | [Link](https://leetcode.com/problems/valid-anagram/)                                      | [Link](./lib/easy/242_valid_anagram.rb)                                     |
+| 257. Binary Tree Paths                                 | [Link](https://leetcode.com/problems/binary-tree-paths/)                                  | [Link](./lib/easy/257_binary_tree_paths.rb)                                 |
