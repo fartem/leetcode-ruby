@@ -69,3 +69,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 257. Binary Tree Paths                                 | [Link](https://leetcode.com/problems/binary-tree-paths/)                                  | [Link](./lib/easy/257_binary_tree_paths.rb)                                 |
 | 258. Add Digits                                        | [Link](https://leetcode.com/problems/add-digits/)                                         | [Link](./lib/easy/258_add_digits.rb)                                        |
 | 263. Ugly Number                                       | [Link](https://leetcode.com/problems/ugly-number/)                                        | [Link](./lib/easy/263_ugly_number.rb)                                       |
+| 268. Missing Number                                    | [Link](https://leetcode.com/problems/missing-number/)                                     | [Link](./lib/easy/268_missing_number.rb)                                    |
