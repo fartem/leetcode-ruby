@@ -67,3 +67,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 234. Palindrome Linked List                            | [Link](https://leetcode.com/problems/palindrome-linked-list/)                             | [Link](./lib/easy/234_palindrome_linked_list.rb)                            |
 | 242. Valid Anagram                                     | [Link](https://leetcode.com/problems/valid-anagram/)                                      | [Link](./lib/easy/242_valid_anagram.rb)                                     |
 | 257. Binary Tree Paths                                 | [Link](https://leetcode.com/problems/binary-tree-paths/)                                  | [Link](./lib/easy/257_binary_tree_paths.rb)                                 |
+| 258. Add Digits                                        | [Link](https://leetcode.com/problems/add-digits/)                                         | [Link](./lib/easy/258_add_digits.rb)                                        |
