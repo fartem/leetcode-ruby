@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/binary-tree-paths/
 # @param {TreeNode} root
 # @return {String[]}
 def binary_tree_paths(root)
