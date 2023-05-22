@@ -12,6 +12,8 @@ Style/CombinableLoops:
   Enabled: false
 Style/MissingElse:
   Enabled: false
+Style/GlobalVars:
+  Enabled: false
 
 Bundler/GemComment:
   Enabled: false
