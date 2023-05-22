@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/ugly-number/
 # @param {Integer} n
 # @return {Boolean}
 def is_ugly(n)

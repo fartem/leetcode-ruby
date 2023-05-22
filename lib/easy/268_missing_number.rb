@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/missing-number/
 # @param {Integer[]} nums
 # @return {Integer}
 def missing_number(nums)
