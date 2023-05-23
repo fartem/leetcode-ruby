@@ -71,3 +71,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 263. Ugly Number                                       | [Link](https://leetcode.com/problems/ugly-number/)                                        | [Link](./lib/easy/263_ugly_number.rb)                                       |
 | 268. Missing Number                                    | [Link](https://leetcode.com/problems/missing-number/)                                     | [Link](./lib/easy/268_missing_number.rb)                                    |
 | 278. First Bad Version                                 | [Link](https://leetcode.com/problems/first-bad-version/)                                  | [Link](./lib/easy/278_first_bad_version.rb)                                 |
+| 283. Move Zeroes                                       | [Link](https://leetcode.com/problems/move-zeroes/)                                        | [Link](./lib/easy/283_move_zeroes.rb)                                       |
