@@ -72,3 +72,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 268. Missing Number                                    | [Link](https://leetcode.com/problems/missing-number/)                                     | [Link](./lib/easy/268_missing_number.rb)                                    |
 | 278. First Bad Version                                 | [Link](https://leetcode.com/problems/first-bad-version/)                                  | [Link](./lib/easy/278_first_bad_version.rb)                                 |
 | 283. Move Zeroes                                       | [Link](https://leetcode.com/problems/move-zeroes/)                                        | [Link](./lib/easy/283_move_zeroes.rb)                                       |
+| 290. Word Pattern                                      | [Link](https://leetcode.com/problems/word-pattern/)                                       | [Link](./lib/easy/290_word_pattern.rb)                                      |
