@@ -31,3 +31,6 @@ Naming/PredicateName:
   Enabled: false
 Naming/MethodParameterName:
   Enabled: false
+
+Lint/UnreachableLoop:
+  Enabled: false
