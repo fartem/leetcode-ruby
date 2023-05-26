@@ -2,7 +2,6 @@
 
 # https://leetcode.com/problems/range-sum-query-immutable/
 class NumArray
-
   # @param {Integer[]} nums
   def initialize(nums)
     @nums = []
