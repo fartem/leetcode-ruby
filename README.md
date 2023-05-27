@@ -75,3 +75,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 290. Word Pattern                                      | [Link](https://leetcode.com/problems/word-pattern/)                                       | [Link](./lib/easy/290_word_pattern.rb)                                      |
 | 292. Nim Game                                          | [Link](https://leetcode.com/problems/nim-game/)                                           | [Link](./lib/easy/292_nim_game.rb)                                          |
 | 303. Range Sum Query - Immutable                       | [Link](https://leetcode.com/problems/range-sum-query-immutable/)                          | [Link](./lib/easy/303_range_sum_query_immutable.rb)                         |
+| 326. Power of Three                                    | [Link](https://leetcode.com/problems/power-of-three/)                                     | [Link](./lib/easy/326_power_of_three.rb)                                    |
