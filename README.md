@@ -78,3 +78,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 326. Power of Three                                    | [Link](https://leetcode.com/problems/power-of-three/)                                     | [Link](./lib/easy/326_power_of_three.rb)                                    |
 | 338. Counting Bits                                     | [Link](https://leetcode.com/problems/counting-bits/)                                      | [Link](./lib/easy/338_counting_bits.rb)                                     |
 | 342. Power of Four                                     | [Link](https://leetcode.com/problems/power-of-four/)                                      | [Link](./lib/easy/342_power_of_four.rb)                                     |
+| 344. Reverse String                                    | [Link](https://leetcode.com/problems/reverse-string/)                                     | [Link](./lib/easy/344_reverse_string.rb)                                    |
