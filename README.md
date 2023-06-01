@@ -80,3 +80,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 342. Power of Four                                     | [Link](https://leetcode.com/problems/power-of-four/)                                      | [Link](./lib/easy/342_power_of_four.rb)                                     |
 | 344. Reverse String                                    | [Link](https://leetcode.com/problems/reverse-string/)                                     | [Link](./lib/easy/344_reverse_string.rb)                                    |
 | 345. Reverse Vowels of a String                        | [Link](https://leetcode.com/problems/reverse-vowels-of-a-string/)                         | [Link](./lib/easy/345_reverse_vowels_of_a_string.rb)                        |
+| 349. Intersection of Two Arrays                        | [Link](https://leetcode.com/problems/intersection-of-two-arrays/)                         | [Link](./lib/easy/349_intersection_of_two_arrays.rb)                        |
