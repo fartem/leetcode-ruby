@@ -82,3 +82,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 345. Reverse Vowels of a String                        | [Link](https://leetcode.com/problems/reverse-vowels-of-a-string/)                         | [Link](./lib/easy/345_reverse_vowels_of_a_string.rb)                        |
 | 349. Intersection of Two Arrays                        | [Link](https://leetcode.com/problems/intersection-of-two-arrays/)                         | [Link](./lib/easy/349_intersection_of_two_arrays.rb)                        |
 | 350. Intersection of Two Arrays II                     | [Link](https://leetcode.com/problems/intersection-of-two-arrays-ii/)                      | [Link](./lib/easy/350_intersection_of_two_arrays_ii.rb)                     |
+| 367. Valid Perfect Square                              | [Link](https://leetcode.com/problems/valid-perfect-square/)                               | [Link](./lib/easy/367_valid_perfect_square.rb)                              |
