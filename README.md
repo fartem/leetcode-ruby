@@ -83,3 +83,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 349. Intersection of Two Arrays                        | [Link](https://leetcode.com/problems/intersection-of-two-arrays/)                         | [Link](./lib/easy/349_intersection_of_two_arrays.rb)                        |
 | 350. Intersection of Two Arrays II                     | [Link](https://leetcode.com/problems/intersection-of-two-arrays-ii/)                      | [Link](./lib/easy/350_intersection_of_two_arrays_ii.rb)                     |
 | 367. Valid Perfect Square                              | [Link](https://leetcode.com/problems/valid-perfect-square/)                               | [Link](./lib/easy/367_valid_perfect_square.rb)                              |
+| 374. Guess Number Higher or Lower                      | [Link](https://leetcode.com/problems/guess-number-higher-or-lower/)                       | [Link](./lib/easy/374_guess_number_higher_or_lower.rb)                      |
