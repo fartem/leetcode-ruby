@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/guess-number-higher-or-lower/
 # @param {Integer} n
 # @return {Integer}
 def guess_number(n)
