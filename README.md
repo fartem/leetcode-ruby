@@ -85,3 +85,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 367. Valid Perfect Square                              | [Link](https://leetcode.com/problems/valid-perfect-square/)                               | [Link](./lib/easy/367_valid_perfect_square.rb)                              |
 | 374. Guess Number Higher or Lower                      | [Link](https://leetcode.com/problems/guess-number-higher-or-lower/)                       | [Link](./lib/easy/374_guess_number_higher_or_lower.rb)                      |
 | 383. Ransom Note                                       | [Link](https://leetcode.com/problems/ransom-note/)                                        | [Link](./lib/easy/383_ransom_note.rb)                                       |
+| 387. First Unique Character in a String                | [Link](https://leetcode.com/problems/first-unique-character-in-a-string/)                 | [Link](./lib/easy/387_first_unique_character_in_a_string.rb)                |
