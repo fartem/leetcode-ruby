@@ -88,3 +88,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 387. First Unique Character in a String                | [Link](https://leetcode.com/problems/first-unique-character-in-a-string/)                 | [Link](./lib/easy/387_first_unique_character_in_a_string.rb)                |
 | 389. Find the Difference                               | [Link](https://leetcode.com/problems/find-the-difference/)                                | [Link](./lib/easy/389_find_the_difference.rb)                               |
 | 392. Is Subsequence                                    | [Link](https://leetcode.com/problems/is-subsequence/)                                     | [Link](./lib/easy/392_is_subsequence.rb)                                    |
+| 404. Sum of Left Leaves                                | [Link](https://leetcode.com/problems/sum-of-left-leaves/)                                 | [Link](./lib/easy/404_sum_of_left_leaves.rb)                                |
