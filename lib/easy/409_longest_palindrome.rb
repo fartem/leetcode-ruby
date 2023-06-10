@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/longest-palindrome/
 # @param {String} s
 # @return {Integer}
 def longest_palindrome(s)
