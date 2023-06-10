@@ -90,3 +90,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 392. Is Subsequence                                    | [Link](https://leetcode.com/problems/is-subsequence/)                                     | [Link](./lib/easy/392_is_subsequence.rb)                                    |
 | 404. Sum of Left Leaves                                | [Link](https://leetcode.com/problems/sum-of-left-leaves/)                                 | [Link](./lib/easy/404_sum_of_left_leaves.rb)                                |
 | 405. Convert a Number to Hexadecimal                   | [Link](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)                    | [Link](./lib/easy/405_convert_a_number_to_hexadecimal.rb)                   |
+| 409. Longest Palindrome                                | [Link](https://leetcode.com/problems/longest-palindrome/)                                 | [Link](./lib/easy/409_longest_palindrome.rb)                                |
