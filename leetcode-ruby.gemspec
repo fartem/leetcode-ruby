@@ -5,7 +5,7 @@ require 'English'
 ::Gem::Specification.new do |s|
   s.required_ruby_version = '>= 3.0'
   s.name = 'leetcode-ruby'
-  s.version = '0.7.8'
+  s.version = '0.7.9'
   s.license = 'MIT'
   s.files = ::Dir['lib/**/*.rb'] + %w[bin/leetcode-ruby README.md LICENSE]
   s.executable = 'leetcode-ruby'
