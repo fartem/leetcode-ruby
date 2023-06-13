@@ -93,3 +93,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 409. Longest Palindrome                                | [Link](https://leetcode.com/problems/longest-palindrome/)                                 | [Link](./lib/easy/409_longest_palindrome.rb)                                |
 | 412. Fizz Buzz                                         | [Link](https://leetcode.com/problems/fizz-buzz/)                                          | [Link](./lib/easy/412_fizz_buzz.rb)                                         |
 | 414. Third Maximum Number                              | [Link](https://leetcode.com/problems/third-maximum-number/)                               | [Link](./lib/easy/414_third_maximum_number.rb)                              |
+| 415. Add Strings                                       | [Link](https://leetcode.com/problems/add-strings/)                                        | [Link](./lib/easy/415_add_strings.rb)                                       |
