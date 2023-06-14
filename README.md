@@ -94,3 +94,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 412. Fizz Buzz                                         | [Link](https://leetcode.com/problems/fizz-buzz/)                                          | [Link](./lib/easy/412_fizz_buzz.rb)                                         |
 | 414. Third Maximum Number                              | [Link](https://leetcode.com/problems/third-maximum-number/)                               | [Link](./lib/easy/414_third_maximum_number.rb)                              |
 | 415. Add Strings                                       | [Link](https://leetcode.com/problems/add-strings/)                                        | [Link](./lib/easy/415_add_strings.rb)                                       |
+| 434. Number of Segments in a String                    | [Link](https://leetcode.com/problems/number-of-segments-in-a-string/)                     | [Link](./lib/easy/434_number_of_segments_in_a_string.rb)                    |
