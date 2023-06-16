@@ -96,3 +96,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 415. Add Strings                                       | [Link](https://leetcode.com/problems/add-strings/)                                        | [Link](./lib/easy/415_add_strings.rb)                                       |
 | 434. Number of Segments in a String                    | [Link](https://leetcode.com/problems/number-of-segments-in-a-string/)                     | [Link](./lib/easy/434_number_of_segments_in_a_string.rb)                    |
 | 441. Arranging Coins                                   | [Link](https://leetcode.com/problems/arranging-coins/)                                    | [Link](./lib/easy/441_arranging_coins.rb)                                   |
+| 448. Find All Numbers Disappeared in an Array          | [Link](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)           | [Link](./lib/easy/448_find_all_numbers_disappeared_in_an_array.rb)          |
