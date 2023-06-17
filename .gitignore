@@ -38,3 +38,6 @@ Gemfile.lock
 
 # RubyMine
 .idea/
+
+# Version checker
+*.remote
