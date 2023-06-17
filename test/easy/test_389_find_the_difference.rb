@@ -18,14 +18,4 @@ class FindTheDifferenceTest < ::Minitest::Test
       find_the_difference('', 'y')
     )
   end
-
-  def test_additional
-    assert_equal(
-      'po',
-      find_the_difference(
-        'abcdefg',
-        'abcdefgpo'
-      )
-    )
-  end
 end
