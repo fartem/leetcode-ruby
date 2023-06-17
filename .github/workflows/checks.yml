@@ -18,6 +18,8 @@ jobs:
         ruby-version: 3.0
     - name: Install dependencies
       run: bundle install
+    - name: Run tests checker
+      run: ruby ./ci/tests_checker.rb
     - name: Run links checker
       run: ruby ./ci/links_checker.rb
     - name: Run RuboCop
