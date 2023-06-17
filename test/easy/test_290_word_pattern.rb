@@ -10,4 +10,8 @@ class WordPatternTest < ::Minitest::Test
     assert(!word_pattern('abba', 'dog cat cat fish'))
     assert(!word_pattern('aaaa', 'dog cat cat dog'))
   end
+
+  def test_additional
+    assert(!word_pattern('abba', 'dog dog dog dog'))
+  end
 end
