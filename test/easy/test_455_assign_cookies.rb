@@ -1,0 +1,24 @@
+# frozen_string_literal: true
+
+require_relative '../test_helper'
+require_relative '../../lib/easy/455_assign_cookies'
+require 'minitest/autorun'
+
+class AssignCookiesTest < ::Minitest::Test
+  def test_default
+    assert_equal(
+      1,
+      find_content_children(
+        [1, 2, 3],
+        [1, 1]
+      )
+    )
+    assert_equal(
+      2,
+      find_content_children(
+        [1, 2],
+        [1, 2, 3]
+      )
+    )
+  end
+end
