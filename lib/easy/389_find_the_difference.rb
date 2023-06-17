@@ -13,6 +13,4 @@ def find_the_difference(s, t)
   (0..s_chars.length).step(1) do |i|
     return t_chars[i] if s_chars[i] != t_chars[i]
   end
-
-  t_chars[t_chars.length - 1]
 end
