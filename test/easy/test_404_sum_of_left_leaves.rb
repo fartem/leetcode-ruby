@@ -28,4 +28,21 @@ class SumOfLeftLeavesTest < ::Minitest::Test
       )
     )
   end
+
+  def test_additional
+    assert_equal(
+      4,
+      sum_of_left_leaves(
+        ::TreeNode.new(
+          1,
+          ::TreeNode.new(
+            2,
+            ::TreeNode.new(4),
+            ::TreeNode.new(5)
+          ),
+          ::TreeNode.new(3)
+        )
+      )
+    )
+  end
 end
