@@ -7,7 +7,27 @@ on:
     branches: [ master ]
 
 jobs:
-  checks:
+  tests_checker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.0
+    - name: Run tests checker
+      run: ruby ./ci/tests_checker.rb
+  links_checker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.0
+    - name: Run links checker
+      run: ruby ./ci/links_checker.rb
+  tests:
     permissions: write-all
     runs-on: ubuntu-latest
     steps:
@@ -18,11 +38,7 @@ jobs:
         ruby-version: 3.0
     - name: Install dependencies
       run: bundle install
-    - name: Run tests checker
-      run: ruby ./ci/tests_checker.rb
     - name: Run links checker
-      run: ruby ./ci/links_checker.rb
-    - name: Run RuboCop
       run: bundle exec rake rubocop
     - name: Run tests
       run: bundle exec rake test
