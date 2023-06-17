@@ -27,6 +27,17 @@ jobs:
         ruby-version: 3.0
     - name: Run links checker
       run: ruby ./ci/links_checker.rb
+  version_checker:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.0
+    - name: Run version checker
+      run: ruby ./ci/version_checker.rb
   tests:
     permissions: write-all
     runs-on: ubuntu-latest
