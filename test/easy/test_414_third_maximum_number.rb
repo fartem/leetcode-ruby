@@ -10,4 +10,8 @@ class ThirdMaximumNumberTest < ::Minitest::Test
     assert_equal(2, third_max([1, 2]))
     assert_equal(1, third_max([2, 2, 3, 1]))
   end
+
+  def test_additional
+    assert_equal(2, third_max([1, 2, 2, 2]))
+  end
 end
