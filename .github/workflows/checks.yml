@@ -8,6 +8,7 @@ on:
 
 jobs:
   tests_checker:
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby
@@ -17,6 +18,7 @@ jobs:
     - name: Run tests checker
       run: ruby ./ci/tests_checker.rb
   links_checker:
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby
