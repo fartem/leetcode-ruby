@@ -15,8 +15,6 @@ def is_valid(s)
       return false if stack.pop != '['
     when '}'
       return false if stack.pop != '{'
-    else
-      next
     end
   end
   stack.empty?
