@@ -39,6 +39,17 @@ jobs:
         ruby-version: 3.0
     - name: Run version checker
       run: ruby ./ci/version_checker.rb
+  reachable_checker:
+    runs-on: ubuntu-latest
+    if: github.ref != 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0
+      - name: Run reachable checker
+        run: ruby ./ci/reachable_checker.rb
   tests:
     permissions: write-all
     runs-on: ubuntu-latest
