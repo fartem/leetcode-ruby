@@ -7,8 +7,8 @@ def process(difficulty)
   solutions.each do |file_name|
     lines = ::IO.readlines("#{path}/#{file_name}")
     has_comment = false
-    (2...lines.length).each do |i|
-      if lines[i].start_with?('# https://leetcode.com/')
+    lines.each do |line|
+      if line.start_with?('# https://leetcode.com/')
         has_comment = true
         break
       end
