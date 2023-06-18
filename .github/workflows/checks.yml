@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+  RUBY_VERSION: 3.0
+  SIMPLECOV_THRESHOLD: 100
+
 jobs:
   tests_checker:
     runs-on: ubuntu-latest
@@ -14,7 +18,7 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.0
+        ruby-version: ${{ env.RUBY_VERSION }}
     - name: Run tests checker
       run: ruby ./ci/tests_checker.rb
   links_checker:
@@ -24,7 +28,7 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.0
+        ruby-version: ${{ env.RUBY_VERSION }}
     - name: Run links checker
       run: ruby ./ci/links_checker.rb
   version_checker:
@@ -36,7 +40,7 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.0
+        ruby-version: ${{ env.RUBY_VERSION }}
     - name: Run version checker
       run: ruby ./ci/version_checker.rb
   tests:
@@ -47,7 +51,7 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.0
+        ruby-version: ${{ env.RUBY_VERSION }}
     - name: Install dependencies
       run: bundle install
     - name: Run tests
@@ -56,4 +60,4 @@ jobs:
       uses: aki77/simplecov-report-action@v1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        failedThreshold: 100
+        failedThreshold: ${{ env.SIMPLECOV_THRESHOLD }}
