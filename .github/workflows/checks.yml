@@ -43,6 +43,16 @@ jobs:
         ruby-version: ${{ env.RUBY_VERSION }}
     - name: Run version checker
       run: ruby ./ci/version_checker.rb
+  readme_checker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+      - name: Run README checker
+        run: ruby ./ci/readme_checker.rb
   reachable_checker:
     runs-on: ubuntu-latest
     if: github.ref != 'refs/heads/master'
