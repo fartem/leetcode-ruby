@@ -99,3 +99,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 448. Find All Numbers Disappeared in an Array          | [Link](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)           | [Link](./lib/easy/448_find_all_numbers_disappeared_in_an_array.rb)          |
 | 455. Assign Cookies                                    | [Link](https://leetcode.com/problems/assign-cookies/)                                     | [Link](./lib/easy/455_assign_cookies.rb)                                    |
 | 459. Repeated Substring Pattern                        | [Link](https://leetcode.com/problems/repeated-substring-pattern/)                         | [Link](./lib/easy/459_repeated_substring_pattern.rb)                        |
+| 461. Hamming Distance                                  | [Link](https://leetcode.com/problems/hamming-distance/)                                   | [Link](./lib/easy/461_hamming_distance.rb)                                  |
