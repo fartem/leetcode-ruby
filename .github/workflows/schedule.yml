@@ -1,0 +1,20 @@
+name: Trigger Site Rebuild on a CRON Schedule
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'
+
+env:
+  RUBY_VERSION: 3.0
+
+jobs:
+  tests_checker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ env.RUBY_VERSION }}
+    - name: Run all reachable checker
+      run: ruby ./ci/all_reachable_checker.rb
