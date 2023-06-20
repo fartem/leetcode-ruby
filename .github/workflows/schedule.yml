@@ -11,10 +11,10 @@ jobs:
   tests_checker:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: ${{ env.RUBY_VERSION }}
-    - name: Run all reachable checker
-      run: ruby ./ci/all_reachable_checker.rb
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+      - name: Run all reachable checker
+        run: ruby ./ci/all_reachable_checker.rb
