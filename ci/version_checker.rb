@@ -7,8 +7,8 @@ require 'open-uri'
 def process
   local_spec = ::Gem::Specification.load('leetcode-ruby.gemspec')
 
-  response = ::URI.open('https://raw.githubusercontent.com/fartem/leetcode-ruby/master/leetcode-ruby.gemspec').read
-  ::File.write('leetcode-ruby.gemspec.remote', response)
+  res = ::URI.open('https://raw.githubusercontent.com/fartem/leetcode-ruby/master/leetcode-ruby.gemspec').read
+  ::File.write('leetcode-ruby.gemspec.remote', res)
   remote_spec = ::Gem::Specification.load('leetcode-ruby.gemspec.remote')
 
   exit(1) if local_spec.version <= remote_spec.version
