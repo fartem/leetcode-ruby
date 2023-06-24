@@ -14,8 +14,6 @@ Style/MissingElse:
   Enabled: false
 Style/GlobalVars:
   Enabled: false
-Style/NestedModifier:
-  Enabled: false
 
 Bundler/GemComment:
   Enabled: false
