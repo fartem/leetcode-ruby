@@ -12,4 +12,8 @@ class KeyboardRowTest < ::Minitest::Test
     )
     assert_equal([], find_words(['omk']))
   end
+
+  def test_additional
+    assert_equal(['MMM'], find_words(['MMM']))
+  end
 end
