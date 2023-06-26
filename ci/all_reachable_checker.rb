@@ -23,7 +23,6 @@ def process
 
     sleep(5)
   end
-
 end
 
 process
