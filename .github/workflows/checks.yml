@@ -64,6 +64,18 @@ jobs:
           ruby-version: 3.0
       - name: Run last reachable checker
         run: ruby ./ci/last_reachable_checker.rb
+  rubocop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0
+      - name: Install dependencies
+        run: bundle install
+      - name: Run RuboCop
+        run: bundle exec rake rubocop
   tests:
     permissions: write-all
     runs-on: ubuntu-latest

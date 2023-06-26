@@ -34,3 +34,5 @@ Naming/MethodParameterName:
 
 Lint/UnreachableLoop:
   Enabled: false
+Lint/NumberConversion:
+  Enabled: false

@@ -16,7 +16,7 @@ class ConstructTheRectangleTest < ::Minitest::Test
     )
     assert_equal(
       [427, 286],
-      construct_rectangle(122122)
+      construct_rectangle(122_122)
     )
   end
 end
