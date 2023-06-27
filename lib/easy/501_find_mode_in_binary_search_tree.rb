@@ -6,24 +6,24 @@
 def find_mode(root)
   $prev = -1
   $count = 1
-  $max = 0
+  $max = -1
 
   result = []
-  traverse(root, result)
+  _traverse(root, result)
 
   result
 end
 
 $prev = -1
 $count = 1
-$max = 0
+$max = -1
 
 # @param {TreeNode} node
 # @param {Integer[]} modes
-def traverse(node, modes)
+def _traverse(node, modes)
   return if node.nil?
 
-  traverse(node.left, modes)
+  _traverse(node.left, modes)
   if $prev != -1
     if $prev == node.val
       $count += 1
@@ -39,5 +39,5 @@ def traverse(node, modes)
     modes << node.val
   end
   $prev = node.val
-  traverse(node.right, modes)
+  _traverse(node.right, modes)
 end
