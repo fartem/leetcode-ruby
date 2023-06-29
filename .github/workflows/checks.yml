@@ -61,7 +61,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0
+          ruby-version: ${{ env.RUBY_VERSION }}
       - name: Run last reachable checker
         run: ruby ./ci/last_reachable_checker.rb
   rubocop:
@@ -71,7 +71,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0
+          ruby-version: ${{ env.RUBY_VERSION }}
       - name: Install dependencies
         run: bundle install
       - name: Run RuboCop
