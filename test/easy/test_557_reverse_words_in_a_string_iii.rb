@@ -11,8 +11,8 @@ class ReverseWordsInAStringIIITest < ::Minitest::Test
       reverse_words("Let's take LeetCode contest")
     )
     assert_equal(
-      "doG gniD",
-      reverse_words("God Ding")
+      'doG gniD',
+      reverse_words('God Ding')
     )
   end
 end
