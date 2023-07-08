@@ -2,6 +2,8 @@
 
 # Binary Tree implementation for this project
 class TreeNode
+  attr_accessor :val, :left, :right
+
   # @param val {Integer}
   # @param left {TreeNode}
   # @param right {TreeNode}
@@ -15,8 +17,6 @@ class TreeNode
   def ==(other)
     are_equals(self, other)
   end
-
-  attr_accessor :val, :left, :right
 
   private
 
