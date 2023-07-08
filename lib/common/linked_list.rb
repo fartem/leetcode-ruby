@@ -2,6 +2,8 @@
 
 # LinkedList implementation for this project
 class ListNode
+  attr_accessor :val, :next
+
   # @param val {Integer}
   # @param nxt {ListNode}
   def initialize(val = 0, nxt = nil)
@@ -30,6 +32,4 @@ class ListNode
 
     first.val == second.val && are_equals(first.next, second.next)
   end
-
-  attr_accessor :val, :next
 end
