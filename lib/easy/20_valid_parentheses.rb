@@ -17,5 +17,6 @@ def is_valid(s)
       return false if stack.pop != '{'
     end
   end
+
   stack.empty?
 end

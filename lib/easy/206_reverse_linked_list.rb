@@ -12,5 +12,6 @@ def reverse_list(head)
     prev = curr
     curr = nxt
   end
+
   prev
 end

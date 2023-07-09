@@ -9,6 +9,7 @@ def is_happy(n)
     seen << n
     n = _next(n)
   end
+
   n == 1
 end
 
@@ -23,5 +24,6 @@ def _next(n)
     n /= 10
     sum += d * d
   end
+
   sum
 end

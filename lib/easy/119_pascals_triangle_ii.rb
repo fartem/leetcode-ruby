@@ -19,5 +19,6 @@ def get_row(row_index)
     end
     result << row
   end
+
   result.last
 end

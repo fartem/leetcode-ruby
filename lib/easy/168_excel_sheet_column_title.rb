@@ -11,5 +11,6 @@ def convert_to_title(column_number)
     result << alphabet[column_number % 26]
     column_number /= 26
   end
+
   result.reverse.join
 end

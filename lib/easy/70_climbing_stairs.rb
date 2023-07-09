@@ -13,5 +13,6 @@ def climb_stairs(n)
     n1 = n2
     n2 += temp
   end
+
   n2
 end

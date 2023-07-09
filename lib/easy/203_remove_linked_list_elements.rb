@@ -15,5 +15,6 @@ def remove_elements(head, val)
       curr = curr.next
     end
   end
+
   head
 end

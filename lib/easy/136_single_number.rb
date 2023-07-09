@@ -9,5 +9,6 @@ def single_number(nums)
     val = count[num]
     count[num] = val.nil? ? 1 : val + 1
   end
+
   count.find { |_key, value| value == 1 }.first
 end

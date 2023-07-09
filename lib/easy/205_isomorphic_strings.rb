@@ -23,5 +23,6 @@ def is_isomorphic(s, t)
       return false if curr_t != replacement
     end
   end
+
   true
 end

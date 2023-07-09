@@ -10,5 +10,6 @@ def title_to_number(column_title)
     result *= 26
     result += alphabet[column_title[i].chr] + 1
   end
+
   result
 end

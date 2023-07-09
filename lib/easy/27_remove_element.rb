@@ -9,5 +9,6 @@ def remove_element(nums, val)
   (0..nums.length).step(1) do |i|
     nums[result += 1] = nums[i] if nums[i] != val
   end
+
   result
 end
