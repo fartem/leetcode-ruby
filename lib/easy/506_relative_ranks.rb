@@ -4,9 +4,7 @@
 # @param {Integer[]} score
 # @return {String[]}
 def find_relative_ranks(score)
-  copy = []
-  copy.replace(score)
-  copy = copy.sort.reverse
+  copy = score.sort.reverse
 
   positions = {}
   copy.each_with_index do |val, index|
