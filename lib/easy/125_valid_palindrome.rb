@@ -15,5 +15,6 @@ def is_valid_palindrome(s)
       break
     end
   end
+
   result
 end

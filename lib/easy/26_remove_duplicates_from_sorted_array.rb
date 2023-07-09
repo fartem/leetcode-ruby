@@ -10,5 +10,6 @@ def remove_duplicates(nums)
   (1..nums.length).step(1) do |i|
     nums[result += 1] = nums[i] unless nums[i] == nums[result]
   end
+
   result
 end

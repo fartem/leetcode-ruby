@@ -19,5 +19,6 @@ def generate(num_rows)
     end
     result << row
   end
+
   result
 end

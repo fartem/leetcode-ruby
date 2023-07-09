@@ -11,5 +11,6 @@ def max_profit(prices)
     max = [price - min, max].max
     min = [price, min].min
   end
+
   max
 end

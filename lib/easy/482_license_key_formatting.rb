@@ -13,7 +13,7 @@ def license_key_formatting(s, k)
 
   return '' if key.length.zero?
 
-  parts =  key.reverse.each_slice(k)
+  parts = key.reverse.each_slice(k)
   result = []
   parts.each do |part|
     result << part.join.reverse

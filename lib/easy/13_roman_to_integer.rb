@@ -13,6 +13,7 @@ def roman_to_int(s)
     'D' => 500,
     'M' => 1000
   }
+
   result = 0
   s.reverse.each_char do |ch|
     curr = values[ch]
@@ -22,5 +23,6 @@ def roman_to_int(s)
       result += curr
     end
   end
+
   result
 end

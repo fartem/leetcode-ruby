@@ -14,5 +14,6 @@ def has_cycle(head)
     slow = slow.next
     fast = fast.next.next
   end
+
   true
 end

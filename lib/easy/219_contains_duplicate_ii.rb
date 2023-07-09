@@ -19,5 +19,6 @@ def contains_nearby_duplicate(nums, k)
       nums_with_indices[num] = [i]
     end
   end
+
   false
 end

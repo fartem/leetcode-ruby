@@ -12,5 +12,6 @@ def delete_duplicates(head)
       p = p.next
     end
   end
+
   head
 end

@@ -16,5 +16,6 @@ def postorder_traverse(node, values)
 
   postorder_traverse(node.left, values)
   postorder_traverse(node.right, values)
+
   values << node.val
 end

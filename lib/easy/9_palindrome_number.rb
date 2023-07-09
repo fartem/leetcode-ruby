@@ -11,5 +11,6 @@ def is_palindrome(x)
     t += y % 10
     y /= 10
   end
+
   x == t
 end

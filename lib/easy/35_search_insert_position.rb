@@ -17,5 +17,6 @@ def search_insert(nums, target)
       right -= 1
     end
   end
+
   left
 end

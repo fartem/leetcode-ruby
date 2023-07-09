@@ -25,7 +25,9 @@ def merge_two_lists(list1, list2)
     end
     result = result.next
   end
+
   result.next = min unless min.nil?
   result.next = max unless max.nil?
+
   head
 end

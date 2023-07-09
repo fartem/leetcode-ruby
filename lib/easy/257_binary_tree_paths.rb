@@ -6,6 +6,7 @@
 def binary_tree_paths(root)
   result = []
   fill_paths(root, '', result)
+
   result
 end
 
