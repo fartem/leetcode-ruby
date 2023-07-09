@@ -5,7 +5,7 @@
 # @return {Integer}
 def third_max(nums)
   nums.sort!
-  length = num.length
+  length = nums.length
   last = nums[length - 1]
 
   return last if length < 3
