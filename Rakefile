@@ -17,3 +17,19 @@ require 'rake/testtask'
   task.pattern = 'test/**/test_*.rb'
   task.verbose = true
 end
+
+desc 'Run all CI checks'
+require_relative './ci/last_reachable_checker'
+require_relative './ci/links_checker'
+require_relative './ci/readme_checker'
+require_relative './ci/tests_checker'
+require_relative './ci/version_checker'
+task :ci do
+  [
+    ::CI::LastReachableChecker.new,
+    ::CI::LinksChecker.new,
+    ::CI::ReadmeChecker.new,
+    ::CI::TestsChecker.new,
+    ::CI::VersionChecker.new
+  ].each(&:run)
+end
