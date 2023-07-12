@@ -1,17 +1,33 @@
 # frozen_string_literal: true
 
+require_relative './ci_job'
+
 require 'rubygems'
 require 'open-uri'
 
-# Process version checker
-def process
-  local_spec = ::Gem::Specification.load('leetcode-ruby.gemspec')
+module CI
+  # CI job that checks project version.
+  class VersionChecker < ::CI::CIJob
+    # Process VersionChecker.
+    def process
+      check
+    end
 
-  res = ::URI.open('https://raw.githubusercontent.com/fartem/leetcode-ruby/master/leetcode-ruby.gemspec').read
-  ::File.write('leetcode-ruby.gemspec.remote', res)
-  remote_spec = ::Gem::Specification.load('leetcode-ruby.gemspec.remote')
+    private
 
-  exit(1) if local_spec.version <= remote_spec.version
+    def check
+      local_spec = ::Gem::Specification.load('leetcode-ruby.gemspec')
+
+      res = ::URI.open('https://raw.githubusercontent.com/fartem/leetcode-ruby/master/leetcode-ruby.gemspec').read
+      ::File.write('leetcode-ruby.gemspec.remote', res)
+      remote_spec = ::Gem::Specification.load('leetcode-ruby.gemspec.remote')
+
+      return if local_spec.version > remote_spec.version
+
+      puts('VersionChecker ends with error.')
+      exit(1)
+    end
+  end
 end
 
-process
+::CI::VersionChecker.new.run
