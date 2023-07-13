@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
-# @param {NAryNode} root
+# @param {NAryTree} root
 # @return {int}
 def max_depth_of_n_ary_tree(root)
   return 0 if root.nil?
