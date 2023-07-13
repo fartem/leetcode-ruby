@@ -3,7 +3,7 @@
 # frozen_string_literal: true
 
 require_relative '../test_helper'
-require_relative '../../lib/common/n_ary_node'
+require_relative '../../lib/common/n_ary_tree'
 require_relative '../../lib/easy/589_n_ary_tree_preorder_traversal'
 require 'minitest/autorun'
 
@@ -12,18 +12,18 @@ class NAryTreePreorderTraversalTest < ::Minitest::Test
     assert_equal(
       [1, 3, 5, 6, 2, 4],
       preorder(
-        ::NAryNode.new(
+        ::NAryTree.new(
           1,
           [
-            ::NAryNode.new(
+            ::NAryTree.new(
               3,
               [
-                ::NAryNode.new(5),
-                ::NAryNode.new(6)
+                ::NAryTree.new(5),
+                ::NAryTree.new(6)
               ]
             ),
-            ::NAryNode.new(2),
-            ::NAryNode.new(4)
+            ::NAryTree.new(2),
+            ::NAryTree.new(4)
           ]
         )
       )
@@ -31,48 +31,48 @@ class NAryTreePreorderTraversalTest < ::Minitest::Test
     assert_equal(
       [1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10],
       preorder(
-        ::NAryNode.new(
+        ::NAryTree.new(
           1,
           [
-            ::NAryNode.new(2),
-            ::NAryNode.new(
+            ::NAryTree.new(2),
+            ::NAryTree.new(
               3,
               [
-                ::NAryNode.new(6),
-                ::NAryNode.new(
+                ::NAryTree.new(6),
+                ::NAryTree.new(
                   7,
                   [
-                    ::NAryNode.new(
+                    ::NAryTree.new(
                       11,
                       [
-                        ::NAryNode.new(14)
+                        ::NAryTree.new(14)
                       ]
                     )
                   ]
                 )
               ]
             ),
-            ::NAryNode.new(
+            ::NAryTree.new(
               4,
               [
-                ::NAryNode.new(
+                ::NAryTree.new(
                   8,
                   [
-                    ::NAryNode.new(12)
+                    ::NAryTree.new(12)
                   ]
                 )
               ]
             ),
-            ::NAryNode.new(
+            ::NAryTree.new(
               5,
               [
-                ::NAryNode.new(
+                ::NAryTree.new(
                   9,
                   [
-                    ::NAryNode.new(13)
+                    ::NAryTree.new(13)
                   ]
                 ),
-                ::NAryNode.new(10)
+                ::NAryTree.new(10)
               ]
             )
           ]

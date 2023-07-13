@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # https://leetcode.com/problems/n-ary-tree-preorder-traversal/
-# @param {NAryNode} root
+# @param {NAryTree} root
 # @return {Integer[]}
 def preorder(root)
   result = []
@@ -10,7 +10,7 @@ def preorder(root)
   result
 end
 
-# @param {NAryNode}
+# @param {NAryTree}
 # @param {Integer[]}
 def apply(node, list)
   return if node.nil?

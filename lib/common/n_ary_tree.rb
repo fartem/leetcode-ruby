@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # N-ary Tree implementation for this project
-class NAryNode
+class NAryTree
   attr_accessor :val, :children
 
   # @param {Integer} val
