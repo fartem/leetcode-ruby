@@ -20,7 +20,7 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
       - name: Run tests checker
-        run: ruby ./ci/tests_checker.rb
+        run: ruby -r "./ci/tests_checker.rb" -e "::CI::TestsChecker.new.process"
   links_checker:
     runs-on: ubuntu-latest
     steps:
@@ -30,7 +30,7 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
       - name: Run links checker
-        run: ruby ./ci/links_checker.rb
+        run: ruby -r "./ci/links_checker.rb" -e "::CI::LinksChecker.new.process"
   version_checker:
     permissions: write-all
     runs-on: ubuntu-latest
@@ -42,7 +42,7 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
       - name: Run version checker
-        run: ruby ./ci/version_checker.rb
+        run: ruby -r "./ci/version_checker.rb" -e "::CI::VersionChecker.new.process"
   readme_checker:
     runs-on: ubuntu-latest
     steps:
@@ -52,7 +52,7 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
       - name: Run README checker
-        run: ruby ./ci/readme_checker.rb
+        run: ruby -r "./ci/readme_checker.rb" -e "::CI::ReadmeChecker.new.process"
   last_reachable_checker:
     runs-on: ubuntu-latest
     if: github.ref != 'refs/heads/master'
@@ -63,7 +63,7 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
       - name: Run last reachable checker
-        run: ruby ./ci/last_reachable_checker.rb
+        run: ruby -r "./ci/last_reachable_checker.rb" -e "::CI::LastReachableChecker.new.process"
   rubocop:
     runs-on: ubuntu-latest
     steps:

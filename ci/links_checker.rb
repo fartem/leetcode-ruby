@@ -27,12 +27,10 @@ module CI
         end
 
         unless has_comment
-          puts("LinksChecker ends with error from #{file_name}.")
+          puts("LinksChecker ends with an error from #{file_name}.")
           exit(1)
         end
       end
     end
   end
 end
-
-::CI::LinksChecker.new.run

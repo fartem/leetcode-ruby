@@ -18,12 +18,10 @@ module CI
       solutions = ::Dir.entries(path).reject { |file_name| file_name.start_with?('.') }
       solutions.each do |file_name|
         unless ::File.exist?("./test/#{difficulty}/test_#{file_name}")
-          puts("TestsChecker ends with error from #{file_name}.")
+          puts("TestsChecker ends with an error from #{file_name}.")
           exit(1)
         end
       end
     end
   end
 end
-
-::CI::TestsChecker.new.run
