@@ -28,10 +28,8 @@ module CI
 
       return if res.code == '200'
 
-      puts("LastReachableChecker ends with error from #{parsed_uri}.")
+      puts("LastReachableChecker ends with an error from #{parsed_uri}.")
       exit(1)
     end
   end
 end
-
-::CI::LastReachableChecker.new.run

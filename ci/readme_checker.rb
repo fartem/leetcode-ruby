@@ -25,12 +25,10 @@ module CI
         end
 
         if links_count != 1
-          puts("ReadmeChecker ends with error from #{file_name}.")
+          puts("ReadmeChecker ends with an error from #{file_name}.")
           exit(1)
         end
       end
     end
   end
 end
-
-::CI::ReadmeChecker.new.run
