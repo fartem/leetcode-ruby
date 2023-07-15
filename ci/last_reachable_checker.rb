@@ -28,8 +28,7 @@ module CI
 
       return if res.code == '200'
 
-      puts("LastReachableChecker ends with an error from #{parsed_uri}.")
-      exit(1)
+      end_with_error(-> { puts("LastReachableChecker ends with an error from #{parsed_uri} (#{res.code}).") })
     end
   end
 end

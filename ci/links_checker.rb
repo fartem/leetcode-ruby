@@ -26,10 +26,7 @@ module CI
           end
         end
 
-        unless has_comment
-          puts("LinksChecker ends with an error from #{file_name}.")
-          exit(1)
-        end
+        end_with_error(-> { puts("LinksChecker ends with an error from #{file_name}.") }) unless has_comment
       end
     end
   end

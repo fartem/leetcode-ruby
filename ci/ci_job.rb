@@ -15,6 +15,13 @@ module CI
       puts("#{self.class.name} ended without errors!")
     end
 
+    # Use this method in your realization when task completed with error.
+    def end_with_error(details)
+      details.call
+      puts("#{self.class.name} ended with an error.")
+      exit(1)
+    end
+
     # Job realization.
     # You should override this method in your realization.
     def process

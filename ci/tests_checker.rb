@@ -17,10 +17,9 @@ module CI
       path = "./lib/#{difficulty}"
       solutions = ::Dir.entries(path).reject { |file_name| file_name.start_with?('.') }
       solutions.each do |file_name|
-        unless ::File.exist?("./test/#{difficulty}/test_#{file_name}")
-          puts("TestsChecker ends with an error from #{file_name}.")
-          exit(1)
-        end
+        next if ::File.exist?("./test/#{difficulty}/test_#{file_name}")
+
+        end_with_error(-> { puts("TestsChecker ends with an error from #{file_name}.") })
       end
     end
   end
