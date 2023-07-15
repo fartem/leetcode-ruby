@@ -24,8 +24,7 @@ module CI
 
       return if local_spec.version > remote_spec.version
 
-      puts('VersionChecker ends with an error.')
-      exit(1)
+      end_with_error(-> { puts('VersionChecker ends with an error.') })
     end
   end
 end

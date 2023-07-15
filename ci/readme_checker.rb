@@ -24,10 +24,7 @@ module CI
           links_count += 1 if line.include?(file_name)
         end
 
-        if links_count != 1
-          puts("ReadmeChecker ends with an error from #{file_name}.")
-          exit(1)
-        end
+        end_with_error(-> { puts("ReadmeChecker ends with an error from #{file_name}.") }) if links_count != 1
       end
     end
   end
