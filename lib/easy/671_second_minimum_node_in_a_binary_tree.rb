@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-$max = 1 << (1 << 16)
+$r_max = 1 << (1 << 16)
 $f_min = 0
 $s_min = $max
 
@@ -9,10 +9,10 @@ $s_min = $max
 # @return {Integer}
 def find_second_minimum_value(root)
   $f_min = root.val
-  $s_min = $max
+  $s_min = $r_max
   find_second_minimum(root)
 
-  $s_min < $max ? $s_min : -1
+  $s_min < $r_max ? $s_min : -1
 end
 
 # @param {TreNode} node

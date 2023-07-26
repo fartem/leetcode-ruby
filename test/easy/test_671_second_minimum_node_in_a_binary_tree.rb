@@ -5,7 +5,7 @@ require_relative '../../lib/common/binary_tree'
 require_relative '../../lib/easy/671_second_minimum_node_in_a_binary_tree'
 require 'minitest/autorun'
 
-class RobotReturnToOriginTest < ::Minitest::Test
+class SecondMinimumNodeInABinaryTreeTest < ::Minitest::Test
   def test_default
     assert_equal(
       5,
