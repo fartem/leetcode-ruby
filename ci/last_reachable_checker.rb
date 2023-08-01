@@ -16,7 +16,7 @@ module CI
 
     def check
       readme = ::File.readlines('README.md')
-      last_solution = readme[readme.length - 1]
+      last_solution = readme.last
 
       uri = ::URI.extract(last_solution)
       parsed_uri = uri.first[0, uri.first.length - 1]

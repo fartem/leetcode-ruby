@@ -14,7 +14,7 @@ def cal_points(operations)
       stack.push(a)
       stack.push(a + b)
     when 'D'
-      stack.push(stack[stack.length - 1] * 2)
+      stack.push(stack.last * 2)
     when 'C'
       stack.pop
     else
