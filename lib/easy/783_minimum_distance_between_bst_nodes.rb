@@ -7,7 +7,7 @@ require_relative '../common/binary_tree'
 # @return {Integer}
 def min_diff_in_bst(root)
   nums = []
-  apply(root, nums)
+  apply_min_diff_in_bst(root, nums)
   result = 1_000_000_000
   (1...nums.length).step(1) do |i|
     diff = nums[i] - nums[i - 1]
@@ -19,10 +19,10 @@ end
 
 # @param {TreeNode} node
 # @param {Integer[]} nums
-def apply(node, nums)
+def apply_min_diff_in_bst(node, nums)
   return if node.nil?
 
-  apply(node.left, nums)
+  apply_min_diff_in_bst(node.left, nums)
   nums << node.val
-  apply(node.right, nums)
+  apply_min_diff_in_bst(node.right, nums)
 end
