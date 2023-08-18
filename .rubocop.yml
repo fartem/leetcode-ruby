@@ -28,6 +28,8 @@ Metrics/PerceivedComplexity:
   Enabled: false
 Metrics/BlockNesting:
   Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
 
 Naming/PredicateName:
   Enabled: false
