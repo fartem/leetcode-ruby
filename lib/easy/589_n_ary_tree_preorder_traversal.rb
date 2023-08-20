@@ -16,5 +16,6 @@ def apply(node, list)
   return if node.nil?
 
   list << node.val
+
   node.children&.each { |child| apply(child, list) }
 end

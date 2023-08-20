@@ -8,6 +8,7 @@ def repeated_substring_pattern(s)
   (1...length).step(1) do |i|
     if (length % i).zero?
       sub = s[0, i]
+
       return true if (sub * (length / sub.length)) == s
     end
   end

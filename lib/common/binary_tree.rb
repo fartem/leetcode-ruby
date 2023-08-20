@@ -4,24 +4,26 @@
 class TreeNode
   attr_accessor :val, :left, :right
 
-  # @param val {Integer}
-  # @param left {TreeNode}
-  # @param right {TreeNode}
+  # @param {Integer} val
+  # @param {TreeNode} left
+  # @param {TreeNode} right
   def initialize(val = 0, left = nil, right = nil)
     @val = val
     @left = left
     @right = right
   end
 
-  # @param other {TreeNode}
+  # @param {TreeNode} other
+  # @return {Bool}
   def ==(other)
     are_equals(self, other)
   end
 
   private
 
-  # @param curr {TreeNode}
-  # @param other {TreeNode}
+  # @param {TreeNode} curr
+  # @param {TreeNode} other
+  # @return {Bool}
   def are_equals(curr, other)
     return true if curr.nil? && other.nil?
     return false if curr.nil? || other.nil?

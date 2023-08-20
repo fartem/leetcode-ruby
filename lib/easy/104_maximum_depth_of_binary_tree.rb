@@ -8,5 +8,6 @@ def max_depth(root)
 
   left = max_depth(root.left)
   right = max_depth(root.right)
+
   left > right ? left + 1 : right + 1
 end

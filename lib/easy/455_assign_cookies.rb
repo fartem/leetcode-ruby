@@ -12,6 +12,7 @@ def find_content_children(g, s)
   result = 0
   while g_p < g.length && s_p < s.length
     s_p += 1 while s_p < s.length && s[s_p] < g[g_p]
+
     next unless s_p < s.length
 
     g_p += 1

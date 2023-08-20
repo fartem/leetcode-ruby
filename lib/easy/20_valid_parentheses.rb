@@ -6,6 +6,7 @@
 def is_valid(s)
   stack = []
   s.each_char do |ch|
+    # noinspection RubyCaseWithoutElseBlockInspection
     case ch
     when '(', '[', '{'
       stack << ch

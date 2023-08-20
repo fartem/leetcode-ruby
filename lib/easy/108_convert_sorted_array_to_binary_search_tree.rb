@@ -19,5 +19,6 @@ def to_bst(nums, start, nd)
   node = ::TreeNode.new(nums[middle])
   node.left = to_bst(nums, start, middle - 1)
   node.right = to_bst(nums, middle + 1, nd)
+
   node
 end

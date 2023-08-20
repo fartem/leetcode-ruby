@@ -23,6 +23,7 @@ def summary_ranges(nums)
       eend = start
     end
   end
+
   result << if start == eend
               start.to_s
             else

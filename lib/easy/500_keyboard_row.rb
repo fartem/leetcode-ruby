@@ -20,6 +20,7 @@ def find_words(words)
         third_row
       end
     can_type = true
+
     (1...word.length).step(1) do |i|
       char = word[i].downcase
       unless row.include?(char)

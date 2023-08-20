@@ -24,6 +24,7 @@ def _traverse(node, modes)
   return if node.nil?
 
   _traverse(node.left, modes)
+
   if $prev != -1
     if $prev == node.val
       $count += 1
@@ -31,6 +32,8 @@ def _traverse(node, modes)
       $count = 1
     end
   end
+
+  #noinspection RubyMismatchedArgumentType
   if $count > $max
     $max = $count
     modes.clear
@@ -38,6 +41,8 @@ def _traverse(node, modes)
   elsif $count == $max
     modes << node.val
   end
+
   $prev = node.val
+
   _traverse(node.right, modes)
 end
