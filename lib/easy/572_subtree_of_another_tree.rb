@@ -28,8 +28,8 @@ end
 def are_identical(n1, n2)
   if !n1.nil? && !n2.nil?
     return n1.val == n2.val &&
-           are_identical(n1.left, n2.left) &&
-           are_identical(n1.right, n2.right)
+      are_identical(n1.left, n2.left) &&
+      are_identical(n1.right, n2.right)
   end
 
   n1.nil? && n2.nil?

@@ -33,7 +33,7 @@ def _traverse(node, modes)
     end
   end
 
-  #noinspection RubyMismatchedArgumentType
+  # noinspection RubyMismatchedArgumentType
   if $count > $max
     $max = $count
     modes.clear
