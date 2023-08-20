@@ -8,6 +8,7 @@ $max = 0
 def diameter_of_binary_tree(root)
   $max = 0
   calc_max_depth(root)
+
   $max
 end
 

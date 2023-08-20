@@ -6,6 +6,7 @@
 def postorder_traversal(root)
   result = []
   postorder_traverse(root, result)
+
   result
 end
 

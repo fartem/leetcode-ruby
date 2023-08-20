@@ -6,6 +6,7 @@
 def inorder_traversal(root)
   result = []
   traverse(root, result)
+
   result
 end
 

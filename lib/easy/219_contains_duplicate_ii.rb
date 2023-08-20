@@ -14,6 +14,7 @@ def contains_nearby_duplicate(nums, k)
       (0...indices.length - 1).step(1) do |j|
         return true if (indices[j] - indices[j + 1]).abs <= k
       end
+
       nums_with_indices[num] = indices
     else
       nums_with_indices[num] = [i]

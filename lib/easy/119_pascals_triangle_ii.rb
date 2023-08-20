@@ -9,6 +9,7 @@ def get_row(row_index)
     row = (0..i).to_a
     row[0] = 1
     row[row.length - 1] = 1
+
     if i >= 2
       prev = result[i - 1]
       p = 1
@@ -17,6 +18,7 @@ def get_row(row_index)
         p += 1
       end
     end
+
     result << row
   end
 

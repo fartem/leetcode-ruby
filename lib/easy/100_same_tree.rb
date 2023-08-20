@@ -11,5 +11,6 @@ def is_same_tree(p, q)
   curr_eq = p.val == q.val
   left_eq = is_same_tree(p.left, q.left)
   right_eq = is_same_tree(p.right, q.right)
+
   curr_eq && left_eq && right_eq
 end

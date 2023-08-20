@@ -6,6 +6,7 @@
 def preorder_traversal(root)
   result = []
   preorder_traverse(root, result)
+
   result
 end
 

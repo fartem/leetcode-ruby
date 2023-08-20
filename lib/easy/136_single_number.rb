@@ -10,5 +10,6 @@ def single_number(nums)
     count[num] = val.nil? ? 1 : val + 1
   end
 
+  # noinspection RubyNilAnalysis
   count.find { |_key, value| value == 1 }.first
 end

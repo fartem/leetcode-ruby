@@ -4,14 +4,14 @@
 class ListNode
   attr_accessor :val, :next
 
-  # @param val {Integer}
-  # @param nxt {ListNode}
+  # @param {Integer} val
+  # @param {ListNode} nxt
   def initialize(val = 0, nxt = nil)
     @val = val
     @next = nxt
   end
 
-  # @param values {Array}
+  # @param {Array} values
   def self.from_array(values)
     return if values.empty?
 
@@ -24,8 +24,9 @@ class ListNode
     head
   end
 
-  # @param first {ListNode}
-  # @param second {ListNode}
+  # @param {ListNode} first
+  # @param {ListNode} second
+  # @return {Bool}
   def self.are_equals(first, second)
     return true if first.nil? && second.nil?
     return false if first.nil? || second.nil?

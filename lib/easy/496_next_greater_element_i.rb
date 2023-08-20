@@ -9,6 +9,7 @@ def next_greater_element(nums1, nums2)
   (0...nums2.length).step(1) do |i|
     nums_with_indices[nums2[i]] = i
   end
+
   result = []
   (0...nums1.length).step(1) do |i|
     num = nums1[i]
@@ -19,6 +20,7 @@ def next_greater_element(nums1, nums2)
         break
       end
     end
+
     result[i] = -1 if result[i].nil?
   end
 

@@ -17,14 +17,17 @@ def add_strings(num1, num2)
       sum += addition
       addition = 0
     end
+
     if sum >= 10
       sum -= 10
       addition = 1
     end
+
     result += sum.to_s
     num1_p -= 1
     num2_p -= 1
   end
+
   result += addition.to_s if addition == 1
 
   result.reverse

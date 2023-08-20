@@ -12,7 +12,9 @@ def merge_two_lists(list1, list2)
 
   min = list1.val > list2.val ? list2 : list1
   max = list1.val > list2.val ? list1 : list2
+
   result = ::ListNode.new(min.val)
+
   min = min.next
   head = result
   while !min.nil? && !max.nil?
@@ -26,7 +28,9 @@ def merge_two_lists(list1, list2)
     result = result.next
   end
 
+  # noinspection RubyNilAnalysis
   result.next = min unless min.nil?
+  # noinspection RubyNilAnalysis
   result.next = max unless max.nil?
 
   head
