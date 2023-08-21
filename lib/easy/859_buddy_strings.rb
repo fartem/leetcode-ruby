@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/buddy-strings/
 # @param {String} s
 # @param {String} goal
 # @return {Boolean}
