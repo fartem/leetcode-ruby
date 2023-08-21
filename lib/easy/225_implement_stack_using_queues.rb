@@ -22,7 +22,7 @@ class MyStack
     @queue.last
   end
 
-  # @return {bool}
+  # @return {Boolean}
   def empty
     @queue.empty?
   end

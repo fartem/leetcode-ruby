@@ -26,7 +26,7 @@ class ListNode
 
   # @param {ListNode} first
   # @param {ListNode} second
-  # @return {Bool}
+  # @return {Boolean}
   def self.are_equals(first, second)
     return true if first.nil? && second.nil?
     return false if first.nil? || second.nil?
