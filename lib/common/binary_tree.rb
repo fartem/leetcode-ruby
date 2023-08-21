@@ -14,7 +14,7 @@ class TreeNode
   end
 
   # @param {TreeNode} other
-  # @return {Bool}
+  # @return {Boolean}
   def ==(other)
     are_equals(self, other)
   end
@@ -23,7 +23,7 @@ class TreeNode
 
   # @param {TreeNode} curr
   # @param {TreeNode} other
-  # @return {Bool}
+  # @return {Boolean}
   def are_equals(curr, other)
     return true if curr.nil? && other.nil?
     return false if curr.nil? || other.nil?
