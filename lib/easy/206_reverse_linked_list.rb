@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# https://leetcode.com/problems/isomorphic-strings/
+# https://leetcode.com/problems/reverse-linked-list/
 # @param {ListNode} head
 # @return {ListNode}
 def reverse_list(head)

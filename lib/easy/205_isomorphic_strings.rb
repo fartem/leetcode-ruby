@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# https://leetcode.com/problems/remove-linked-list-elements/
+# https://leetcode.com/problems/isomorphic-strings/
 # @param {String} s
 # @param {String} t
 # @return {Boolean}
@@ -8,7 +8,7 @@ def is_isomorphic(s, t)
   replaces = {}
   replace_values = ::Set.new
 
-  (0..s.length).step(1) do |i|
+  (0..s.length).each do |i|
     curr_s = s[i]
     curr_t = t[i]
 
