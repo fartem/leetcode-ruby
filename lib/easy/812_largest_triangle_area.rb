@@ -6,9 +6,9 @@
 def largest_triangle_area(points)
   result = 0.0
   n = points.length
-  (0...n).step(1) do |i|
-    (i...n).step(1) do |j|
-      (j...n).step(1) do |k|
+  (0...n).each do |i|
+    (i...n).each do |j|
+      (j...n).each do |k|
         result = [
           result,
           triangle(
