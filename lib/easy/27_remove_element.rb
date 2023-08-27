@@ -6,7 +6,7 @@
 # @return {Integer}
 def remove_element(nums, val)
   result = -1
-  (0..nums.length).step(1) do |i|
+  (0..nums.length).each do |i|
     nums[result += 1] = nums[i] if nums[i] != val
   end
 
