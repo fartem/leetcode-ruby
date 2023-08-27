@@ -6,14 +6,14 @@
 # @return {Integer[]}
 def next_greater_element(nums1, nums2)
   nums_with_indices = {}
-  (0...nums2.length).step(1) do |i|
+  (0...nums2.length).each do |i|
     nums_with_indices[nums2[i]] = i
   end
 
   result = []
-  (0...nums1.length).step(1) do |i|
+  (0...nums1.length).each do |i|
     num = nums1[i]
-    (nums_with_indices[num]...nums2.length).step(1) do |j|
+    (nums_with_indices[num]...nums2.length).each do |j|
       candidate = nums2[j]
       if num < candidate
         result[i] = candidate
