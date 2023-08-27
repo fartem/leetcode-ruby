@@ -5,7 +5,7 @@
 # @return {Void} Do not return anything, modify s in-place instead.
 def reverse_string(s)
   max = s.length - 1
-  (0...s.length / 2).step(1) do |i|
+  (0...s.length / 2).each do |i|
     temp = s[i]
     s[i] = s[max - i]
     s[max - i] = temp
