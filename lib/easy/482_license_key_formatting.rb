@@ -6,7 +6,7 @@
 # @return {String}
 def license_key_formatting(s, k)
   key = []
-  (0...s.length).step(1) do |i|
+  (0...s.length).each do |i|
     c = s[i]
     key << c.upcase if c != '-'
   end
