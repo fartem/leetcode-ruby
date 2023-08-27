@@ -6,7 +6,7 @@ class NumArray
   def initialize(nums)
     @nums = []
     @nums << nums.first
-    (1...nums.length).step(1) do |i|
+    (1...nums.length).each do |i|
       @nums << @nums[i - 1] + nums[i]
     end
   end
