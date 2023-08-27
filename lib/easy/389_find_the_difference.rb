@@ -10,7 +10,7 @@ def find_the_difference(s, t)
   s_chars = s.split('').sort
   t_chars = t.split('').sort
 
-  (0..s_chars.length).step(1) do |i|
+  (0..s_chars.length).each do |i|
     return t_chars[i] if s_chars[i] != t_chars[i]
   end
 end
