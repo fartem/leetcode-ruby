@@ -9,7 +9,7 @@ def summary_ranges(nums)
   result = []
   start = nums.first
   eend = start
-  (1...nums.length).step(1) do |i|
+  (1...nums.length).each do |i|
     num = nums[i]
     if eend + 1 == num
       eend = num
