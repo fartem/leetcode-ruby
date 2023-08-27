@@ -5,7 +5,7 @@
 # @return {String[]}
 def fizz_buzz(n)
   result = ['1']
-  (2..n).step(1) do |i|
+  (2..n).each do |i|
     result << if (i % 3).zero? && (i % 5).zero?
                 'FizzBuzz'
               elsif (i % 3).zero?
