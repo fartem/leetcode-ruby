@@ -5,9 +5,10 @@
 # @return {Integer}
 def longest_palindrome(s)
   letters = ::Hash.new(0)
-  (0...s.length).step(1) do |i|
+  (0...s.length).each do |i|
     letters[s[i]] += 1
   end
+
   result = 0
   middle = 0
   letters.each_value do |value|
