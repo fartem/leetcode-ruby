@@ -6,10 +6,10 @@
 # @return {Boolean}
 def can_construct(ransom_note, magazine)
   letters = ::Hash.new(0)
-  (0..magazine.length).step(1) do |i|
+  (0..magazine.length).each do |i|
     letters[magazine[i]] += 1
   end
-  (0..ransom_note.length).step(1) do |i|
+  (0..ransom_note.length).each do |i|
     curr = ransom_note[i]
 
     return false if letters[curr].zero?
