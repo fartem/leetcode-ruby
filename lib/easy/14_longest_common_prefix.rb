@@ -8,7 +8,7 @@ def longest_common_prefix(strs)
 
   first = strs.first
   result = ''
-  (0...first.length).step(1) do |i|
+  (0...first.length).each do |i|
     ch = first[i]
     eq = true
     strs.drop(1).each do |str|
@@ -19,6 +19,7 @@ def longest_common_prefix(strs)
     end
 
     result += ch if eq
+
     break unless eq
   end
 
