@@ -21,12 +21,14 @@ def find_words(words)
       end
     can_type = true
 
-    (1...word.length).step(1) do |i|
+    (1...word.length).each do |i|
       char = word[i].downcase
-      unless row.include?(char)
-        can_type = false
-        break
-      end
+
+      next if row.include?(char)
+
+      can_type = false
+
+      break
     end
 
     result << word if can_type
