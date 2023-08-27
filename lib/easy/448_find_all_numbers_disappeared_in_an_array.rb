@@ -17,7 +17,7 @@ def find_disappeared_numbers(nums)
   end
 
   result = []
-  (0...nums.length).step(1) do |j|
+  (0...nums.length).each do |j|
     result << j + 1 if nums[j] != j + 1
   end
 
