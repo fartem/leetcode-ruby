@@ -5,12 +5,12 @@
 # @return {Boolean}
 def repeated_substring_pattern(s)
   length = s.length
-  (1...length).step(1) do |i|
-    if (length % i).zero?
-      sub = s[0, i]
+  (1...length).each do |i|
+    next unless (length % i).zero?
 
-      return true if (sub * (length / sub.length)) == s
-    end
+    sub = s[0, i]
+
+    return true if (sub * (length / sub.length)) == s
   end
 
   false
