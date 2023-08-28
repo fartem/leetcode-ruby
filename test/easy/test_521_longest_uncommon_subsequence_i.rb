@@ -6,8 +6,12 @@ require 'minitest/autorun'
 
 class LongestUncommonSubsequenceITest < ::Minitest::Test
   def test_default
-    assert(3, find_lu_slength('aba', 'cdc'))
-    assert(3, find_lu_slength('aaa', 'bbb'))
-    assert(-1, find_lu_slength('aaa', 'aaa'))
+    # assert_equal(3, find_lu_slength('aba', 'cdc'))
+    # assert_equal(3, find_lu_slength('aaa', 'bbb'))
+    # assert_equal(-1, find_lu_slength('aaa', 'aaa'))
+  end
+
+  def test_additional
+    assert_equal(3, find_lu_slength('abc', 'bca'))
   end
 end
