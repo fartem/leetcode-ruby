@@ -8,7 +8,7 @@ def climb_stairs(n)
 
   n1 = 1
   n2 = 2
-  (3..n).step(1) do
+  (3..n).each do
     temp = n1
     n1 = n2
     n2 += temp
