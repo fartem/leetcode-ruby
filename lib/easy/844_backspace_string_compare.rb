@@ -10,7 +10,7 @@ def backspace_compare(s, t)
 
   return false if f.length != n.length
 
-  (0...f.length).step(1) do |i|
+  (0...f.length).each do |i|
     f_c = f[i]
     n_c = n[i]
 
@@ -24,7 +24,7 @@ end
 # @return {Array}
 def print_chars(s)
   stack = []
-  (0...s.length).step(1) do |i|
+  (0...s.length).each do |i|
     c = s[i]
     if c == '#'
       stack.pop unless stack.empty?
