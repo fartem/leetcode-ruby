@@ -9,7 +9,7 @@ def min_diff_in_bst(root)
   nums = []
   apply_min_diff_in_bst(root, nums)
   result = 1_000_000_000
-  (1...nums.length).step(1) do |i|
+  (1...nums.length).each do |i|
     diff = nums[i] - nums[i - 1]
     result = diff if diff < result
   end
