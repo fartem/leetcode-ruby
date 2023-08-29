@@ -11,13 +11,14 @@ def matrix_reshape(mat, r, c)
   k = 0
   l = 0
   result = []
-  (0...r).step(1) do |i|
+  (0...r).each do |i|
     result << []
-    (0...c).step(1) do |j|
+    (0...c).each do |j|
       if l == mat.first.length
         l = 0
         k += 1
       end
+
       result[i].insert(j, mat[k][l])
       l += 1
     end
