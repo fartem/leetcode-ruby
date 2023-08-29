@@ -8,7 +8,7 @@ def di_string_match(s)
   result = ::Array.new(n + 1)
   l = 0
   h = n
-  (0...n).step(1) do |i|
+  (0...n).each do |i|
     if s[i] == 'I'
       result[i] = l
       l += 1
