@@ -8,7 +8,7 @@ def large_group_positions(s)
   prev = s[0]
   count = 1
   n = s.length
-  (1...n).step(1) do |i|
+  (1...n).each do |i|
     c = s[i]
     if c == prev
       count += 1
