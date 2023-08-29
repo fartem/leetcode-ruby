@@ -6,7 +6,7 @@
 def is_monotonic(nums)
   inc = true
   dec = true
-  (0...nums.length - 1).step(1) do |i|
+  (0...nums.length - 1).each do |i|
     dec = false if nums[i] > nums[i + 1]
     inc = false if nums[i] < nums[i + 1]
 
