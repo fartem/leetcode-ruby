@@ -6,7 +6,7 @@
 def check_record(s)
   absent = 0
   late = 0
-  (0..s.length).step(1) do |i|
+  (0..s.length).each do |i|
     char = s[i]
     if char == 'L'
       late += 1
