@@ -4,8 +4,8 @@
 # @param {Integer[][]} matrix
 # @return {Boolean}
 def is_toeplitz_matrix(matrix)
-  (1...matrix.length).step(1) do |i|
-    (1...matrix.first.length).step(1) do |j|
+  (1...matrix.length).each do |i|
+    (1...matrix.first.length).each do |j|
       return false if matrix[i - 1][j - 1] != matrix[i][j]
     end
   end
