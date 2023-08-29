@@ -11,13 +11,14 @@ def most_common_word(paragraph, banned)
   counter = 0
   words_with_count = {}
   in_lower_case = paragraph.downcase
-  (0...paragraph.length).step(1) do |i|
+  (0...paragraph.length).each do |i|
     c = in_lower_case[i]
     if is_letter?(c)
       word << c
     else
       candidate = word.join.strip
       word.clear
+
       if !candidate.empty? && !ban.include?(candidate)
         count = words_with_count.fetch(candidate, 1)
         words_with_count[candidate] = count + 1
