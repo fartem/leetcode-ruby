@@ -36,7 +36,7 @@ def unique_morse_representations(words)
   uniq = ::Set.new
   words.each do |word|
     str = ''
-    (0...word.length).step(1) do |i|
+    (0...word.length).each do |i|
       str += $alphabet[word[i].ord - 97]
     end
 
