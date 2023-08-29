@@ -9,19 +9,19 @@ def num_unique_emails(emails)
     parsed = []
     ignore = false
     domain = false
-    (0...email.length).step(1) do |i|
+    (0...email.length).each do |i|
       c = email[i]
-      if c != '.' || domain
-        case c
-        when '+'
-          ignore = true
-        when '@'
-          ignore = false
-          domain = true
-        end
+      next unless c != '.' || domain
 
-        parsed << c unless ignore && !domain
+      case c
+      when '+'
+        ignore = true
+      when '@'
+        ignore = false
+        domain = true
       end
+
+      parsed << c unless ignore && !domain
     end
 
     uniq.add(parsed.join)
