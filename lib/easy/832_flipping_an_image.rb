@@ -6,7 +6,7 @@
 def flip_and_invert_image(image)
   c = image[0].length
   image.each do |row|
-    (0...(c + 1) / 2).step(1) do |i|
+    (0...(c + 1) / 2).each do |i|
       temp = row[i] ^ 1
       index = c - i - 1
       row[i] = row[index] ^ 1
