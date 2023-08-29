@@ -18,7 +18,7 @@ def sort_array_by_parity_ii(nums)
     end
   end
 
-  (0...nums.length).step(1) do |i|
+  (0...nums.length).each do |i|
     if i.even?
       e_p -= 1
       nums[i] = evens[e_p]
