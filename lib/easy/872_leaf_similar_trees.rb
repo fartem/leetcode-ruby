@@ -13,7 +13,7 @@ def leaf_similar(root1, root2)
 
   return false if f.length != s.length
 
-  (0...f.length).step(1) do |i|
+  (0...f.length).each do |i|
     f_n = f[i]
     s_n = s[i]
 
