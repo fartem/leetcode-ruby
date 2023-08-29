@@ -15,7 +15,7 @@ def sort_array_by_parity(nums)
   end
 
   evens_length = evens.length
-  (0...nums.length).step(1) do |i|
+  (0...nums.length).each do |i|
     nums[i] =
       if i < evens_length
         evens[i]
