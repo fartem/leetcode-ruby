@@ -6,7 +6,7 @@
 # @return {Integer}
 def count_prime_set_bits(left, right)
   result = 0
-  (left..right).step(1) do |num|
+  (left..right).each do |num|
     bits = pop_count(num)
     result += 1 if is_prime?(bits)
   end
