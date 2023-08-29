@@ -6,7 +6,7 @@
 def find_length_of_lcis(nums)
   result = 0
   max = 1
-  (1...nums.length).step(1) do |i|
+  (1...nums.length).each do |i|
     if nums[i - 1] < nums[i]
       max += 1
     else
