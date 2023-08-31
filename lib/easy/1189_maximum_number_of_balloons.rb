@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/maximum-number-of-balloons/
 # @param {String} text
 # @return {Integer}
 def max_number_of_balloons(text)
