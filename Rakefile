@@ -18,7 +18,7 @@ require 'rake/testtask'
   task.verbose = true
 end
 
-desc 'Run all CI checks'
+desc 'Run all custom checks for CI'
 require_relative './ci/last_reachable_checker'
 require_relative './ci/links_checker'
 require_relative './ci/readme_checker'
