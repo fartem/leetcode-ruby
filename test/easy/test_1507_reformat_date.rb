@@ -4,7 +4,6 @@ require_relative '../test_helper'
 require_relative '../../lib/easy/1507_reformat_date'
 require 'minitest/autorun'
 
-# https://leetcode.com/problems/reformat-date/
 class ReformatDateTest < ::Minitest::Test
   def test_default
     assert_equal('2052-10-20', reformat_date('20th Oct 2052'))
