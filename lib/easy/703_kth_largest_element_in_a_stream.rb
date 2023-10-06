@@ -10,7 +10,7 @@ class KthLargest
   end
 
   # @param {Integer} val
-  # @@return {Integer}
+  # @return {Integer}
   def add(val)
     if @a.size < @k || val > @a.last
       @a.insert(@a.bsearch_index { |v| val >= v } || -1, val)
