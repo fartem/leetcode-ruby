@@ -2,6 +2,7 @@
 
 require 'set'
 
+# https://leetcode.com/problems/count-the-number-of-consistent-strings/
 # @param {String} allowed
 # @param {String[]} words
 # @return {Integer}
