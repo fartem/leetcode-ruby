@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/maximum-ascending-subarray-sum/
 # @param {Integer[]} nums
 # @return {Integer}
 def max_ascending_sum(nums)
