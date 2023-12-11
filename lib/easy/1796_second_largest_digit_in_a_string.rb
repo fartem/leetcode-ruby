@@ -9,7 +9,7 @@ def second_highest(s)
   (0...s.length).each do |i|
     c = s[i]
 
-    next unless is_digit?(c)
+    next unless _1796_is_digit?(c)
 
     num = c.to_i
     if num > max
@@ -25,7 +25,7 @@ end
 
 # @param {String} s
 # @return {Boolean}
-def is_digit?(s)
+def _1796_is_digit?(s)
   code = s.ord
 
   code >= 48 && code <= 57
