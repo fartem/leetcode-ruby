@@ -3,7 +3,7 @@
 # https://leetcode.com/problems/crawler-log-folder/
 # @param {String[]} logs
 # @return {Integer}
-def min_operations(logs)
+def _1598_min_operations(logs)
   stack = []
   logs.each do |log|
     if log == '../'
