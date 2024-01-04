@@ -57,17 +57,17 @@ jobs:
       - name: Run README checker
         run: ruby -r "./ci/readme_checker.rb" -e "::CI::ReadmeChecker.new.process"
 
-#  last_reachable_checker:
-#    runs-on: ubuntu-latest
-#    if: github.ref != 'refs/heads/master'
-#    steps:
-#      - uses: actions/checkout@v2
-#      - name: Set up Ruby
-#        uses: ruby/setup-ruby@v1
-#        with:
-#          ruby-version: ${{ env.RUBY_VERSION }}
-#      - name: Run last reachable checker
-#        run: ruby -r "./ci/last_reachable_checker.rb" -e "::CI::LastReachableChecker.new.process"
+  last_reachable_checker:
+    runs-on: ubuntu-latest
+    if: github.ref != 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+      - name: Run last reachable checker
+        run: ruby -r "./ci/last_reachable_checker.rb" -e "::CI::LastReachableChecker.new.process"
 
   rubocop:
     runs-on: ubuntu-latest
