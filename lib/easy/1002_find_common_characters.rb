@@ -7,15 +7,11 @@ def common_chars(words)
   return [] if words.length == 1
 
   common = ::Array.new(128, 0)
-  words.first.each_char do |c|
-    common[c.ord] += 1
-  end
+  words.first.each_byte { |b| common[b] += 1 }
 
   (1...words.length).each do |i|
     letters = ::Array.new(128, 0)
-    words[i].each_char do |c|
-      letters[c.ord] += 1
-    end
+    words[i].each_byte { |b| letters[b] += 1 }
 
     (0...common.length).each do |k|
       common[k] = [common[k], letters[k]].min
