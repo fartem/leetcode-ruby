@@ -6,8 +6,7 @@
 def remove_outer_parentheses(s)
   result = []
   counter = 0
-  (0..s.length).each do |i|
-    c = s[i]
+  s.each_char do |c|
     result << c unless (counter.zero? && c == '(') || (counter == 1 && c == ')')
     counter += 1 if c == '('
     counter -= 1 if c == ')'
