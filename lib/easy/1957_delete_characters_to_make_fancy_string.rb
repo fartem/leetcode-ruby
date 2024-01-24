@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# https://leetcode.com/problems/delete-characters-to-make-fancy-string/description/
+# https://leetcode.com/problems/delete-characters-to-make-fancy-string/
 # @param {String} s
 # @return {String}
 def make_fancy_string(s)

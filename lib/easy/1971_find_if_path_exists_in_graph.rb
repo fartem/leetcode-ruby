@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# https://leetcode.com/problems/find-if-path-exists-in-graph/description/
+# https://leetcode.com/problems/find-if-path-exists-in-graph/
 # @param {Integer} n
 # @param {Integer[][]} edges
 # @param {Integer} source
