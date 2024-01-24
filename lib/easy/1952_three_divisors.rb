@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# https://leetcode.com/problems/three-divisors/description/
+# https://leetcode.com/problems/three-divisors/
 # @param {Integer} n
 # @return {Boolean}
 def is_three(n)

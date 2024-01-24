@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# https://leetcode.com/problems/find-greatest-common-divisor-of-array/description/
+# https://leetcode.com/problems/find-greatest-common-divisor-of-array/
 # @param {Integer[]} nums
 # @return {Integer}
 def find_gcd(nums)

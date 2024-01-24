@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# https://leetcode.com/problems/maximum-number-of-words-you-can-type/description/
+# https://leetcode.com/problems/maximum-number-of-words-you-can-type/
 # @param {String} text
 # @param {String} broken_letters
 # @return {Integer}

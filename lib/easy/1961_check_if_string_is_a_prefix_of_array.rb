@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/description/
+# https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/
 # @param {String} s
 # @param {String[]} words
 # @return {Boolean}

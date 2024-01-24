@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/description/
+# https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/
 # @param {String[]} patterns
 # @param {String} word
 # @return {Integer}

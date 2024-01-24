@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# https://leetcode.com/problems/concatenation-of-array/description/
+# https://leetcode.com/problems/concatenation-of-array/
 # @param {Integer[]} nums
 # @return {Integer[]}
 def get_concatenation(nums)

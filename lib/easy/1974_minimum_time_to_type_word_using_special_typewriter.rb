@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/description/
+# https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/
 # @param {String} word
 # @return {Integer}
 def min_time_to_type(word)

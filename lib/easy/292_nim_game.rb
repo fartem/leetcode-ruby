@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# https://leetcode.com/problems/nim-game/description/
+# https://leetcode.com/problems/nim-game/
 # @param {Integer} n
 # @return {Boolean}
 def can_win_nim(n)

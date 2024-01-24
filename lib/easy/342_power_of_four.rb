@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# https://leetcode.com/problems/power-of-four/description/
+# https://leetcode.com/problems/power-of-four/
 # @param {Integer} n
 # @return {Boolean}
 def is_power_of_four(n)

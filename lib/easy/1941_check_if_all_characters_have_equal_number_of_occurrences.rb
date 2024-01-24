@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/description/
+# https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/
 # @param {String} s
 # @return {Boolean}
 def are_occurrences_equal(s)
