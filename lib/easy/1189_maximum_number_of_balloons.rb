@@ -5,9 +5,7 @@
 # @return {Integer}
 def max_number_of_balloons(text)
   count = ::Array.new(128, 0)
-  (0...text.length).each do |i|
-    count[text[i].ord] += 1
-  end
+  text.each_byte { |b| count[b] += 1 }
 
   result = 1_000_000_000_000
   (0...count.length).each do |i|
