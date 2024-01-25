@@ -7,9 +7,7 @@
 def count_characters(words, chars)
   result = 0
   letters = ::Array.new(128, 0)
-  chars.each_byte do |b|
-    letters[b] += 1
-  end
+  chars.each_byte { |b| letters[b] += 1 }
 
   (0...words.length).each do |i|
     word = words[i]
