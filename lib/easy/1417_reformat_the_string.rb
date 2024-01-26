@@ -6,8 +6,7 @@
 def reformat(s)
   letters = []
   digits = []
-  (0...s.length).each do |i|
-    c = s[i]
+  s.each_char do |c|
     if is_letter_rts?(c)
       letters << c
     else
