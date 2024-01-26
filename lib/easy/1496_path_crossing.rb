@@ -13,9 +13,8 @@ def is_path_crossing(path)
   points = { '0,0' => true }
   x = 0
   y = 0
-  (0...path.length).each do |i|
-    move = path[i]
-    directions = steps[move]
+  path.each_char do |c|
+    directions = steps[c]
     x += directions.first
     y += directions.last
     key = "#{x},#{y}"
