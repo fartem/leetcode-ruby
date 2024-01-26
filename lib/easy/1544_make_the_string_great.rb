@@ -5,8 +5,7 @@
 # @return {String}
 def make_good(s)
   stack = []
-  (0...s.length).each do |i|
-    c = s[i]
+  s.each_char do |c|
     if !stack.empty? && (stack.last.ord - c.ord).abs == 32
       stack.pop
     else
