@@ -6,10 +6,9 @@
 def sort_string(s)
   freq = ::Array.new(128, 0)
   max = 0
-  (0...s.length).each do |i|
-    c = s[i].ord
-    freq[c] += 1
-    count = freq[c]
+  s.each_byte do |b|
+    freq[b] += 1
+    count = freq[b]
 
     max = count if count > max
   end
