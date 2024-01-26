@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# https://leetcode.com/problems/find-the-middle-index-in-array/description/
+# https://leetcode.com/problems/find-the-middle-index-in-array/
 # @param {Integer[]} nums
 # @return {Integer}
 def find_middle_index(nums)
