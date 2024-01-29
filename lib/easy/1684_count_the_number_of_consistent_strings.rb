@@ -10,8 +10,8 @@ def count_consistent_strings(allowed, words)
   allowed_chars = allowed.split('').to_set
   result = words.length
   words.each do |word|
-    (0...word.length).each do |i|
-      next if allowed_chars.include?(word[i])
+    word.each_char do |c|
+      next if allowed_chars.include?(c)
 
       result -= 1
 
