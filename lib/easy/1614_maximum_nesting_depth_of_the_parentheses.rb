@@ -6,8 +6,8 @@
 def max_depth_of_the_parentheses(s)
   curr = 0
   result = 0
-  (0...s.length).each do |i|
-    case s[i]
+  s.each_char do |c|
+    case c
     when '('
       curr += 1
 
