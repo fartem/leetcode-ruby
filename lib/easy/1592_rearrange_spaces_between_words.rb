@@ -7,8 +7,7 @@ def reorder_spaces(text)
   words = []
   spaces = 0
   word = []
-  (0...text.length).each do |i|
-    c = text[i]
+  text.each_char do |c|
     if c == ' '
       spaces += 1
 
