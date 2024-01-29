@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/reverse-prefix-of-word/
 # @param {String} word
 # @param {Character} ch
 # @return {String}
