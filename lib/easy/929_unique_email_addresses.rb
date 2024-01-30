@@ -9,8 +9,7 @@ def num_unique_emails(emails)
     parsed = []
     ignore = false
     domain = false
-    (0...email.length).each do |i|
-      c = email[i]
+    email.each_char do |c|
       next unless c != '.' || domain
 
       case c
