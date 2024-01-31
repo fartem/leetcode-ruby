@@ -24,8 +24,7 @@ end
 # @return {Array}
 def print_chars(s)
   stack = []
-  (0...s.length).each do |i|
-    c = s[i]
+  s.each_char do |c|
     if c == '#'
       stack.pop unless stack.empty?
     else
