@@ -7,9 +7,8 @@
 def number_of_lines(widths, s)
   lines = 1
   width = 0
-  (0...s.length).each do |i|
-    c = s[i]
-    w = widths[c.ord - 97]
+  s.each_byte do |b|
+    w = widths[b - 97]
     width += w
 
     if width > 100
