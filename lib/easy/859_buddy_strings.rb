@@ -8,12 +8,11 @@ def buddy_strings(s, goal)
   return false if s.length != goal.length
 
   if s == goal
-    count = ::Array.new(26, 0)
+    count = ::Array.new(128, 0)
     max = 1
-    (0...s.length).each do |i|
-      index = s[i].ord - 97
-      count[index] += 1
-      max = [max, count[index]].max
+    s.each_byte do |b|
+      count[b] += 1
+      max = [max, count[b]].max
     end
 
     max > 1
@@ -21,14 +20,14 @@ def buddy_strings(s, goal)
     f = -1
     n = -1
     (0...s.length).each do |i|
-      if s[i] != goal[i]
-        if f == -1
-          f = i
-        elsif n == -1
-          n = i
-        else
-          return false
-        end
+      next if s[i] == goal[i]
+
+      if f == -1
+        f = i
+      elsif n == -1
+        n = i
+      else
+        return false
       end
     end
 
