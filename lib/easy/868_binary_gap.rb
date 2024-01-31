@@ -8,8 +8,8 @@ def binary_gap(n)
   distance = 0
   count = 0
   is_counting = false
-  (0...binary.length).each do |i|
-    if binary[i] == '1'
+  binary.each_char do |c|
+    if c == '1'
       if is_counting
         count += 1
         distance = [distance, count].max
