@@ -8,12 +8,10 @@ def can_be_typed_words(text, broken_letters)
   words = text.split
   result = words.length
   chars = []
-  (0...broken_letters.length).each do |i|
-    chars[broken_letters[i].ord] = 1
-  end
+  broken_letters.each_byte { |b| chars[b] = 1 }
   words.each do |word|
-    (0...word.length).each do |i|
-      next unless chars[word[i].ord] == 1
+    word.each_byte do |b|
+      next unless chars[b] == 1
 
       result -= 1
 
