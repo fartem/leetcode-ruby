@@ -4,14 +4,5 @@
 # @param {String[]} operations
 # @return {Integer}
 def final_value_after_operations(operations)
-  result = 0
-  operations.each do |op|
-    if op[0] == '-' || op[2] == '-'
-      result -= 1
-    else
-      result += 1
-    end
-  end
-
-  result
+  operations.sum { |op| op[0] == '-' || op[2] == '-' ? -1 : 1 }
 end
