@@ -4,11 +4,8 @@
 # @param {String} s
 # @return {Boolean}
 def are_occurrences_equal(s)
-  chars = ::Array.new(26, 0)
-  (0...s.length).each do |i|
-    index = s[i].ord - 97
-    chars[index] += 1
-  end
+  chars = ::Array.new(128, 0)
+  s.each_byte { |b| chars[b] += 1 }
 
   count = 0
   chars.each do |c|
