@@ -10,9 +10,7 @@ def most_common_word(paragraph, banned)
   word = []
   counter = 0
   words_with_count = {}
-  in_lower_case = paragraph.downcase
-  (0...paragraph.length).each do |i|
-    c = in_lower_case[i]
+  paragraph.downcase.each_char do |c|
     if is_letter?(c)
       word << c
     else
