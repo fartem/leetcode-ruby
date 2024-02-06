@@ -5,16 +5,11 @@
 # @param {String} magazine
 # @return {Boolean}
 def can_construct(ransom_note, magazine)
-  letters = ::Hash.new(0)
-  (0..magazine.length).each do |i|
-    letters[magazine[i]] += 1
-  end
-  (0..ransom_note.length).each do |i|
-    curr = ransom_note[i]
+  letters = magazine.chars.tally
+  ransom_note.each_char do |c|
+    return false if letters[c].nil? || letters[c].zero?
 
-    return false if letters[curr].zero?
-
-    letters[curr] -= 1
+    letters[c] -= 1
   end
 
   true
