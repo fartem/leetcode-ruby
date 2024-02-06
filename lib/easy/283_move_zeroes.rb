@@ -2,7 +2,7 @@
 
 # https://leetcode.com/problems/move-zeroes/
 # @param {Integer[]} nums
-# @return {Void} Do not return anything, modify nums in-place instead.
+# @return {Void}
 def move_zeroes(nums)
   index = 0
   (0...nums.length).each do |i|
