@@ -6,9 +6,7 @@
 def second_highest(s)
   max = -1
   result = -1
-  (0...s.length).each do |i|
-    c = s[i]
-
+  s.each_char do |c|
     next unless _1796_is_digit?(c)
 
     num = c.to_i
