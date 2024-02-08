@@ -8,8 +8,8 @@ def check_zero_ones(s)
   zeros = 0
   ones_temp = 0
   zeros_temp = 0
-  (0...s.length).each do |i|
-    if s[i] == '1'
+  s.each_char do |c|
+    if c == '1'
       if zeros_temp != 0
         zeros = zeros_temp if zeros_temp > zeros
 
