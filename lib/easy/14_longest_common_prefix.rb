@@ -11,7 +11,9 @@ def longest_common_prefix(strs)
   (0...first.length).each do |i|
     ch = first[i]
     eq = true
-    strs.drop(1).each do |str|
+    (1...strs.length).each do |j|
+      str = strs[j]
+
       next if str.length >= i && str[i] == ch
 
       eq = false
