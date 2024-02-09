@@ -15,13 +15,9 @@ def roman_to_int(s)
   }
 
   result = 0
-  s.reverse.each_char do |ch|
-    curr = values[ch]
-    if curr * 4 < result
-      result -= curr
-    else
-      result += curr
-    end
+  s.reverse.each_char do |c|
+    curr = values[c]
+    result += curr * 4 < result ? -curr : curr
   end
 
   result
