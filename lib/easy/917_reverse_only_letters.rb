@@ -9,13 +9,13 @@ def reverse_only_letters(s)
   r = chars.length - 1
   while l < r
     l_c = chars[l]
-    unless is_letter_rol?(l_c)
+    unless _917_is_letter?(l_c)
       l += 1
       next
     end
 
     r_c = chars[r]
-    unless is_letter_rol?(r_c)
+    unless _917_is_letter?(r_c)
       r -= 1
       next
     end
@@ -32,6 +32,6 @@ end
 
 # @param {String} s
 # @return {Boolean}
-def is_letter_rol?(s)
+def _917_is_letter?(s)
   s =~ /[A-Za-z]/
 end
