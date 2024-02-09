@@ -7,7 +7,7 @@ def reformat(s)
   letters = []
   digits = []
   s.each_char do |c|
-    if is_letter_rts?(c)
+    if _1417_is_letter?(c)
       letters << c
     else
       digits << c
@@ -40,6 +40,6 @@ end
 
 # @param {String} s
 # @return {Boolean}
-def is_letter_rts?(s)
+def _1417_is_letter?(s)
   s =~ /[A-Za-z]/
 end
