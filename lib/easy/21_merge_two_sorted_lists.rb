@@ -8,6 +8,7 @@ require_relative '../common/linked_list'
 # @return {ListNode}
 def merge_two_lists(list1, list2)
   return list1 if list2.nil?
+
   return list2 if list1.nil?
 
   min = list1.val > list2.val ? list2 : list1
@@ -25,6 +26,7 @@ def merge_two_lists(list1, list2)
       result.next = ::ListNode.new(min.val)
       min = min.next
     end
+
     result = result.next
   end
 
