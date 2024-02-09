@@ -11,7 +11,7 @@ def most_common_word(paragraph, banned)
   counter = 0
   words_with_count = {}
   paragraph.downcase.each_char do |c|
-    if is_letter?(c)
+    if _819_is_letter?(c)
       word << c
     else
       candidate = word.join.strip
@@ -33,6 +33,6 @@ end
 
 # @param {String} s
 # @return {Boolean}
-def is_letter?(s)
+def _819_is_letter?(s)
   s =~ /[A-Za-z]/
 end
