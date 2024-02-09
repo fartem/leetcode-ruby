@@ -12,10 +12,11 @@ def longest_common_prefix(strs)
     ch = first[i]
     eq = true
     strs.drop(1).each do |str|
-      unless str.length >= i && str[i] == ch
-        eq = false
-        break
-      end
+      next if str.length >= i && str[i] == ch
+
+      eq = false
+
+      break
     end
 
     result += ch if eq
