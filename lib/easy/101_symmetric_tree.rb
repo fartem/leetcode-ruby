@@ -11,6 +11,7 @@ end
 # @param {TreeNode} right
 def is_mirror(left, right)
   return true if left.nil? && right.nil?
+
   return false if left.nil? || right.nil?
 
   curr_eq = left.val == right.val
