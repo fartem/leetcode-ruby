@@ -12,6 +12,7 @@ def is_valid_palindrome(s)
       p -= 1
     else
       result = false
+
       break
     end
   end
