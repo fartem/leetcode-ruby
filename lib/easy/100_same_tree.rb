@@ -6,6 +6,7 @@
 # @return {Boolean}
 def is_same_tree(p, q)
   return true if p.nil? && q.nil?
+
   return false if p.nil? || q.nil?
 
   curr_eq = p.val == q.val
