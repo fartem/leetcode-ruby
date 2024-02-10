@@ -14,5 +14,6 @@ def plus_one(digits)
   end
 
   digits.insert(0, 1) unless rem.zero?
+
   digits
 end
