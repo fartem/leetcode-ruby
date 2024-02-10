@@ -14,6 +14,7 @@ end
 # @return {Boolean}
 def sum(node, target, curr)
   return false if node.nil?
+
   return curr + node.val == target if node.left.nil? && node.right.nil?
 
   sum(node.left, target, curr + node.val) || sum(node.right, target, curr + node.val)
