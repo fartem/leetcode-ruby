@@ -14,16 +14,17 @@ def is_palindrome_ll(head)
 
   slow = reverse(slow)
   until slow.nil?
-    return false if slow.val != head.val
+    return false if slow.val != head&.val
 
     slow = slow.next
-    head = head.next
+    head = head&.next
   end
 
   true
 end
 
 # @param {ListNode} node
+# @return {ListNode}
 def reverse(node)
   prev = nil
   until node.nil?
