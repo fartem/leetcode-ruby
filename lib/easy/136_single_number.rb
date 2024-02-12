@@ -4,12 +4,7 @@
 # @param {Integer[]} nums
 # @return {Integer}
 def single_number(nums)
-  count = {}
-  nums.each do |num|
-    val = count[num]
-    count[num] = val.nil? ? 1 : val + 1
-  end
+  count = nums.each_with_object(::Hash.new(0)) { |elem, acc| acc[elem] += 1 }
 
-  # noinspection RubyNilAnalysis
-  count.find { |_key, value| value == 1 }.first
+  count.find { |_key, value| value == 1 }&.first
 end
