@@ -6,9 +6,9 @@
 def title_to_number(column_title)
   alphabet = ('A'..'Z').each_with_index.map { |l, i| [l, i] }.to_h
   result = 0
-  (0...column_title.length).each do |i|
+  column_title.each_char do |c|
     result *= 26
-    result += alphabet[column_title[i].chr] + 1
+    result += alphabet[c] + 1
   end
 
   result
