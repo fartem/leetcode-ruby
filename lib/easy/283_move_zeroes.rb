@@ -6,13 +6,11 @@
 def move_zeroes(nums)
   index = 0
   (0...nums.length).each do |i|
-    unless nums[i].zero?
-      nums[index] = nums[i]
-      index += 1
-    end
+    next if nums[i].zero?
+
+    nums[index] = nums[i]
+    index += 1
   end
 
-  (index...nums.length).each do |i|
-    nums[i] = 0
-  end
+  (index...nums.length).each { |i| nums[i] = 0 }
 end
