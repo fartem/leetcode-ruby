@@ -9,9 +9,7 @@ def intersection(nums1, nums2)
   nums1_s = nums1.to_set
   nums2_s = nums2.to_set
 
-  nums1_s.each do |num|
-    result << num if nums2_s.include?(num)
-  end
+  nums1_s.each { |num| result << num if nums2_s.include?(num) }
 
   result
 end
