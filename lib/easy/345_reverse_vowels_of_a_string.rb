@@ -12,12 +12,14 @@ def reverse_vowels(s)
     l = letters[left]
     unless vowels.include?(l)
       left += 1
+
       next
     end
 
     r = letters[right]
     unless vowels.include?(r)
       right -= 1
+
       next
     end
 
