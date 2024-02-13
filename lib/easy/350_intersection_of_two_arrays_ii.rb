@@ -5,17 +5,14 @@
 # @param {Integer[]} nums2
 # @return {Integer[]}
 def intersect(nums1, nums2)
-  nums1_c = ::Hash.new(0)
-  nums1.each do |num|
-    nums1_c[num] += 1
-  end
+  nums1_c = nums1.each_with_object(::Hash.new(0)) { |elem, acc| acc[elem] += 1 }
 
   result = []
   nums2.each do |num|
-    unless nums1_c[num].zero?
-      result << num
-      nums1_c[num] -= 1
-    end
+    next if nums1_c[num].zero?
+
+    result << num
+    nums1_c[num] -= 1
   end
 
   result
