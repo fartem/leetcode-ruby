@@ -30,6 +30,7 @@ $guess_num = -1
 # @return {Integer}
 def guess(n)
   return -1 if $guess_num < n
+
   return 1 if $guess_num > n
 
   0
