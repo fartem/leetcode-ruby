@@ -9,8 +9,8 @@ def sum_of_left_leaves(root)
     left = root.left
     unless left.nil?
       sum +=
-        if left.left.nil? && left.right.nil?
-          left.val
+        if left.left.nil? && left&.right.nil?
+          left&.val
         else
           sum_of_left_leaves(left)
         end
