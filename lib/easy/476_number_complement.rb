@@ -5,9 +5,7 @@
 # @return {Integer}
 def find_complement(num)
   bits = ((::Math.log(num) / ::Math.log(2)) + 1).floor
-  (0...bits).each do |i|
-    num = (num ^ (1 << i))
-  end
+  (0...bits).each { |i| num = (num ^ (1 << i)) }
 
   num
 end
