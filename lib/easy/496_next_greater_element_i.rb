@@ -5,23 +5,23 @@
 # @param {Integer[]} nums2
 # @return {Integer[]}
 def next_greater_element(nums1, nums2)
-  nums_with_indices = {}
-  (0...nums2.length).each do |i|
-    nums_with_indices[nums2[i]] = i
-  end
+  nums_with_indices = nums2.map.with_index.to_h
 
   result = []
-  (0...nums1.length).each do |i|
-    num = nums1[i]
+  nums1.each do |num|
+    add_last = true
     (nums_with_indices[num]...nums2.length).each do |j|
       candidate = nums2[j]
-      if num < candidate
-        result[i] = candidate
-        break
-      end
+
+      next unless num < candidate
+
+      result << candidate
+      add_last = false
+
+      break
     end
 
-    result[i] = -1 if result[i].nil?
+    result << -1 if add_last
   end
 
   result
