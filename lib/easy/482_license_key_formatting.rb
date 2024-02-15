@@ -15,9 +15,7 @@ def license_key_formatting(s, k)
 
   parts = key.reverse.each_slice(k)
   result = []
-  parts.each do |part|
-    result << part.join.reverse
-  end
+  parts.each { |part| result << part.join.reverse }
 
   result.reverse_each.to_a.join('-')
 end
