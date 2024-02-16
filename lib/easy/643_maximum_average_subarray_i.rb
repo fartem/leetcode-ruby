@@ -5,10 +5,7 @@
 # @param {Integer} k
 # @return {Float}
 def find_max_average(nums, k)
-  sum = 0.0
-  (0...k).each do |i|
-    sum += nums[i]
-  end
+  sum = (0...k).sum { |i| nums[i] }.to_f
 
   result = sum
   (k...nums.length).each do |i|
