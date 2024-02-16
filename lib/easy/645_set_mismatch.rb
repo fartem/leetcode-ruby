@@ -14,13 +14,9 @@ def find_error_nums(nums)
     end
   end
 
-  miss = 0
   (1..nums.length + 1).each do |i|
-    if uniq[i].zero?
-      miss = i
-      break
-    end
-  end
+    next unless uniq[i].zero?
 
-  [rep, miss]
+    return [rep, i]
+  end
 end
