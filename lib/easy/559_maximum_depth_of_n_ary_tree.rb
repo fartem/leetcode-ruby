@@ -11,11 +11,10 @@ def max_depth_of_n_ary_tree(root)
   queue << root
   until queue.empty?
     size = queue.length
+
     while size.positive?
       parent = queue.pop
-      parent.children&.each do |child|
-        queue << child
-      end
+      parent.children&.each { |child| queue << child }
       size -= 1
     end
 
