@@ -5,7 +5,6 @@ class MyHashSet
   # Init
   def initialize
     @table = {}
-    ::Set.new
   end
 
   # @param {Integer} key
