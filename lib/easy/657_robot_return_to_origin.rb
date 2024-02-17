@@ -6,15 +6,15 @@
 def judge_circle(moves)
   hor = 0
   vert = 0
-  (0..moves.length).each do |i|
-    case moves[i]
+  moves.each_char do |move|
+    case move
     when 'U'
       vert += 1
     when 'D'
       vert -= 1
     when 'L'
       hor += 1
-    when 'R'
+    else
       hor -= 1
     end
   end
