@@ -21,6 +21,7 @@ class MyHashMap
       until e.nil?
         if e.key == key
           e.value = value
+
           break
         end
 
@@ -28,7 +29,7 @@ class MyHashMap
         e = e.next
       end
 
-      p.next = ::Entry.new(key, value) if e.nil?
+      p&.next = ::Entry.new(key, value) if e.nil?
     end
   end
 
