@@ -15,6 +15,7 @@ def contains(node, nums, k)
   return false if node.nil?
 
   diff = k - node.val
+
   return true if nums.include?(diff)
 
   nums << node.val
