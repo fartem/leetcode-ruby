@@ -13,12 +13,14 @@ def self_dividing_numbers(left, right)
       candidate = cpy % 10
       if candidate.zero?
         is_self_dividing = false
+
         break
       end
 
       rem = num % candidate
       unless rem.zero?
         is_self_dividing = false
+
         break
       end
 
