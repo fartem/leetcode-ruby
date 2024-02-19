@@ -5,9 +5,7 @@
 # @param {Character} target
 # @return {Character}
 def next_greatest_letter(letters, target)
-  letters.each do |letter|
-    return letter if letter > target
-  end
+  letters.each { |letter| return letter if letter > target }
 
   letters.first
 end
