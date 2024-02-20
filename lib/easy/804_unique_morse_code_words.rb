@@ -35,12 +35,8 @@ $alphabet = %w[
 def unique_morse_representations(words)
   uniq = ::Set.new
   words.each do |word|
-    str = ''
-    word.each_byte do |b|
-      str += $alphabet[b - 97]
-    end
-
-    uniq << str
+    str = word.each_byte.map { |b| $alphabet[b - 97] }
+    uniq << str.join
   end
 
   uniq.length
