@@ -7,14 +7,13 @@ def dominant_index(nums)
   max = 0
   result = 0
   nums.each_with_index do |num, i|
-    if num > max
-      max = num
-      result = i
-    end
+    next unless num > max
+
+    max = num
+    result = i
   end
-  nums.each do |num|
-    return -1 if max != num && max < num * 2
-  end
+
+  nums.each { |num| return -1 if max != num && max < num * 2 }
 
   result
 end
