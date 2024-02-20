@@ -11,10 +11,10 @@ def number_of_lines(widths, s)
     w = widths[b - 97]
     width += w
 
-    if width > 100
-      lines += 1
-      width = w
-    end
+    next unless width > 100
+
+    lines += 1
+    width = w
   end
 
   [lines, width]
