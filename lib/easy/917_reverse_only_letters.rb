@@ -11,12 +11,14 @@ def reverse_only_letters(s)
     l_c = chars[l]
     unless _917_is_letter?(l_c)
       l += 1
+
       next
     end
 
     r_c = chars[r]
     unless _917_is_letter?(r_c)
       r -= 1
+
       next
     end
 
