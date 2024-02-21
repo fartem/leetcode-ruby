@@ -9,15 +9,11 @@ $days_in_month = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 # @param {Integer} year
 # @return {String}
 def day_of_the_week(day, month, year)
-  (1971...year).each do |i|
-    day += is_leap?(i) ? 366 : 365
-  end
+  (1971...year).each { |i| day += is_leap?(i) ? 366 : 365 }
 
   day += 1 if month > 2 && is_leap?(year)
 
-  (1...month).each do |i|
-    day += $days_in_month[i]
-  end
+  (1...month).each { |i| day += $days_in_month[i] }
 
   $days_of_week[(day + 4) % 7]
 end
