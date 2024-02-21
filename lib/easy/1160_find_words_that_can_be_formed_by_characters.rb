@@ -16,6 +16,7 @@ def count_characters(words, chars)
     word.each_byte do |b|
       if letters[b].zero?
         brk = true
+
         break
       else
         count = letters_in_word[b] + 1
@@ -23,6 +24,7 @@ def count_characters(words, chars)
           letters_in_word[b] = count
         else
           brk = true
+
           break
         end
       end
