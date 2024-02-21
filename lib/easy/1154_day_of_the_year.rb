@@ -11,9 +11,7 @@ def day_of_year(date)
   d = date[8..10].to_i
   day = 0
   day += 1 if m > 2 && (((y % 4).zero? && (y % 100).positive?) || (y % 400).zero?)
-  (1..(m - 1)).each do |i|
-    day += $days[i]
-  end
+  (1..(m - 1)).each { |i| day += $days[i] }
 
   day + d
 end
