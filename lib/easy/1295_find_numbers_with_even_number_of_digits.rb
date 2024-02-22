@@ -4,10 +4,5 @@
 # @param {Integer[]} nums
 # @return {Integer}
 def find_numbers(nums)
-  result = 0
-  nums.each do |num|
-    result += 1 if ((::Math.log10(num).to_i + 1) % 2).zero?
-  end
-
-  result
+  nums.sum { |num| ((::Math.log10(num).to_i + 1) % 2).zero? ? 1 : 0 }
 end
