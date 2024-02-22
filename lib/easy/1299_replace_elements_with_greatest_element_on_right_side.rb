@@ -12,10 +12,11 @@ def replace_elements(arr)
       max = 0
       ((i + 1)...n).each do |j|
         num = arr[j]
-        if num > max
-          max = num
-          index = j
-        end
+
+        next unless num > max
+
+        max = num
+        index = j
       end
     end
 
