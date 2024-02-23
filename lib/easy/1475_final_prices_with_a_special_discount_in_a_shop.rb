@@ -5,13 +5,15 @@
 # @return {Integer[]}
 def final_prices(prices)
   (0...prices.length).each do |i|
-    price = prices[i]
     ((i + 1)...prices.length).each do |j|
+      price = prices[i]
       discount = prices[j]
-      if price >= discount
-        prices[i] = price - discount
-        break
-      end
+
+      next if price < discount
+
+      prices[i] = price - discount
+
+      break
     end
   end
 
