@@ -4,13 +4,9 @@
 # @param {String} s
 # @return {Boolean}
 def check_ones_segment(s)
-  return false if s[0] == '0'
-
   after_segment = false
-  (1...s.length).each do |i|
-    digit = s[i]
-
-    if digit == '0'
+  s.each_char do |seg|
+    if seg == '0'
       after_segment = true
     elsif after_segment
       return false
