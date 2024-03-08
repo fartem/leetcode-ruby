@@ -2,6 +2,7 @@
 
 require 'set'
 
+# https://leetcode.com/problems/keep-multiplying-found-values-by-two/
 # @param {Integer[]} nums
 # @param {Integer} original
 # @return {Integer}
