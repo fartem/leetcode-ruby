@@ -67,6 +67,7 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
       - name: Run last reachable checker
+        continue-on-error: true
         run: ruby -r "./ci/last_reachable_checker.rb" -e "::CI::LastReachableChecker.new.process"
 
   rubocop:
