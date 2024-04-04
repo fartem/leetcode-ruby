@@ -2,7 +2,6 @@
 
 require_relative '../test_helper'
 require_relative '../../lib/easy/2243_calculate_digit_sum_of_a_string'
-require_relative '../../lib/common/binary_tree'
 require 'minitest/autorun'
 
 class CalculateDigitSumOfAStringTest < ::Minitest::Test
