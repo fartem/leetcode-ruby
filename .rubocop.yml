@@ -16,6 +16,8 @@ Style/GlobalVars:
   Enabled: false
 Style/MethodCalledOnDoEndBlock:
   Enabled: false
+Style/MultilineMethodSignature:
+  Enabled: false
 
 Bundler/GemComment:
   Enabled: false
