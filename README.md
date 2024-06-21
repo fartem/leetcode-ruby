@@ -454,3 +454,9 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 2540. Minimum Common Value                                         | [Link](https://leetcode.com/problems/minimum-common-value/)                                         | [Link](./lib/easy/2540_minimum_common_value.rb)                                         |
 | 2544. Alternating Digit Sum                                        | [Link](https://leetcode.com/problems/alternating-digit-sum/)                                        | [Link](./lib/easy/2544_alternating_digit_sum.rb)                                        |
 | 2549. Count Distinct Numbers on Board                              | [Link](https://leetcode.com/problems/count-distinct-numbers-on-board/)                              | [Link](./lib/easy/2549_count_distinct_numbers_on_board.rb)                              |
+
+### Medium
+
+| Name               | Link to LeetCode                                       | Link to solution                          |
+|--------------------|--------------------------------------------------------|-------------------------------------------|
+| 2. Add Two Numbers | [Link](https://leetcode.com/problems/add-two-numbers/) | [Link](./lib/medium/2_add_two_numbers.rb) |
