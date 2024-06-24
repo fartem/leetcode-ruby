@@ -457,6 +457,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 
 ### Medium
 
-| Name               | Link to LeetCode                                       | Link to solution                          |
-|--------------------|--------------------------------------------------------|-------------------------------------------|
-| 2. Add Two Numbers | [Link](https://leetcode.com/problems/add-two-numbers/) | [Link](./lib/medium/2_add_two_numbers.rb) |
+| Name                                              | Link to LeetCode                                                                      | Link to solution                                                         |
+|---------------------------------------------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| 2. Add Two Numbers                                | [Link](https://leetcode.com/problems/add-two-numbers/)                                | [Link](./lib/medium/2_add_two_numbers.rb)                                |
+| 3. Longest Substring Without Repeating Characters | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Link](./lib/medium/3_longest_substring_without_repeating_characters.rb) |
