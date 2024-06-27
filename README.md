@@ -463,3 +463,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 3. Longest Substring Without Repeating Characters | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Link](./lib/medium/3_longest_substring_without_repeating_characters.rb) |
 | 5. Longest Palindromic Substring                  | [Link](https://leetcode.com/problems/longest-palindromic-substring/)                  | [Link](./lib/medium/5_longest_palindromic_substring.rb)                  |
 | 7. Reverse Integer                                | [Link](https://leetcode.com/problems/reverse-integer/)                                | [Link](./lib/medium/7_reverse_integer.rb)                                |
+| 8. String to Integer (atoi)                       | [Link](https://leetcode.com/problems/string-to-integer-atoi/)                         | [Link](./lib/medium/8_string_to_integer_atoi.rb)                         |
