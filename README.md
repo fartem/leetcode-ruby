@@ -465,3 +465,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 7. Reverse Integer                                | [Link](https://leetcode.com/problems/reverse-integer/)                                | [Link](./lib/medium/7_reverse_integer.rb)                                |
 | 8. String to Integer (atoi)                       | [Link](https://leetcode.com/problems/string-to-integer-atoi/)                         | [Link](./lib/medium/8_string_to_integer_atoi.rb)                         |
 | 11. Container With Most Water                     | [Link](https://leetcode.com/problems/container-with-most-water/)                      | [Link](./lib/medium/11_container_with_most_water.rb)                     |
+| 12. Integer to Roman                              | [Link](https://leetcode.com/problems/integer-to-roman/)                               | [Link](./lib/medium/12_integer_to_roman.rb)                              |
