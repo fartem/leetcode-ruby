@@ -467,3 +467,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 11. Container With Most Water                     | [Link](https://leetcode.com/problems/container-with-most-water/)                      | [Link](./lib/medium/11_container_with_most_water.rb)                     |
 | 12. Integer to Roman                              | [Link](https://leetcode.com/problems/integer-to-roman/)                               | [Link](./lib/medium/12_integer_to_roman.rb)                              |
 | 15. 3Sum                                          | [Link](https://leetcode.com/problems/3sum/)                                           | [Link](./lib/medium/15_3sum.rb)                                          |
+| 16. 3Sum Closest                                  | [Link](https://leetcode.com/problems/3sum-closest/)                                   | [Link](./lib/medium/16_3sum_closest.rb)                                  |
