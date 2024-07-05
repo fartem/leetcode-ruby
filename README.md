@@ -471,3 +471,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 17. Letter Combinations of a Phone Number         | [Link](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)          | [Link](./lib/medium/17_letter_combinations_of_a_phone_number.rb)         |
 | 19. Remove Nth Node From End of List              | [Link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)               | [Link](./lib/medium/19_remove_nth_node_from_end_of_list.rb)              |
 | 22. Generate Parentheses                          | [Link](https://leetcode.com/problems/generate-parentheses/)                           | [Link](./lib/medium/22_generate_parentheses.rb)                          |
+| 24. Swap Nodes in Pairs                           | [Link](https://leetcode.com/problems/swap-nodes-in-pairs/)                            | [Link](./lib/medium/24_swap_nodes_in_pairs.rb)                           |
