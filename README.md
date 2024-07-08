@@ -473,3 +473,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 22. Generate Parentheses                          | [Link](https://leetcode.com/problems/generate-parentheses/)                           | [Link](./lib/medium/22_generate_parentheses.rb)                          |
 | 24. Swap Nodes in Pairs                           | [Link](https://leetcode.com/problems/swap-nodes-in-pairs/)                            | [Link](./lib/medium/24_swap_nodes_in_pairs.rb)                           |
 | 29. Divide Two Integers                           | [Link](https://leetcode.com/problems/divide-two-integers/)                            | [Link](./lib/medium/29_divide_two_integers.rb)                           |
+| 33. Search in Rotated Sorted Array                | [Link](https://leetcode.com/problems/search-in-rotated-sorted-array/)                 | [Link](./lib/medium/33_search_in_rotated_sorted_array.rb)                |
