@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require_relative '../test_helper'
-require_relative '../../lib/medium/24_swap_nodes_in_pairs'
 require_relative '../../lib/common/linked_list'
+require_relative '../../lib/medium/24_swap_nodes_in_pairs'
 require 'minitest/autorun'
 
 class SwapNodesInPairsTest < ::Minitest::Test

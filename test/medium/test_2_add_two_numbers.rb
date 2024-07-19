@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require_relative '../test_helper'
-require_relative '../../lib/medium/2_add_two_numbers'
 require_relative '../../lib/common/linked_list'
+require_relative '../../lib/medium/2_add_two_numbers'
 require 'minitest/autorun'
 
 class AddTwoNumbersTest < ::Minitest::Test

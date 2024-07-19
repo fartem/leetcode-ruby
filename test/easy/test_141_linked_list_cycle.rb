@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require_relative '../test_helper'
-require_relative '../../lib/easy/141_linked_list_cycle'
 require_relative '../../lib/common/linked_list'
+require_relative '../../lib/easy/141_linked_list_cycle'
 require 'minitest/autorun'
 
 class LinkedListCycleTest < ::Minitest::Test

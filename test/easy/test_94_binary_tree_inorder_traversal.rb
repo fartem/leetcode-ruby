@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require_relative '../test_helper'
-require_relative '../../lib/easy/94_binary_tree_inorder_traversal'
 require_relative '../../lib/common/binary_tree'
+require_relative '../../lib/easy/94_binary_tree_inorder_traversal'
 require 'minitest/autorun'
 
 class BinaryTreeInorderTraversalTest < ::Minitest::Test
