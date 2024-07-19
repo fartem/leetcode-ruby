@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require_relative '../test_helper'
-require_relative '../../lib/easy/83_remove_duplicates_from_sorted_list'
 require_relative '../../lib/common/linked_list'
+require_relative '../../lib/easy/83_remove_duplicates_from_sorted_list'
 require 'minitest/autorun'
 
 class RemoveDuplicatesFromSortedListTest < ::Minitest::Test

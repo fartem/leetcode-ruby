@@ -2,7 +2,6 @@
 
 require_relative '../test_helper'
 require_relative '../../lib/easy/2239_find_closest_number_to_zero'
-require_relative '../../lib/common/binary_tree'
 require 'minitest/autorun'
 
 class FindClosestNumberToZeroTest < ::Minitest::Test

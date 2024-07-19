@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require_relative '../test_helper'
-require_relative '../../lib/easy/108_convert_sorted_array_to_binary_search_tree'
 require_relative '../../lib/common/binary_tree'
+require_relative '../../lib/easy/108_convert_sorted_array_to_binary_search_tree'
 require 'minitest/autorun'
 
 class ConvertSortedArrayToBinarySearchTreeTest < ::Minitest::Test

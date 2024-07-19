@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require_relative '../test_helper'
-require_relative '../../lib/medium/19_remove_nth_node_from_end_of_list'
 require_relative '../../lib/common/linked_list'
+require_relative '../../lib/medium/19_remove_nth_node_from_end_of_list'
 require 'minitest/autorun'
 
 class RemoveNthNodeFromEndOfListTest < ::Minitest::Test

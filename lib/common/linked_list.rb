@@ -21,6 +21,7 @@ class ListNode
       list.next = ::ListNode.new(value)
       list = list.next
     end
+
     head
   end
 
