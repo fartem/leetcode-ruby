@@ -26,10 +26,11 @@ module LCSP
     # @param {String[]} dirs
     def fill_directories(path, dirs)
       ::Dir.foreach(path).reject { |name| name.start_with?('.') }.each do |entry|
-        unless ::File.file?("#{path}/#{entry}")
-          dirs << "#{path}/#{entry}"
-          fill_directories("#{path}/#{entry}", dirs)
-        end
+        next if ::File.file?("#{path}/#{entry}")
+
+        dirs << "#{path}/#{entry}"
+
+        fill_directories("#{path}/#{entry}", dirs)
       end
     end
   end
