@@ -16,14 +16,29 @@ class BinaryTreeTest < ::Minitest::Test
       ::TreeNode.new(2),
       ::TreeNode.new(3)
     )
-    assert_equal(first, second)
+    assert(
+      ::TreeNode.are_equals(
+        first,
+        second
+      )
+    )
 
     third = ::TreeNode.new(
       1,
       ::TreeNode.new(4),
       ::TreeNode.new(5)
     )
-    assert(first != third)
-    assert(second != third)
+    assert(
+      !::TreeNode.are_equals(
+        first,
+        third
+      )
+    )
+    assert(
+      !::TreeNode.are_equals(
+        second,
+        third
+      )
+    )
   end
 end

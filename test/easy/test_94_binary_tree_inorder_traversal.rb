@@ -20,7 +20,10 @@ class BinaryTreeInorderTraversalTest < ::Minitest::Test
         )
       )
     )
-    assert_equal([], inorder_traversal(nil))
+    assert_equal(
+      [],
+      inorder_traversal(nil)
+    )
     assert_equal(
       [1],
       inorder_traversal(

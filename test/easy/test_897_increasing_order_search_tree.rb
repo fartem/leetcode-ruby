@@ -7,79 +7,83 @@ require 'minitest/autorun'
 
 class IncreasingOrderSearchTreeTest < ::Minitest::Test
   def test_default
-    assert_equal(
-      ::TreeNode.new(
-        1,
-        nil,
+    assert(
+      ::TreeNode.are_equals(
         ::TreeNode.new(
-          2,
+          1,
           nil,
           ::TreeNode.new(
-            3,
+            2,
             nil,
             ::TreeNode.new(
-              4,
+              3,
               nil,
               ::TreeNode.new(
-                5,
+                4,
                 nil,
                 ::TreeNode.new(
-                  6,
+                  5,
                   nil,
                   ::TreeNode.new(
-                    7,
+                    6,
                     nil,
                     ::TreeNode.new(
-                      8,
+                      7,
                       nil,
-                      ::TreeNode.new(9)
+                      ::TreeNode.new(
+                        8,
+                        nil,
+                        ::TreeNode.new(9)
+                      )
                     )
                   )
                 )
               )
             )
           )
-        )
-      ),
-      increasing_bst(
-        ::TreeNode.new(
-          5,
+        ),
+        increasing_bst(
           ::TreeNode.new(
-            3,
+            5,
             ::TreeNode.new(
-              2,
-              ::TreeNode.new(1),
-              nil
+              3,
+              ::TreeNode.new(
+                2,
+                ::TreeNode.new(1),
+                nil
+              ),
+              ::TreeNode.new(4)
             ),
-            ::TreeNode.new(4)
-          ),
-          ::TreeNode.new(
-            6,
-            nil,
             ::TreeNode.new(
-              8,
-              ::TreeNode.new(7),
-              ::TreeNode.new(9)
+              6,
+              nil,
+              ::TreeNode.new(
+                8,
+                ::TreeNode.new(7),
+                ::TreeNode.new(9)
+              )
             )
           )
         )
       )
     )
-    assert_equal(
-      ::TreeNode.new(
-        1,
-        nil,
+    assert(
+      ::TreeNode.are_equals(
         ::TreeNode.new(
-          5,
+          1,
           nil,
-          ::TreeNode.new(7)
-        )
-      ),
-      increasing_bst(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(1),
-          ::TreeNode.new(7)
+          ::TreeNode.new(
+            5,
+            nil,
+            ::TreeNode.new(7)
+          )
+        ),
+        increasing_bst(
+          ::TreeNode.new(
+            5,
+            ::TreeNode.new(1),
+            ::TreeNode.new(7)
+          )
         )
       )
     )
