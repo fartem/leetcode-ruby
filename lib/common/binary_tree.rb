@@ -13,18 +13,10 @@ class TreeNode
     @right = right
   end
 
-  # @param {TreeNode} other
-  # @return {Boolean}
-  def ==(other)
-    are_equals(self, other)
-  end
-
-  private
-
   # @param {TreeNode} curr
   # @param {TreeNode} other
   # @return {Boolean}
-  def are_equals(curr, other)
+  def self.are_equals(curr, other)
     return true if curr.nil? && other.nil?
     return false if curr.nil? || other.nil?
 

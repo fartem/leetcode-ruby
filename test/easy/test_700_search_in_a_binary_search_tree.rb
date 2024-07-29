@@ -7,23 +7,25 @@ require 'minitest/autorun'
 
 class SearchInABinarySearchTreeTest < ::Minitest::Test
   def test_default
-    assert_equal(
-      ::TreeNode.new(
-        2,
-        ::TreeNode.new(1),
-        ::TreeNode.new(3)
-      ),
-      search_bst(
+    assert(
+      ::TreeNode.are_equals(
         ::TreeNode.new(
-          4,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(1),
-            ::TreeNode.new(3)
-          ),
-          ::TreeNode.new(7)
+          2,
+          ::TreeNode.new(1),
+          ::TreeNode.new(3)
         ),
-        2
+        search_bst(
+          ::TreeNode.new(
+            4,
+            ::TreeNode.new(
+              2,
+              ::TreeNode.new(1),
+              ::TreeNode.new(3)
+            ),
+            ::TreeNode.new(7)
+          ),
+          2
+        )
       )
     )
     assert_nil(
