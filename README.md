@@ -13,7 +13,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 ### Easy
 
 | Name                                                               | Link to LeetCode                                                                                    | Link to solution                                                                        |
-|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | 1. Two Sum                                                         | [Link](https://leetcode.com/problems/two-sum/)                                                      | [Link](./lib/easy/1_two_sum.rb)                                                         |
 | 9. Palindrome Number                                               | [Link](https://leetcode.com/problems/palindrome-number/)                                            | [Link](./lib/easy/9_palindrome_number.rb)                                               |
 | 13. Roman to Integer                                               | [Link](https://leetcode.com/problems/roman-to-integer/)                                             | [Link](./lib/easy/13_roman_to_integer.rb)                                               |
@@ -458,7 +458,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 ### Medium
 
 | Name                                                        | Link to LeetCode                                                                               | Link to solution                                                                   |
-|-------------------------------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | 2. Add Two Numbers                                          | [Link](https://leetcode.com/problems/add-two-numbers/)                                         | [Link](./lib/medium/2_add_two_numbers.rb)                                          |
 | 3. Longest Substring Without Repeating Characters           | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)          | [Link](./lib/medium/3_longest_substring_without_repeating_characters.rb)           |
 | 5. Longest Palindromic Substring                            | [Link](https://leetcode.com/problems/longest-palindromic-substring/)                           | [Link](./lib/medium/5_longest_palindromic_substring.rb)                            |
@@ -500,3 +500,4 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 95. Unique Binary Search Trees II                           | [Link](https://leetcode.com/problems/unique-binary-search-trees-ii/)                           | [Link](./lib/medium/95_unique_binary_search_trees_ii.rb)                           |
 | 96. Unique Binary Search Trees                              | [Link](https://leetcode.com/problems/unique-binary-search-trees/)                              | [Link](./lib/medium/96_unique_binary_search_trees.rb)                              |
 | 98. Validate Binary Search Tree                             | [Link](https://leetcode.com/problems/validate-binary-search-tree/)                             | [Link](./lib/medium/98_validate_binary_search_tree.rb)                             |
+| 99. Recover Binary Search Tree                              | [Link](https://leetcode.com/problems/recover-binary-search-tree/)                              | [Link](./lib/medium/99_recover_binary_search_tree.rb)                              |
