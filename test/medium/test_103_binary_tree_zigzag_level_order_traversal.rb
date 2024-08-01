@@ -2,14 +2,14 @@
 
 require_relative '../test_helper'
 require_relative '../../lib/common/binary_tree'
-require_relative '../../lib/medium/102_binary_tree_level_order_traversal'
+require_relative '../../lib/medium/103_binary_tree_zigzag_level_order_traversal'
 require 'minitest/autorun'
 
-class BinaryTreeLevelOrderTraversalTest < ::Minitest::Test
+class BinaryTreeZigzagLevelOrderTraversalTest < ::Minitest::Test
   def test_default
     assert_equal(
-      [[3], [9, 20], [15, 7]],
-      level_order(
+      [[3], [20, 9], [15, 7]],
+      zigzag_level_order(
         ::TreeNode.new(
           3,
           ::TreeNode.new(9),
@@ -23,13 +23,13 @@ class BinaryTreeLevelOrderTraversalTest < ::Minitest::Test
     )
     assert_equal(
       [[1]],
-      level_order(
+      zigzag_level_order(
         ::TreeNode.new(1)
       )
     )
     assert_equal(
       [],
-      level_order(nil)
+      zigzag_level_order(nil)
     )
   end
 end
