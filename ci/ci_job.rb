@@ -6,19 +6,24 @@ module CI
   # Use it to create concrete CI jobs.
   class CIJob
     PROCESS_NO_IMPL_ERROR = "No implementation for process in #{self.class.name}"
+
     private_constant :PROCESS_NO_IMPL_ERROR
 
     # Main entry of job class that runs your check.
     def run
       puts("#{self.class.name} started...")
+
       process
+
       puts("#{self.class.name} ended without errors!")
     end
 
     # Use this method in your realization when task completed with error.
     def end_with_error(details)
       details.call
+
       puts("#{self.class.name} ended with an error.")
+
       exit(1)
     end
 

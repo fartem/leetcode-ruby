@@ -19,10 +19,7 @@ module CI
       readme = ::File.readlines('./README.md')
 
       solutions.each do |file_name|
-        links_count = 0
-        readme.each do |line|
-          links_count += 1 if line.include?(file_name)
-        end
+        links_count = readme.count { |line| line.include?(file_name) }
 
         end_with_error(-> { puts("ReadmeChecker ends with an error from #{file_name}.") }) if links_count != 1
       end
