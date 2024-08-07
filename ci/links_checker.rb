@@ -20,10 +20,11 @@ module CI
         lines = ::IO.readlines("#{path}/#{file_name}")
         has_comment = false
         lines.each do |line|
-          if line.start_with?('# https://leetcode.com/')
-            has_comment = true
-            break
-          end
+          next unless line.start_with?('# https://leetcode.com/')
+
+          has_comment = true
+
+          break
         end
 
         end_with_error(-> { puts("LinksChecker ends with an error from #{file_name}.") }) unless has_comment
