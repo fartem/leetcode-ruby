@@ -78,8 +78,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Run last reachable checker
-        continue-on-error: true
+      - name: Run duplicate links checker
         run: ruby -r "./ci/duplicate_links_checker.rb" -e "::CI::DuplicateLinksChecker.new.process"
 
   rubocop:
