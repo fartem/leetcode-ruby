@@ -9,12 +9,14 @@ module CI
   # CI job that checks project version.
   class VersionChecker < ::CI::CIJob
     # Process VersionChecker.
+    # @return {Void}
     def process
       check
     end
 
     private
 
+    # @return {Void}
     def check
       local_spec = ::Gem::Specification.load('leetcode-ruby.gemspec')
 
