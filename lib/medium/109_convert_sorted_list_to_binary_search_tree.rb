@@ -20,20 +20,6 @@ def sorted_list_to_bst(head)
   node
 end
 
-# public TreeNode sortedListToBST(ListNode head) {
-#   if (head == null) {
-#       return null;
-#   }
-#   ListNode middle = middle(head);
-#   TreeNode node = new TreeNode(middle.val);
-#   if (head == middle) {
-#       return node;
-#   }
-#   node.left = sortedListToBST(head);
-#   node.right = sortedListToBST(middle.next);
-#   return node;
-# }
-
 private
 
 # @param {ListNode} node

@@ -36,6 +36,9 @@ end
 
 private
 
+# @param {TreeNode} root
+# @param {Array} nodes
+# @return {Void}
 def traverse99(root, nodes)
   return unless root
 
