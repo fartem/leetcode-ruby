@@ -10,6 +10,7 @@ module CI
     private_constant :PROCESS_NO_IMPL_ERROR
 
     # Main entry of job class that runs your check.
+    # @return {Void}
     def run
       puts("#{self.class.name} started...")
 
@@ -19,6 +20,8 @@ module CI
     end
 
     # Use this method in your realization when task completed with error.
+    # @param {String} details
+    # @return {Void}
     def end_with_error(details)
       details.call
 
@@ -29,6 +32,7 @@ module CI
 
     # Job realization.
     # You should override this method in your realization.
+    # @return {Void}
     def process
       raise(::PROCESS_NO_IMPL_ERROR)
     end

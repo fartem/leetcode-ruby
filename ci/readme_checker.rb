@@ -6,6 +6,7 @@ module CI
   # CI job that checks links in README.
   class ReadmeChecker < ::CI::CIJob
     # Process ReadmeChecker.
+    # @return {Void}
     def process
       check('easy')
     end
@@ -13,6 +14,7 @@ module CI
     private
 
     # @param {String} difficulty
+    # @return {Void}
     def check(difficulty)
       path = "./lib/#{difficulty}"
       solutions = ::Dir.entries(path).reject { |file_name| file_name.start_with?('.') }

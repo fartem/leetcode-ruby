@@ -70,6 +70,17 @@ jobs:
         continue-on-error: true
         run: ruby -r "./ci/last_reachable_checker.rb" -e "::CI::LastReachableChecker.new.process"
 
+  duplicate_links_checker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+      - name: Run duplicate links checker
+        run: ruby -r "./ci/duplicate_links_checker.rb" -e "::CI::DuplicateLinksChecker.new.process"
+
   rubocop:
     runs-on: ubuntu-latest
     steps:
