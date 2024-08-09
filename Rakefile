@@ -19,15 +19,17 @@ require 'rake/testtask'
 end
 
 desc 'Run all custom checks for CI'
-require_relative './ci/last_reachable_checker'
 require_relative './ci/links_checker'
 require_relative './ci/readme_checker'
 require_relative './ci/tests_checker'
 require_relative './ci/version_checker'
+require_relative './ci/duplicate_links_checker'
 task :ci do
-  ::CI::LastReachableChecker.new.process
-  ::CI::LinksChecker.new.process
-  ::CI::ReadmeChecker.new.process
-  ::CI::TestsChecker.new.process
-  ::CI::VersionChecker.new.process
+  [
+    ::CI::LinksChecker.new,
+    ::CI::ReadmeChecker.new,
+    ::CI::TestsChecker.new,
+    ::CI::VersionChecker.new,
+    ::CI::DuplicateLinksChecker.new
+  ].each(&:process)
 end
