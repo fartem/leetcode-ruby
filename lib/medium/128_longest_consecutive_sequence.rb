@@ -8,7 +8,7 @@ require 'set'
 def longest_consecutive(nums)
   uniq = nums.to_set
   result = 0
-  nums.each do |num|
+  uniq.each do |num|
     next if uniq.include?(num - 1)
 
     curr = num
