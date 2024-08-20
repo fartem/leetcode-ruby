@@ -5,12 +5,9 @@ require_relative '../../lib/easy/657_robot_return_to_origin'
 require 'minitest/autorun'
 
 class RobotReturnToOriginTest < ::Minitest::Test
-  def test_default
-    assert(judge_circle('UD'))
-    assert(!judge_circle('LL'))
-  end
+  def test_default_one = assert(judge_circle('UD'))
 
-  def test_additional
-    assert(judge_circle('RL'))
-  end
+  def test_default_two = assert(!judge_circle('LL'))
+
+  def test_additional_one = assert(judge_circle('RL'))
 end

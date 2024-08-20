@@ -6,7 +6,7 @@ require_relative '../../lib/easy/700_search_in_a_binary_search_tree'
 require 'minitest/autorun'
 
 class SearchInABinarySearchTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       ::TreeNode.are_equals(
         ::TreeNode.new(
@@ -28,6 +28,9 @@ class SearchInABinarySearchTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_nil(
       search_bst(
         ::TreeNode.new(

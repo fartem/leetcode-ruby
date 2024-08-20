@@ -6,7 +6,7 @@ require_relative '../../lib/easy/617_merge_two_binary_trees'
 require 'minitest/autorun'
 
 class MergeTwoBinaryTreesTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       ::TreeNode.are_equals(
         ::TreeNode.new(
@@ -48,6 +48,9 @@ class MergeTwoBinaryTreesTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert(
       ::TreeNode.are_equals(
         ::TreeNode.new(

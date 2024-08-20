@@ -6,7 +6,7 @@ require_relative '../../lib/easy/783_minimum_distance_between_bst_nodes'
 require 'minitest/autorun'
 
 class MinimumDistanceBetweenBSTNodesTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       1,
       min_diff_in_bst(
@@ -21,6 +21,9 @@ class MinimumDistanceBetweenBSTNodesTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       1,
       min_diff_in_bst(

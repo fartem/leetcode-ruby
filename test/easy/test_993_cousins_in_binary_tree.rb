@@ -6,7 +6,7 @@ require_relative '../../lib/easy/993_cousins_in_binary_tree'
 require 'minitest/autorun'
 
 class CousinsInBinaryTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       !is_cousins(
         ::TreeNode.new(
@@ -21,6 +21,9 @@ class CousinsInBinaryTreeTest < ::Minitest::Test
         3
       )
     )
+  end
+
+  def test_default_two
     assert(
       is_cousins(
         ::TreeNode.new(
@@ -40,6 +43,9 @@ class CousinsInBinaryTreeTest < ::Minitest::Test
         4
       )
     )
+  end
+
+  def test_default_three
     assert(
       !is_cousins(
         ::TreeNode.new(

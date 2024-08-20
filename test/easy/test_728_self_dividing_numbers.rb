@@ -5,11 +5,14 @@ require_relative '../../lib/easy/728_self_dividing_numbers'
 require 'minitest/autorun'
 
 class SelfDividingNumbersTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22],
       self_dividing_numbers(1, 22)
     )
+  end
+
+  def test_default_two
     assert_equal(
       [48, 55, 66, 77],
       self_dividing_numbers(47, 85)

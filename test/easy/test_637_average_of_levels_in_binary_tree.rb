@@ -6,7 +6,7 @@ require_relative '../../lib/easy/637_average_of_levels_in_binary_tree'
 require 'minitest/autorun'
 
 class AverageOfLevelsInBinaryTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       [3.00000, 14.50000, 11.00000],
       average_of_levels(
@@ -21,6 +21,9 @@ class AverageOfLevelsInBinaryTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       [3.00000, 14.50000, 11.00000],
       average_of_levels(

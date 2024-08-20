@@ -5,12 +5,27 @@ require_relative '../../lib/easy/1160_find_words_that_can_be_formed_by_character
 require 'minitest/autorun'
 
 class FindWordsThatCanBeFormedByCharactersTest < ::Minitest::Test
-  def test_default
-    assert_equal(6, count_characters(%w[cat bt hat tree], 'atach'))
-    assert_equal(10, count_characters(%w[hello world leetcode], 'welldonehoneyr'))
+  def test_default_one
+    assert_equal(
+      6,
+      count_characters(
+        %w[cat bt hat tree],
+        'atach'
+      )
+    )
   end
 
-  def test_additional
+  def test_default_two
+    assert_equal(
+      10,
+      count_characters(
+        %w[hello world leetcode],
+        'welldonehoneyr'
+      )
+    )
+  end
+
+  def test_additional_one
     assert_equal(
       0,
       count_characters(

@@ -5,7 +5,7 @@ require_relative '../../lib/easy/643_maximum_average_subarray_i'
 require 'minitest/autorun'
 
 class MaximumAverageSubarrayITest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       12.75000,
       find_max_average(
@@ -13,9 +13,7 @@ class MaximumAverageSubarrayITest < ::Minitest::Test
         4
       )
     )
-    assert_equal(
-      5.00000,
-      find_max_average([5], 1)
-    )
   end
+
+  def test_default_two = assert_equal(5.00000, find_max_average([5], 1))
 end

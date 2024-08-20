@@ -5,7 +5,7 @@ require_relative '../../lib/easy/705_design_hashset'
 require 'minitest/autorun'
 
 class DesignHashSetTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     my_hashset = ::MyHashSet.new
     my_hashset.add(1)
     my_hashset.add(2)

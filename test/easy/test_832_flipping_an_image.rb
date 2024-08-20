@@ -5,14 +5,39 @@ require_relative '../../lib/easy/832_flipping_an_image'
 require 'minitest/autorun'
 
 class FlippingAnImageTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
-      [[1, 0, 0], [0, 1, 0], [1, 1, 1]],
-      flip_and_invert_image([[1, 1, 0], [1, 0, 1], [0, 0, 0]])
+      [
+        [1, 0, 0],
+        [0, 1, 0],
+        [1, 1, 1]
+      ],
+      flip_and_invert_image(
+        [
+          [1, 1, 0],
+          [1, 0, 1],
+          [0, 0, 0]
+        ]
+      )
     )
+  end
+
+  def test_default_two
     assert_equal(
-      [[1, 1, 0, 0], [0, 1, 1, 0], [0, 0, 0, 1], [1, 0, 1, 0]],
-      flip_and_invert_image([[1, 1, 0, 0], [1, 0, 0, 1], [0, 1, 1, 1], [1, 0, 1, 0]])
+      [
+        [1, 1, 0, 0],
+        [0, 1, 1, 0],
+        [0, 0, 0, 1],
+        [1, 0, 1, 0]
+      ],
+      flip_and_invert_image(
+        [
+          [1, 1, 0, 0],
+          [1, 0, 0, 1],
+          [0, 1, 1, 1],
+          [1, 0, 1, 0]
+        ]
+      )
     )
   end
 end

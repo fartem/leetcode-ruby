@@ -5,17 +5,19 @@ require_relative '../../lib/easy/1089_duplicate_zeros'
 require 'minitest/autorun'
 
 class DuplicateZerosTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     arr = [1, 0, 2, 3, 0, 4, 5, 0]
     duplicate_zeros(arr)
     assert_equal([1, 0, 0, 2, 3, 0, 0, 4], arr)
+  end
 
+  def test_default_two
     arr = [1, 2, 3]
     duplicate_zeros(arr)
     assert_equal([1, 2, 3], arr)
   end
 
-  def test_additional
+  def test_additional_one
     arr = [8, 4, 5, 0, 0, 0, 0, 7]
     duplicate_zeros(arr)
     assert_equal([8, 4, 5, 0, 0, 0, 0, 0], arr)

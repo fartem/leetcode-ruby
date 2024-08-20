@@ -6,7 +6,7 @@ require_relative '../../lib/easy/897_increasing_order_search_tree'
 require 'minitest/autorun'
 
 class IncreasingOrderSearchTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       ::TreeNode.are_equals(
         ::TreeNode.new(
@@ -67,6 +67,9 @@ class IncreasingOrderSearchTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert(
       ::TreeNode.are_equals(
         ::TreeNode.new(

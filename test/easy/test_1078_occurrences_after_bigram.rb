@@ -5,7 +5,7 @@ require_relative '../../lib/easy/1078_occurrences_after_bigram'
 require 'minitest/autorun'
 
 class OccurrencesAfterBigramTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       %w[girl student],
       find_occurrences(
@@ -14,6 +14,9 @@ class OccurrencesAfterBigramTest < ::Minitest::Test
         'good'
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       %w[we rock],
       find_occurrences(

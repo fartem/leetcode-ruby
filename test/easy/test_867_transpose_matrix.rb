@@ -5,11 +5,14 @@ require_relative '../../lib/easy/867_transpose_matrix'
 require 'minitest/autorun'
 
 class TransposeMatrixTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       [[1, 4, 7], [2, 5, 8], [3, 6, 9]],
       transpose([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
     )
+  end
+
+  def test_default_two
     assert_equal(
       [[1, 4], [2, 5], [3, 6]],
       transpose([[1, 2, 3], [4, 5, 6]])
