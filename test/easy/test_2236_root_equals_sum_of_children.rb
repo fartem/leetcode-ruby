@@ -6,7 +6,7 @@ require_relative '../../lib/easy/2236_root_equals_sum_of_children'
 require 'minitest/autorun'
 
 class RootEqualsSumOfChildrenTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       check_tree(
         ::TreeNode.new(
@@ -16,6 +16,9 @@ class RootEqualsSumOfChildrenTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert(
       !check_tree(
         ::TreeNode.new(

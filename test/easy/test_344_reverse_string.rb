@@ -5,11 +5,13 @@ require_relative '../../lib/easy/344_reverse_string'
 require 'minitest/autorun'
 
 class ReverseStringTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     arr = %w[h e l l o]
     reverse_string(arr)
     assert_equal(%w[o l l e h], arr)
+  end
 
+  def test_default_two
     arr = %w[H a n n a h]
     reverse_string(arr)
     assert_equal(%w[h a n n a H], arr)

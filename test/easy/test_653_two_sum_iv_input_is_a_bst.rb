@@ -6,7 +6,7 @@ require_relative '../../lib/easy/653_two_sum_iv_input_is_a_bst'
 require 'minitest/autorun'
 
 class TwoSumIVInputIsABSTTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       find_target(
         ::TreeNode.new(
@@ -25,6 +25,9 @@ class TwoSumIVInputIsABSTTest < ::Minitest::Test
         9
       )
     )
+  end
+
+  def test_default_two
     assert(
       !find_target(
         ::TreeNode.new(

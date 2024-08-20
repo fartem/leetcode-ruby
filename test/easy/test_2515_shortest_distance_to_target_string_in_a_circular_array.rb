@@ -5,9 +5,36 @@ require_relative '../../lib/easy/2515_shortest_distance_to_target_string_in_a_ci
 require 'minitest/autorun'
 
 class ShortestDistanceToTargetStringInACircularArrayTest < ::Minitest::Test
-  def test_default
-    assert_equal(1, closet_target(%w[hello i am leetcode hello], 'hello', 1))
-    assert_equal(1, closet_target(%w[a b leetcode], 'leetcode', 0))
-    assert_equal(-1, closet_target(%w[i eat leetcode], 'ate', 0))
+  def test_default_one
+    assert_equal(
+      1,
+      closet_target(
+        %w[hello i am leetcode hello],
+        'hello',
+        1
+      )
+    )
+  end
+
+  def test_default_two
+    assert_equal(
+      1,
+      closet_target(
+        %w[a b leetcode],
+        'leetcode',
+        0
+      )
+    )
+  end
+
+  def test_default_three
+    assert_equal(
+      -1,
+      closet_target(
+        %w[i eat leetcode],
+        'ate',
+        0
+      )
+    )
   end
 end

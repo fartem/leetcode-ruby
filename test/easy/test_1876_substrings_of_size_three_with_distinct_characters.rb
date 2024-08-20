@@ -5,8 +5,7 @@ require_relative '../../lib/easy/1876_substrings_of_size_three_with_distinct_cha
 require 'minitest/autorun'
 
 class SubstringsOfSizeThreeWithDistinctCharactersTest < ::Minitest::Test
-  def test_default
-    assert_equal(1, count_good_substrings('xyzzaz'))
-    assert_equal(4, count_good_substrings('aababcabc'))
-  end
+  def test_default_one = assert_equal(1, count_good_substrings('xyzzaz'))
+
+  def test_default_two = assert_equal(4, count_good_substrings('aababcabc'))
 end

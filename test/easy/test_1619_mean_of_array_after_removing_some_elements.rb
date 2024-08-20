@@ -6,7 +6,7 @@ require 'minitest/autorun'
 
 class MeanOfArrayAfterMovingSomeElementsTest < ::Minitest::Test
   # rubocop:disable Style/DisableCopsWithinSourceCodeDirective, Layout/MultilineArrayLineBreaks
-  def test_default
+  def test_default_one
     assert_equal(
       2.00000,
       trim_mean(
@@ -16,6 +16,9 @@ class MeanOfArrayAfterMovingSomeElementsTest < ::Minitest::Test
         ]
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       4.00000,
       trim_mean(
@@ -25,6 +28,9 @@ class MeanOfArrayAfterMovingSomeElementsTest < ::Minitest::Test
         ]
       )
     )
+  end
+
+  def test_default_three
     assert_equal(
       4.777777777777778,
       trim_mean(

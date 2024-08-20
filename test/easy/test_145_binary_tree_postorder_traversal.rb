@@ -6,7 +6,7 @@ require_relative '../../lib/easy/145_binary_tree_postorder_traversal'
 require 'minitest/autorun'
 
 class BinaryTreePostorderTraversalTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       [3, 2, 1],
       postorder_traversal(
@@ -20,7 +20,21 @@ class BinaryTreePostorderTraversalTest < ::Minitest::Test
         )
       )
     )
-    assert_equal([], postorder_traversal(nil))
-    assert_equal([1], postorder_traversal(::TreeNode.new(1)))
+  end
+
+  def test_default_two
+    assert_equal(
+      [],
+      postorder_traversal(nil)
+    )
+  end
+
+  def test_default_three
+    assert_equal(
+      [1],
+      postorder_traversal(
+        ::TreeNode.new(1)
+      )
+    )
   end
 end

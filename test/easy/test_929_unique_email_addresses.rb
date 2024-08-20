@@ -5,13 +5,16 @@ require_relative '../../lib/easy/929_unique_email_addresses'
 require 'minitest/autorun'
 
 class UniqueEmailAddressesTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       2,
       num_unique_emails(
         %w[test.email+alex@leetcode.com test.e.mail+bob.cathy@leetcode.com testemail+david@lee.tcode.com]
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       3,
       num_unique_emails(

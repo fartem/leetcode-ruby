@@ -6,7 +6,7 @@ require_relative '../../lib/medium/19_remove_nth_node_from_end_of_list'
 require 'minitest/autorun'
 
 class RemoveNthNodeFromEndOfListTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       ::ListNode.are_equals(
         ::ListNode.from_array(
@@ -20,6 +20,9 @@ class RemoveNthNodeFromEndOfListTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert(
       ::ListNode.are_equals(
         ::ListNode.from_array([]),
@@ -29,6 +32,9 @@ class RemoveNthNodeFromEndOfListTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_three
     assert(
       ::ListNode.are_equals(
         ::ListNode.from_array([1]),

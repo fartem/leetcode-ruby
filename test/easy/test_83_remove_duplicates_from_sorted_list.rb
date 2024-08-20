@@ -6,17 +6,32 @@ require_relative '../../lib/easy/83_remove_duplicates_from_sorted_list'
 require 'minitest/autorun'
 
 class RemoveDuplicatesFromSortedListTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       ::ListNode.are_equals(
-        ::ListNode.from_array([1, 2]),
-        delete_duplicates(::ListNode.from_array([1, 1, 2]))
+        ::ListNode.from_array(
+          [1, 2]
+        ),
+        delete_duplicates(
+          ::ListNode.from_array(
+            [1, 1, 2]
+          )
+        )
       )
     )
+  end
+
+  def test_default_two
     assert(
       ::ListNode.are_equals(
-        ::ListNode.from_array([1, 2, 3]),
-        delete_duplicates(::ListNode.from_array([1, 1, 2, 3, 3]))
+        ::ListNode.from_array(
+          [1, 2, 3]
+        ),
+        delete_duplicates(
+          ::ListNode.from_array(
+            [1, 1, 2, 3, 3]
+          )
+        )
       )
     )
   end

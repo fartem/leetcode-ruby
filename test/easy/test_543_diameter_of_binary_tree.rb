@@ -6,7 +6,7 @@ require_relative '../../lib/easy/543_diameter_of_binary_tree'
 require 'minitest/autorun'
 
 class DiameterOfBinaryTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       3,
       diameter_of_binary_tree(
@@ -21,6 +21,9 @@ class DiameterOfBinaryTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       1,
       diameter_of_binary_tree(

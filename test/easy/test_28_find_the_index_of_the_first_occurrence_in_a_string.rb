@@ -5,8 +5,7 @@ require_relative '../../lib/easy/28_find_the_index_of_the_first_occurrence_in_a_
 require 'minitest/autorun'
 
 class FindTheIndexOfTheFirstOccurrenceInAStringTest < ::Minitest::Test
-  def test_default
-    assert(str_str('sadbutsad', 'sad').zero?)
-    assert_equal(-1, str_str('leetcode', 'leeto'))
-  end
+  def test_default_one = assert(str_str('sadbutsad', 'sad').zero?)
+
+  def test_default_two = assert_equal(-1, str_str('leetcode', 'leeto'))
 end

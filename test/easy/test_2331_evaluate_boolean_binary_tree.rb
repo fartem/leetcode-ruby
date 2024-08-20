@@ -6,7 +6,7 @@ require_relative '../../lib/easy/2331_evaluate_boolean_binary_tree'
 require 'minitest/autorun'
 
 class EvaluateBooleanBinaryTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       evaluate_tree(
         ::TreeNode.new(
@@ -27,7 +27,15 @@ class EvaluateBooleanBinaryTreeTest < ::Minitest::Test
     )
   end
 
-  def test_additional
+  def test_default_two
+    assert(
+      !evaluate_tree(
+        ::TreeNode.new(0)
+      )
+    )
+  end
+
+  def test_additional_one
     assert(
       !evaluate_tree(
         ::TreeNode.new(

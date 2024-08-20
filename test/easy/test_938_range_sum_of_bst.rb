@@ -6,7 +6,7 @@ require_relative '../../lib/easy/938_range_sum_of_bst'
 require 'minitest/autorun'
 
 class RangeSumOfBSTTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       32,
       range_sum_bst(
@@ -27,6 +27,9 @@ class RangeSumOfBSTTest < ::Minitest::Test
         15
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       23,
       range_sum_bst(

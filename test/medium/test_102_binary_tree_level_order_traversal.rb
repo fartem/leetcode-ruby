@@ -6,9 +6,13 @@ require_relative '../../lib/medium/102_binary_tree_level_order_traversal'
 require 'minitest/autorun'
 
 class BinaryTreeLevelOrderTraversalTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
-      [[3], [9, 20], [15, 7]],
+      [
+        [3],
+        [9, 20],
+        [15, 7]
+      ],
       level_order(
         ::TreeNode.new(
           3,
@@ -21,12 +25,20 @@ class BinaryTreeLevelOrderTraversalTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
-      [[1]],
+      [
+        [1]
+      ],
       level_order(
         ::TreeNode.new(1)
       )
     )
+  end
+
+  def test_default_three
     assert_equal(
       [],
       level_order(nil)

@@ -5,9 +5,9 @@ require_relative '../../lib/easy/2309_greatest_english_letter_in_upper_and_lower
 require 'minitest/autorun'
 
 class GreatestEnglishLetterInUpperAndLowerCaseTest < ::Minitest::Test
-  def test_default
-    assert_equal('E', greatest_letter('lEeTcOdE'))
-    assert_equal('R', greatest_letter('arRAzFif'))
-    assert_equal('', greatest_letter('AbCdEfGhIjK'))
-  end
+  def test_default_one = assert_equal('E', greatest_letter('lEeTcOdE'))
+
+  def test_default_two = assert_equal('R', greatest_letter('arRAzFif'))
+
+  def test_default_three = assert_equal('', greatest_letter('AbCdEfGhIjK'))
 end

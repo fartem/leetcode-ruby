@@ -6,7 +6,7 @@ require_relative '../../lib/easy/572_subtree_of_another_tree'
 require 'minitest/autorun'
 
 class SubtreeOfAnotherTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       is_subtree(
         ::TreeNode.new(
@@ -25,6 +25,9 @@ class SubtreeOfAnotherTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert(
       !is_subtree(
         ::TreeNode.new(

@@ -5,7 +5,7 @@ require_relative '../../lib/easy/225_implement_stack_using_queues'
 require 'minitest/autorun'
 
 class ImplementStackUsingQueuesTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     my_stack = ::MyStack.new
     my_stack.push(1)
     my_stack.push(2)

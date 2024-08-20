@@ -5,8 +5,7 @@ require_relative '../../lib/easy/551_student_attendance_record_i'
 require 'minitest/autorun'
 
 class StudentAttendanceRecordITest < ::Minitest::Test
-  def test_default
-    assert(check_record('PPALLP'))
-    assert(!check_record('PPALLL'))
-  end
+  def test_default_one = assert(check_record('PPALLP'))
+
+  def test_default_two = assert(!check_record('PPALLL'))
 end

@@ -5,7 +5,7 @@ require_relative '../../lib/medium/36_valid_sudoku'
 require 'minitest/autorun'
 
 class ValidSudokuTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       is_valid_sudoku(
         [
@@ -21,6 +21,9 @@ class ValidSudokuTest < ::Minitest::Test
         ]
       )
     )
+  end
+
+  def test_default_two
     assert(
       !is_valid_sudoku(
         [

@@ -5,8 +5,7 @@ require_relative '../../lib/easy/1893_check_if_all_the_integers_in_a_range_are_c
 require 'minitest/autorun'
 
 class CheckIfAllTheIntegersInARangeAreCoveredTest < ::Minitest::Test
-  def test_default
-    assert(is_covered([[1, 2], [3, 4], [5, 6]], 2, 5))
-    assert(!is_covered([[1, 10], [10, 20]], 21, 21))
-  end
+  def test_default_one = assert(is_covered([[1, 2], [3, 4], [5, 6]], 2, 5))
+
+  def test_default_two = assert(!is_covered([[1, 10], [10, 20]], 21, 21))
 end

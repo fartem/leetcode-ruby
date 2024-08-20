@@ -5,7 +5,7 @@ require_relative '../../lib/easy/884_uncommon_words_from_two_sentences'
 require 'minitest/autorun'
 
 class UncommonWordsFromTwoSentencesTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       %w[sweet sour],
       uncommon_from_sentences(
@@ -13,6 +13,9 @@ class UncommonWordsFromTwoSentencesTest < ::Minitest::Test
         'this apple is sour'
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       %w[banana],
       uncommon_from_sentences(

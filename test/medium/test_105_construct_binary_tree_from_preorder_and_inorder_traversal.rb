@@ -6,7 +6,7 @@ require_relative '../../lib/medium/105_construct_binary_tree_from_preorder_and_i
 require 'minitest/autorun'
 
 class ConstructBinaryTreeFromPreorderAndInorderTraversalTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       ::TreeNode.are_equals(
         ::TreeNode.new(
@@ -24,6 +24,9 @@ class ConstructBinaryTreeFromPreorderAndInorderTraversalTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert(
       ::TreeNode.are_equals(
         ::TreeNode.new(-1),

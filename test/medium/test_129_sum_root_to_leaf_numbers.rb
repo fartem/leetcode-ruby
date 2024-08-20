@@ -6,7 +6,7 @@ require_relative '../../lib/medium/129_sum_root_to_leaf_numbers'
 require 'minitest/autorun'
 
 class SumRootToLeafNumbersTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       25,
       sum_numbers(
@@ -17,6 +17,9 @@ class SumRootToLeafNumbersTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       1026,
       sum_numbers(

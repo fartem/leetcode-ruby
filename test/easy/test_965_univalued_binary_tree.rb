@@ -6,7 +6,7 @@ require_relative '../../lib/easy/965_univalued_binary_tree'
 require 'minitest/autorun'
 
 class UnivaluedBinaryTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       is_unival_tree(
         ::TreeNode.new(
@@ -24,6 +24,9 @@ class UnivaluedBinaryTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert(
       !is_unival_tree(
         ::TreeNode.new(

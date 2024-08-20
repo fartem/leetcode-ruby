@@ -6,7 +6,7 @@ require_relative '../../lib/easy/671_second_minimum_node_in_a_binary_tree'
 require 'minitest/autorun'
 
 class SecondMinimumNodeInABinaryTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       5,
       find_second_minimum_value(
@@ -21,6 +21,9 @@ class SecondMinimumNodeInABinaryTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       -1,
       find_second_minimum_value(

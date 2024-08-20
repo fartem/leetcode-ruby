@@ -5,8 +5,7 @@ require_relative '../../lib/easy/2379_minimum_recolors_to_get_k_consecutive_blac
 require 'minitest/autorun'
 
 class MinimumRecolorsToGetKConsecutiveBlackBlocksTest < ::Minitest::Test
-  def test_default
-    assert_equal(3, minimum_recolors('WBBWWBBWBW', 7))
-    assert_equal(0, minimum_recolors('WBWBBBW', 2))
-  end
+  def test_default_one = assert_equal(3, minimum_recolors('WBBWWBBWBW', 7))
+
+  def test_default_two = assert_equal(0, minimum_recolors('WBWBBBW', 2))
 end

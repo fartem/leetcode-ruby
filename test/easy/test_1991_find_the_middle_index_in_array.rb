@@ -5,9 +5,9 @@ require_relative '../../lib/easy/1991_find_the_middle_index_in_array'
 require 'minitest/autorun'
 
 class FindTheMiddleIndexInArrayTest < ::Minitest::Test
-  def test_default
-    assert_equal(3, find_middle_index([2, 3, -1, 8, 4]))
-    assert_equal(2, find_middle_index([1, -1, 4]))
-    assert_equal(-1, find_middle_index([2, 5]))
-  end
+  def test_default_one = assert_equal(3, find_middle_index([2, 3, -1, 8, 4]))
+
+  def test_default_two = assert_equal(2, find_middle_index([1, -1, 4]))
+
+  def test_default_three = assert_equal(-1, find_middle_index([2, 5]))
 end

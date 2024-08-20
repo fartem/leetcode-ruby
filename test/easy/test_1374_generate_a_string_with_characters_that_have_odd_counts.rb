@@ -5,9 +5,9 @@ require_relative '../../lib/easy/1374_generate_a_string_with_characters_that_hav
 require 'minitest/autorun'
 
 class GenerateAStringWithCharactersThatHaveOddCountsTest < ::Minitest::Test
-  def test_default
-    assert_equal('aaab', generate_the_string(4))
-    assert_equal('ab', generate_the_string(2))
-    assert_equal('aaaaaaa', generate_the_string(7))
-  end
+  def test_default_one = assert_equal('aaab', generate_the_string(4))
+
+  def test_default_two = assert_equal('ab', generate_the_string(2))
+
+  def test_default_three = assert_equal('aaaaaaa', generate_the_string(7))
 end

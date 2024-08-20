@@ -6,7 +6,7 @@ require_relative '../../lib/easy/257_binary_tree_paths'
 require 'minitest/autorun'
 
 class BinaryTreePathsTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       %w[1->2->5 1->3],
       binary_tree_paths(
@@ -21,6 +21,9 @@ class BinaryTreePathsTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       ['1'],
       binary_tree_paths(

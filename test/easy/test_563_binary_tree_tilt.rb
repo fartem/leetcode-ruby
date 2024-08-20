@@ -6,7 +6,7 @@ require_relative '../../lib/easy/563_binary_tree_tilt'
 require 'minitest/autorun'
 
 class BinaryTreeTiltTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       1,
       find_tilt(
@@ -17,6 +17,9 @@ class BinaryTreeTiltTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       15,
       find_tilt(
@@ -35,6 +38,9 @@ class BinaryTreeTiltTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_three
     assert_equal(
       9,
       find_tilt(

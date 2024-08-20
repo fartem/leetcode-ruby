@@ -5,13 +5,16 @@ require_relative '../../lib/easy/228_summary_ranges'
 require 'minitest/autorun'
 
 class SummaryRangesTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       %w[0->2 4->5 7],
       summary_ranges(
         [0, 1, 2, 4, 5, 7]
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       %w[0 2->4 6 8->9],
       summary_ranges(

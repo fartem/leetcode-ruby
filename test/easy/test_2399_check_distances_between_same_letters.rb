@@ -5,13 +5,16 @@ require_relative '../../lib/easy/2399_check_distances_between_same_letters'
 require 'minitest/autorun'
 
 class CheckDistancesBetweenSameLettersTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       check_distances(
         'abaccb',
         [1, 3, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
       )
     )
+  end
+
+  def test_default_two
     assert(
       !check_distances(
         'aa',

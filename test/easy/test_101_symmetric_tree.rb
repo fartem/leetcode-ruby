@@ -6,7 +6,7 @@ require_relative '../../lib/easy/101_symmetric_tree'
 require 'minitest/autorun'
 
 class SymmetricTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       is_symmetric(
         ::TreeNode.new(
@@ -24,6 +24,9 @@ class SymmetricTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert(
       !is_symmetric(
         ::TreeNode.new(

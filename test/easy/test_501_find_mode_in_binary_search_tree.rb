@@ -6,7 +6,7 @@ require_relative '../../lib/easy/501_find_mode_in_binary_search_tree'
 require 'minitest/autorun'
 
 class FindModeInBinarySearchTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       [2],
       find_mode(
@@ -21,9 +21,14 @@ class FindModeInBinarySearchTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       [0],
-      find_mode(::TreeNode.new(0))
+      find_mode(
+        ::TreeNode.new(0)
+      )
     )
   end
 end

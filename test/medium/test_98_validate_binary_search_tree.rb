@@ -6,7 +6,7 @@ require_relative '../../lib/medium/98_validate_binary_search_tree'
 require 'minitest/autorun'
 
 class ValidateBinarySearchTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       is_valid_bst(
         ::TreeNode.new(
@@ -16,6 +16,9 @@ class ValidateBinarySearchTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert(
       !is_valid_bst(
         ::TreeNode.new(

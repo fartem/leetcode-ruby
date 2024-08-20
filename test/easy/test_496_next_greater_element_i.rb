@@ -5,7 +5,7 @@ require_relative '../../lib/easy/496_next_greater_element_i'
 require 'minitest/autorun'
 
 class NextGreaterElementITest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       [-1, 3, -1],
       next_greater_element(
@@ -13,6 +13,9 @@ class NextGreaterElementITest < ::Minitest::Test
         [1, 3, 4, 2]
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       [3, -1],
       next_greater_element(

@@ -5,7 +5,7 @@ require_relative '../../lib/easy/819_most_common_word'
 require 'minitest/autorun'
 
 class MostCommonWordTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       'ball',
       most_common_word(
@@ -13,10 +13,16 @@ class MostCommonWordTest < ::Minitest::Test
         ['hit']
       )
     )
-    assert_equal('a', most_common_word('a.', []))
   end
 
-  def test_additional
-    assert_equal('ball', most_common_word('Bob. hIt, baLl', %w[bob hit]))
+  def test_default_two = assert_equal('a', most_common_word('a.', []))
+
+  def test_additional_one
+    assert_equal(
+      'ball',
+      most_common_word(
+        'Bob. hIt, baLl', %w[bob hit]
+      )
+    )
   end
 end

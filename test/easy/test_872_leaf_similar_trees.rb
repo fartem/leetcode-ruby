@@ -6,7 +6,7 @@ require_relative '../../lib/easy/872_leaf_similar_trees'
 require 'minitest/autorun'
 
 class LeafSimilarTreesTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       leaf_similar(
         ::TreeNode.new(
@@ -45,6 +45,9 @@ class LeafSimilarTreesTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert(
       !leaf_similar(
         ::TreeNode.new(

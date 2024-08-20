@@ -6,7 +6,7 @@ require_relative '../../lib/medium/92_reverse_linked_list_ii'
 require 'minitest/autorun'
 
 class ReverseLinkedListIITest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       ::ListNode.are_equals(
         ::ListNode.from_array(
@@ -21,6 +21,9 @@ class ReverseLinkedListIITest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert(
       ::ListNode.are_equals(
         ::ListNode.from_array([5]),
