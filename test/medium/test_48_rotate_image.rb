@@ -5,7 +5,7 @@ require_relative '../../lib/medium/48_rotate_image'
 require 'minitest/autorun'
 
 class RotateImageTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     matrix = [
       [1, 2, 3],
       [4, 5, 6],
@@ -21,7 +21,9 @@ class RotateImageTest < ::Minitest::Test
       ],
       matrix
     )
+  end
 
+  def test_default_two
     matrix = [
       [5, 1, 9, 11],
       [2, 4, 8, 10],

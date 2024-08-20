@@ -6,7 +6,7 @@ require_relative '../../lib/medium/95_unique_binary_search_trees_ii'
 require 'minitest/autorun'
 
 class UniqueBinarySearchTreesIITest < ::Minitest::Test
-  def test_default
+  def test_default_one
     input = [
       ::TreeNode.new(
         1,
@@ -61,7 +61,9 @@ class UniqueBinarySearchTreesIITest < ::Minitest::Test
         )
       )
     end
+  end
 
+  def test_default_two
     input = [::TreeNode.new(1)]
     output = generate_trees(1)
 

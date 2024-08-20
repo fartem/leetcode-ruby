@@ -6,7 +6,7 @@ require_relative '../../lib/medium/133_clone_graph'
 require 'minitest/autorun'
 
 class CloneGraphTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     g1 = ::NodeWithNeighbors.new(1)
     g2 = ::NodeWithNeighbors.new(2)
     g3 = ::NodeWithNeighbors.new(3)
@@ -26,15 +26,19 @@ class CloneGraphTest < ::Minitest::Test
         clone_graph(g1)
       )
     )
+  end
 
-    g5 = ::NodeWithNeighbors.new(1)
+  def test_default_two
+    g1 = ::NodeWithNeighbors.new(1)
     assert(
       ::NodeWithNeighbors.are_equals(
-        g5,
-        clone_graph(g5)
+        g1,
+        clone_graph(g1)
       )
     )
+  end
 
+  def test_default_three
     assert(
       ::NodeWithNeighbors.are_equals(
         nil,

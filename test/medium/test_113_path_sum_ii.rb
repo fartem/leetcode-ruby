@@ -6,9 +6,12 @@ require_relative '../../lib/medium/113_path_sum_ii'
 require 'minitest/autorun'
 
 class PathSumIITest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
-      [[5, 4, 11, 2], [5, 8, 4, 5]],
+      [
+        [5, 4, 11, 2],
+        [5, 8, 4, 5]
+      ],
       path_sum(
         ::TreeNode.new(
           5,
@@ -34,6 +37,9 @@ class PathSumIITest < ::Minitest::Test
         22
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       [],
       path_sum(
@@ -45,6 +51,9 @@ class PathSumIITest < ::Minitest::Test
         5
       )
     )
+  end
+
+  def test_default_three
     assert_empty(
       [],
       path_sum(

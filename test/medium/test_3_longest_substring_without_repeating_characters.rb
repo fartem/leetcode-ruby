@@ -5,9 +5,9 @@ require_relative '../../lib/medium/3_longest_substring_without_repeating_charact
 require 'minitest/autorun'
 
 class LongestSubstringWithoutRepeatingCharactersTest < ::Minitest::Test
-  def test_default
-    assert_equal(3, length_of_longest_substring('abcabcbb'))
-    assert_equal(1, length_of_longest_substring('bbbbb'))
-    assert_equal(3, length_of_longest_substring('pwwkew'))
-  end
+  def test_default_one = assert_equal(3, length_of_longest_substring('abcabcbb'))
+
+  def test_default_two = assert_equal(1, length_of_longest_substring('bbbbb'))
+
+  def test_default_three = assert_equal(3, length_of_longest_substring('pwwkew'))
 end

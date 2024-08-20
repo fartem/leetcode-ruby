@@ -5,8 +5,7 @@ require_relative '../../lib/easy/2535_difference_between_element_sum_and_digit_s
 require 'minitest/autorun'
 
 class DifferenceBetweenElementSumAndDigitSumOfAnArrayTest < ::Minitest::Test
-  def test_default
-    assert_equal(9, difference_of_sum([1, 15, 6, 3]))
-    assert_equal(0, difference_of_sum([1, 2, 3, 4]))
-  end
+  def test_default_one = assert_equal(9, difference_of_sum([1, 15, 6, 3]))
+
+  def test_default_two = assert_equal(0, difference_of_sum([1, 2, 3, 4]))
 end

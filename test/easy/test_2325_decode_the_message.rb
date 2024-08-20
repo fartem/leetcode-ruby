@@ -5,7 +5,7 @@ require_relative '../../lib/easy/2325_decode_the_message'
 require 'minitest/autorun'
 
 class DecodeTheMessageTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       'this is a secret',
       decode_message(
@@ -13,6 +13,9 @@ class DecodeTheMessageTest < ::Minitest::Test
         'vkbs bs t suepuv'
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       'the five boxing wizards jump quickly',
       decode_message(

@@ -5,9 +5,12 @@ require_relative '../../lib/easy/2373_largest_local_values_in_a_matrix'
 require 'minitest/autorun'
 
 class LargestLocalValuesInAMatrixTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
-      [[9, 9], [8, 6]],
+      [
+        [9, 9],
+        [8, 6]
+      ],
       largest_local(
         [
           [9, 9, 8, 1],
@@ -17,8 +20,15 @@ class LargestLocalValuesInAMatrixTest < ::Minitest::Test
         ]
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
-      [[2, 2, 2], [2, 2, 2], [2, 2, 2]],
+      [
+        [2, 2, 2],
+        [2, 2, 2],
+        [2, 2, 2]
+      ],
       largest_local(
         [
           [1, 1, 1, 1, 1],

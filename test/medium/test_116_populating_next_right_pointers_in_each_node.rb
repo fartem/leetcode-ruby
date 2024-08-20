@@ -6,7 +6,7 @@ require_relative '../../lib/medium/116_populating_next_right_pointers_in_each_no
 require 'minitest/autorun'
 
 class PopulatingNextRightPointersInEachNodeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     l3n4 = ::NextTreeNode.new(7)
     l3n3 = ::NextTreeNode.new(6, nil, nil, l3n4)
     l3n2 = ::NextTreeNode.new(5, nil, nil, l3n3)
@@ -39,7 +39,9 @@ class PopulatingNextRightPointersInEachNodeTest < ::Minitest::Test
         )
       )
     )
+  end
 
+  def test_default_two
     assert(
       ::NextTreeNode.are_equals(
         nil,

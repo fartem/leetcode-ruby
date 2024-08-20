@@ -5,7 +5,7 @@ require_relative '../../lib/medium/134_gas_station'
 require 'minitest/autorun'
 
 class GasStationTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       3,
       can_complete_circuit(
@@ -13,6 +13,9 @@ class GasStationTest < ::Minitest::Test
         [3, 4, 5, 1, 2]
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       -1,
       can_complete_circuit(
