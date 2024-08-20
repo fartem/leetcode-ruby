@@ -5,13 +5,16 @@ require_relative '../../lib/easy/561_array_partition'
 require 'minitest/autorun'
 
 class ArrayPartitionTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       4,
       array_pair_sum(
         [1, 4, 3, 2]
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       9,
       array_pair_sum(

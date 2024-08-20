@@ -8,7 +8,7 @@ require_relative '../../lib/easy/589_n_ary_tree_preorder_traversal'
 require 'minitest/autorun'
 
 class NAryTreePreorderTraversalTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       [1, 3, 5, 6, 2, 4],
       preorder(
@@ -28,6 +28,9 @@ class NAryTreePreorderTraversalTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       [1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10],
       preorder(

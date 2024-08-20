@@ -6,7 +6,7 @@ require_relative '../../lib/easy/530_minimum_absolute_difference_in_bst'
 require 'minitest/autorun'
 
 class MinimumAbsoluteDifferenceInBSTTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       1,
       get_minimum_difference(
@@ -21,6 +21,9 @@ class MinimumAbsoluteDifferenceInBSTTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       1,
       get_minimum_difference(

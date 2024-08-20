@@ -6,7 +6,7 @@ require_relative '../../lib/easy/606_construct_string_from_binary_tree'
 require 'minitest/autorun'
 
 class ConstructStringFromBinaryTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       '1(2(4))(3)',
       tree2str(
@@ -21,6 +21,9 @@ class ConstructStringFromBinaryTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       '1(2()(4))(3)',
       tree2str(

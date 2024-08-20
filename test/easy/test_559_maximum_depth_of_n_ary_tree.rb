@@ -6,7 +6,7 @@ require_relative '../../lib/easy/559_maximum_depth_of_n_ary_tree'
 require 'minitest/autorun'
 
 class MaximumDepthOfNAryTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       3,
       max_depth_of_n_ary_tree(
@@ -26,6 +26,9 @@ class MaximumDepthOfNAryTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       5,
       max_depth_of_n_ary_tree(
