@@ -9,7 +9,12 @@ class AverageSalaryExcludingTheMinimumAndMaximumSalaryTest < ::Minitest::Test
     assert_equal(
       2500.00000,
       average(
-        [4000, 3000, 1000, 2000]
+        [
+          4000,
+          3000,
+          1000,
+          2000
+        ]
       )
     )
   end
@@ -18,7 +23,11 @@ class AverageSalaryExcludingTheMinimumAndMaximumSalaryTest < ::Minitest::Test
     assert_equal(
       2000.00000,
       average(
-        [1000, 2000, 3000]
+        [
+          1000,
+          2000,
+          3000
+        ]
       )
     )
   end

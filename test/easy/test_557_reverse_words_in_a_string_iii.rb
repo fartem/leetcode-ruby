@@ -8,14 +8,18 @@ class ReverseWordsInAStringIIITest < ::Minitest::Test
   def test_default_one
     assert_equal(
       "s'teL ekat edoCteeL tsetnoc",
-      reverse_words("Let's take LeetCode contest")
+      reverse_words(
+        "Let's take LeetCode contest"
+      )
     )
   end
 
   def test_default_two
     assert_equal(
       'doG gniD',
-      reverse_words('God Ding')
+      reverse_words(
+        'God Ding'
+      )
     )
   end
 end

@@ -7,7 +7,11 @@ require 'minitest/autorun'
 class MinimumAbsoluteDifferenceTest < ::Minitest::Test
   def test_default_one
     assert_equal(
-      [[1, 2], [2, 3], [3, 4]],
+      [
+        [1, 2],
+        [2, 3],
+        [3, 4]
+      ],
       minimum_abs_difference(
         [4, 2, 1, 3]
       )
@@ -16,7 +20,9 @@ class MinimumAbsoluteDifferenceTest < ::Minitest::Test
 
   def test_default_two
     assert_equal(
-      [[1, 3]],
+      [
+        [1, 3]
+      ],
       minimum_abs_difference(
         [1, 3, 6, 10, 15]
       )
@@ -25,7 +31,11 @@ class MinimumAbsoluteDifferenceTest < ::Minitest::Test
 
   def test_default_three
     assert_equal(
-      [[-14, -10], [19, 23], [23, 27]],
+      [
+        [-14, -10],
+        [19, 23],
+        [23, 27]
+      ],
       minimum_abs_difference(
         [3, 8, -10, 23, 19, -4, -14, 27]
       )

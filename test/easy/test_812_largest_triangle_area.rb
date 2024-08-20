@@ -9,7 +9,13 @@ class LargestTriangleAreaTest < ::Minitest::Test
     assert_equal(
       2.00000,
       largest_triangle_area(
-        [[0, 0], [0, 1], [1, 0], [0, 2], [2, 0]]
+        [
+          [0, 0],
+          [0, 1],
+          [1, 0],
+          [0, 2],
+          [2, 0]
+        ]
       )
     )
   end
@@ -18,7 +24,11 @@ class LargestTriangleAreaTest < ::Minitest::Test
     assert_equal(
       0.50000,
       largest_triangle_area(
-        [[1, 0], [0, 0], [0, 1]]
+        [
+          [1, 0],
+          [0, 0],
+          [0, 1]
+        ]
       )
     )
   end

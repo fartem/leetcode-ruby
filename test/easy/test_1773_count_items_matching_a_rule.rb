@@ -9,7 +9,11 @@ class CountItemsMatchingARuleTest < ::Minitest::Test
     assert_equal(
       1,
       count_matches(
-        [%w[phone blue pixel], %w[computer silver lenovo], %w[phone gold iphone]],
+        [
+          %w[phone blue pixel],
+          %w[computer silver lenovo],
+          %w[phone gold iphone]
+        ],
         'color',
         'silver'
       )
@@ -20,7 +24,11 @@ class CountItemsMatchingARuleTest < ::Minitest::Test
     assert_equal(
       2,
       count_matches(
-        [%w[phone blue pixel], %w[computer silver phone], %w[phone gold iphone]],
+        [
+          %w[phone blue pixel],
+          %w[computer silver phone],
+          %w[phone gold iphone]
+        ],
         'type',
         'phone'
       )
@@ -31,7 +39,11 @@ class CountItemsMatchingARuleTest < ::Minitest::Test
     assert_equal(
       1,
       count_matches(
-        [%w[phone blue pixel], %w[computer silver phone], %w[phone gold iphone]],
+        [
+          %w[phone blue pixel],
+          %w[computer silver phone],
+          %w[phone gold iphone]
+        ],
         'name',
         'phone'
       )

@@ -7,9 +7,14 @@ require 'minitest/autorun'
 class ReshapeTheMatrixTest < ::Minitest::Test
   def test_default_one
     assert_equal(
-      [[1, 2, 3, 4]],
+      [
+        [1, 2, 3, 4]
+      ],
       matrix_reshape(
-        [[1, 2], [3, 4]],
+        [
+          [1, 2],
+          [3, 4]
+        ],
         1,
         4
       )
@@ -18,9 +23,15 @@ class ReshapeTheMatrixTest < ::Minitest::Test
 
   def test_default_two
     assert_equal(
-      [[1, 2], [3, 4]],
+      [
+        [1, 2],
+        [3, 4]
+      ],
       matrix_reshape(
-        [[1, 2], [3, 4]],
+        [
+          [1, 2],
+          [3, 4]
+        ],
         2,
         4
       )

@@ -15,5 +15,13 @@ class MaximumAverageSubarrayITest < ::Minitest::Test
     )
   end
 
-  def test_default_two = assert_equal(5.00000, find_max_average([5], 1))
+  def test_default_two
+    assert_equal(
+      5.00000,
+      find_max_average(
+        [5],
+        1
+      )
+    )
+  end
 end

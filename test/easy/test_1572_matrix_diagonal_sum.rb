@@ -32,5 +32,12 @@ class MatrixDiagonalSumTest < ::Minitest::Test
     )
   end
 
-  def test_default_three = assert_equal(5, diagonal_sum([[5]]))
+  def test_default_three
+    assert_equal(
+      5,
+      diagonal_sum(
+        [[5]]
+      )
+    )
+  end
 end

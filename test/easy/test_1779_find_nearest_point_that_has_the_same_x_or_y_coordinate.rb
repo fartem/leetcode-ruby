@@ -22,7 +22,29 @@ class FindNearestPointThatHasTheSameXOrYCoordinateTest < ::Minitest::Test
     )
   end
 
-  def test_default_two = assert_equal(0, nearest_valid_point(3, 4, [[3, 4]]))
+  def test_default_two
+    assert_equal(
+      0,
+      nearest_valid_point(
+        3,
+        4,
+        [
+          [3, 4]
+        ]
+      )
+    )
+  end
 
-  def test_default_three = assert_equal(-1, nearest_valid_point(3, 4, [[2, 3]]))
+  def test_default_three
+    assert_equal(
+      -1,
+      nearest_valid_point(
+        3,
+        4,
+        [
+          [2, 3]
+        ]
+      )
+    )
+  end
 end

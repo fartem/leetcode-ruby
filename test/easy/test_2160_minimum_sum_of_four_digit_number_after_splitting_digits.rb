@@ -5,8 +5,7 @@ require_relative '../../lib/easy/2160_minimum_sum_of_four_digit_number_after_spl
 require 'minitest/autorun'
 
 class MinimumSumOfFourDigitNumberAfterSplittingDigitsTest < ::Minitest::Test
-  def test_default
-    assert_equal(52, minimum_sum(2932))
-    assert_equal(13, minimum_sum(4009))
-  end
+  def test_default_one = assert_equal(52, minimum_sum(2932))
+
+  def test_default_two = assert_equal(13, minimum_sum(4009))
 end

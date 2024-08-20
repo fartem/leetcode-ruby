@@ -5,8 +5,21 @@ require_relative '../../lib/easy/1961_check_if_string_is_a_prefix_of_array'
 require 'minitest/autorun'
 
 class CheckIfStringIsAPrefixOfArrayTest < ::Minitest::Test
-  def test_default
-    assert(is_prefix_string('iloveleetcode', %w[i love leetcode apples]))
-    assert(!is_prefix_string('iloveleetcode', %w[apples i love leetcode]))
+  def test_default_one
+    assert(
+      is_prefix_string(
+        'iloveleetcode',
+        %w[i love leetcode apples]
+      )
+    )
+  end
+
+  def test_default_two
+    assert(
+      !is_prefix_string(
+        'iloveleetcode',
+        %w[apples i love leetcode]
+      )
+    )
   end
 end

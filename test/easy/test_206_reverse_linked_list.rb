@@ -24,9 +24,13 @@ class ReverseLinkedListTest < ::Minitest::Test
   def test_default_two
     assert(
       ::ListNode.are_equals(
-        ::ListNode.from_array([2, 1]),
+        ::ListNode.from_array(
+          [2, 1]
+        ),
         reverse_list(
-          ::ListNode.from_array([1, 2])
+          ::ListNode.from_array(
+            [1, 2]
+          )
         )
       )
     )

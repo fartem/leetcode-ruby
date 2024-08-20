@@ -5,9 +5,9 @@ require_relative '../../lib/easy/2068_check_whether_two_strings_are_almost_equiv
 require 'minitest/autorun'
 
 class CheckWhetherTwoStringsAreAlmostEquivalentTest < ::Minitest::Test
-  def test_default
-    assert(!check_almost_equivalent('aaaa', 'bccb'))
-    assert(check_almost_equivalent('abcdeef', 'abaaacc'))
-    assert(check_almost_equivalent('cccddabba', 'babababab'))
-  end
+  def test_default_one = assert(!check_almost_equivalent('aaaa', 'bccb'))
+
+  def test_default_two = assert(check_almost_equivalent('abcdeef', 'abaaacc'))
+
+  def test_default_three = assert(check_almost_equivalent('cccddabba', 'babababab'))
 end
