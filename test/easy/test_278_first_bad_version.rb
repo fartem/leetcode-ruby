@@ -5,10 +5,12 @@ require_relative '../../lib/easy/278_first_bad_version'
 require 'minitest/autorun'
 
 class FirstBadVersionTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     $b_version = 4
     assert_equal(4, first_bad_version(5))
+  end
 
+  def test_default_two
     $b_version = 1
     assert_equal(1, first_bad_version(1))
   end

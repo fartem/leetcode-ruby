@@ -5,7 +5,7 @@ require_relative '../../lib/easy/455_assign_cookies'
 require 'minitest/autorun'
 
 class AssignCookiesTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       1,
       find_content_children(
@@ -13,6 +13,9 @@ class AssignCookiesTest < ::Minitest::Test
         [1, 1]
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       2,
       find_content_children(

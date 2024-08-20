@@ -6,7 +6,7 @@ require_relative '../../lib/easy/404_sum_of_left_leaves'
 require 'minitest/autorun'
 
 class SumOfLeftLeavesTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       24,
       sum_of_left_leaves(
@@ -21,6 +21,9 @@ class SumOfLeftLeavesTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       0,
       sum_of_left_leaves(
@@ -29,7 +32,7 @@ class SumOfLeftLeavesTest < ::Minitest::Test
     )
   end
 
-  def test_additional
+  def test_additional_one
     assert_equal(
       4,
       sum_of_left_leaves(

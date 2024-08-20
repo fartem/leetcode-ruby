@@ -5,9 +5,9 @@ require_relative '../../lib/easy/292_nim_game'
 require 'minitest/autorun'
 
 class NimGameTest < ::Minitest::Test
-  def test_default
-    assert(!can_win_nim(4))
-    assert(can_win_nim(1))
-    assert(can_win_nim(2))
-  end
+  def test_default_one = assert(!can_win_nim(4))
+
+  def test_default_two = assert(can_win_nim(1))
+
+  def test_default_three = assert(can_win_nim(2))
 end
