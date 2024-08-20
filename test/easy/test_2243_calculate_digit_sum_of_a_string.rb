@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# rubocop:disable Style/FrozenStringLiteralComment, Style/DisableCopsWithinSourceCodeDirective
 
 require_relative '../test_helper'
 require_relative '../../lib/easy/2243_calculate_digit_sum_of_a_string'
@@ -9,3 +9,5 @@ class CalculateDigitSumOfAStringTest < ::Minitest::Test
 
   def test_default_two = assert_equal('000', digit_sum('00000000', 3))
 end
+
+# rubocop:enable Style/FrozenStringLiteralComment, Style/DisableCopsWithinSourceCodeDirective
