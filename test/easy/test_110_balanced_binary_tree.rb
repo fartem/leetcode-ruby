@@ -6,7 +6,7 @@ require_relative '../../lib/easy/110_balanced_binary_tree'
 require 'minitest/autorun'
 
 class BalancedBinaryTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       is_balanced(
         ::TreeNode.new(
@@ -20,6 +20,9 @@ class BalancedBinaryTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert(
       !is_balanced(
         ::TreeNode.new(
@@ -37,6 +40,7 @@ class BalancedBinaryTreeTest < ::Minitest::Test
         )
       )
     )
-    assert(is_balanced(nil))
   end
+
+  def test_default_three = assert(is_balanced(nil))
 end

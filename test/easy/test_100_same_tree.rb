@@ -6,7 +6,7 @@ require_relative '../../lib/easy/100_same_tree'
 require 'minitest/autorun'
 
 class SameTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       is_same_tree(
         ::TreeNode.new(
@@ -21,6 +21,9 @@ class SameTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert(
       !is_same_tree(
         ::TreeNode.new(
@@ -32,6 +35,9 @@ class SameTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_three
     assert(
       !is_same_tree(
         ::TreeNode.new(

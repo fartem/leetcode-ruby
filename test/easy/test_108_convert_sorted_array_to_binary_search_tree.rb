@@ -6,7 +6,7 @@ require_relative '../../lib/easy/108_convert_sorted_array_to_binary_search_tree'
 require 'minitest/autorun'
 
 class ConvertSortedArrayToBinarySearchTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       ::TreeNode.are_equals(
         ::TreeNode.new(
@@ -27,6 +27,9 @@ class ConvertSortedArrayToBinarySearchTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert(
       ::TreeNode.are_equals(
         ::TreeNode.new(
@@ -34,7 +37,9 @@ class ConvertSortedArrayToBinarySearchTreeTest < ::Minitest::Test
           nil,
           ::TreeNode.new(3)
         ),
-        sorted_array_to_bst([1, 3])
+        sorted_array_to_bst(
+          [1, 3]
+        )
       )
     )
   end

@@ -6,17 +6,25 @@ require_relative '../../lib/easy/203_remove_linked_list_elements'
 require 'minitest/autorun'
 
 class RemoveLinkedListElementsTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       ::ListNode.are_equals(
-        ::ListNode.from_array([1, 2, 3, 4, 5]),
+        ::ListNode.from_array(
+          [1, 2, 3, 4, 5]
+        ),
         remove_elements(
-          ::ListNode.from_array([1, 2, 6, 3, 4, 5, 6]),
+          ::ListNode.from_array(
+            [1, 2, 6, 3, 4, 5, 6]
+          ),
           6
         )
       )
     )
-    assert_nil(remove_elements(nil, 1))
+  end
+
+  def test_default_two = assert_nil(remove_elements(nil, 1))
+
+  def test_default_three
     assert_nil(
       remove_elements(
         ::ListNode.from_array(

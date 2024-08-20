@@ -6,7 +6,7 @@ require_relative '../../lib/easy/226_invert_binary_tree'
 require 'minitest/autorun'
 
 class InvertBinaryTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       ::TreeNode.are_equals(
         ::TreeNode.new(
@@ -39,6 +39,9 @@ class InvertBinaryTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert(
       ::TreeNode.are_equals(
         ::TreeNode.new(
@@ -55,6 +58,7 @@ class InvertBinaryTreeTest < ::Minitest::Test
         )
       )
     )
-    assert_nil(invert_tree(nil))
   end
+
+  def test_default_three = assert_nil(invert_tree(nil))
 end

@@ -6,7 +6,7 @@ require_relative '../../lib/easy/111_minimum_depth_of_binary_tree'
 require 'minitest/autorun'
 
 class MinimumDepthOfBinaryTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       2,
       min_depth(
@@ -21,6 +21,9 @@ class MinimumDepthOfBinaryTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       5,
       min_depth(

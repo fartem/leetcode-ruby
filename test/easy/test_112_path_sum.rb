@@ -6,7 +6,7 @@ require_relative '../../lib/easy/112_path_sum'
 require 'minitest/autorun'
 
 class PathSumTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       has_path_sum(
         ::TreeNode.new(
@@ -32,6 +32,9 @@ class PathSumTest < ::Minitest::Test
         22
       )
     )
+  end
+
+  def test_default_two
     assert(
       !has_path_sum(
         ::TreeNode.new(
@@ -42,6 +45,7 @@ class PathSumTest < ::Minitest::Test
         5
       )
     )
-    assert(!has_path_sum(nil, 0))
   end
+
+  def test_default_three = assert(!has_path_sum(nil, 0))
 end

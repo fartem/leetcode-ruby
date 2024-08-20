@@ -6,7 +6,7 @@ require_relative '../../lib/easy/144_binary_tree_preorder_traversal'
 require 'minitest/autorun'
 
 class BinaryTreePreorderTraversalTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       [1, 2, 3],
       preorder_traversal(
@@ -20,10 +20,16 @@ class BinaryTreePreorderTraversalTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       [],
       preorder_traversal(nil)
     )
+  end
+
+  def test_default_three
     assert_equal(
       [1],
       preorder_traversal(

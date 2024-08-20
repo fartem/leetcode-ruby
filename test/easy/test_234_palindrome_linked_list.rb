@@ -6,8 +6,7 @@ require_relative '../../lib/easy/234_palindrome_linked_list'
 require 'minitest/autorun'
 
 class PalindromeLinkedListTest < ::Minitest::Test
-  def test_default
-    assert(is_palindrome_ll(::ListNode.from_array([1, 2, 2, 1])))
-    assert(!is_palindrome_ll(::ListNode.from_array([1, 2])))
-  end
+  def test_default_one = assert(is_palindrome_ll(::ListNode.from_array([1, 2, 2, 1])))
+
+  def test_default_two = assert(!is_palindrome_ll(::ListNode.from_array([1, 2])))
 end

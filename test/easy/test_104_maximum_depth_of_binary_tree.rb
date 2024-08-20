@@ -6,7 +6,7 @@ require_relative '../../lib/easy/104_maximum_depth_of_binary_tree'
 require 'minitest/autorun'
 
 class MaximumDepthOfBinaryTreeTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       3,
       max_depth(
@@ -21,6 +21,9 @@ class MaximumDepthOfBinaryTreeTest < ::Minitest::Test
         )
       )
     )
+  end
+
+  def test_default_two
     assert_equal(
       2,
       max_depth(

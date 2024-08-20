@@ -6,7 +6,7 @@ require_relative '../../lib/easy/160_intersection_of_two_linked_lists'
 require 'minitest/autorun'
 
 class IntersectionOfTwoLinkedListsTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     intersection = ::ListNode.from_array([8, 4, 5])
     head_a = ::ListNode.from_array([4, 1])
     head_a.next = intersection
@@ -19,7 +19,9 @@ class IntersectionOfTwoLinkedListsTest < ::Minitest::Test
         head_b
       )
     )
+  end
 
+  def test_default_two
     intersection = ::ListNode.from_array([2, 4])
     head_a = ::ListNode.from_array([1, 9, 1])
     head_a.next = intersection
@@ -32,7 +34,9 @@ class IntersectionOfTwoLinkedListsTest < ::Minitest::Test
         head_b
       )
     )
+  end
 
+  def test_default_three
     assert_nil(
       get_intersection_node(
         ::ListNode.from_array([2, 6, 4]),
