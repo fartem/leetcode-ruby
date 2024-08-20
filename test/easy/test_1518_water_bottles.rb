@@ -5,8 +5,7 @@ require_relative '../../lib/easy/1518_water_bottles'
 require 'minitest/autorun'
 
 class WaterBottlesTest < ::Minitest::Test
-  def test_default
-    assert_equal(13, num_water_bottles(9, 3))
-    assert_equal(19, num_water_bottles(15, 4))
-  end
+  def test_default_one = assert_equal(13, num_water_bottles(9, 3))
+
+  def test_default_two = assert_equal(19, num_water_bottles(15, 4))
 end

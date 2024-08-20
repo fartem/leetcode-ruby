@@ -5,8 +5,29 @@ require_relative '../../lib/easy/1582_special_positions_in_a_binary_matrix'
 require 'minitest/autorun'
 
 class SpecialPositionsInABinaryMatrixTest < ::Minitest::Test
-  def test_default
-    assert_equal(1, num_special([[1, 0, 0], [0, 0, 1], [1, 0, 0]]))
-    assert_equal(3, num_special([[1, 0, 0], [0, 1, 0], [0, 0, 1]]))
+  def test_default_one
+    assert_equal(
+      1,
+      num_special(
+        [
+          [1, 0, 0],
+          [0, 0, 1],
+          [1, 0, 0]
+        ]
+      )
+    )
+  end
+
+  def test_default_two
+    assert_equal(
+      3,
+      num_special(
+        [
+          [1, 0, 0],
+          [0, 1, 0],
+          [0, 0, 1]
+        ]
+      )
+    )
   end
 end
