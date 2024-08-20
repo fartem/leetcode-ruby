@@ -14,5 +14,12 @@ class ElementAppearingMoreThan25InSortedArrayTest < ::Minitest::Test
     )
   end
 
-  def test_default_two = assert_equal(1, find_special_integer([1, 1]))
+  def test_default_two
+    assert_equal(
+      1,
+      find_special_integer(
+        [1, 1]
+      )
+    )
+  end
 end

@@ -5,7 +5,7 @@ require_relative '../../lib/easy/1351_count_negative_numbers_in_a_sorted_matrix'
 require 'minitest/autorun'
 
 class CountNegativeNumbersInASortedMatrixTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert_equal(
       8,
       count_negatives(
@@ -17,6 +17,17 @@ class CountNegativeNumbersInASortedMatrixTest < ::Minitest::Test
         ]
       )
     )
-    assert_equal(0, count_negatives([[3, 2], [1, 0]]))
+  end
+
+  def test_default_two
+    assert_equal(
+      0,
+      count_negatives(
+        [
+          [3, 2],
+          [1, 0]
+        ]
+      )
+    )
   end
 end

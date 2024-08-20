@@ -14,5 +14,12 @@ class ReplaceElementsWithGreatestElementOnRightSideTest < ::Minitest::Test
     )
   end
 
-  def test_default_two = assert_equal([-1], replace_elements([400]))
+  def test_default_two
+    assert_equal(
+      [-1],
+      replace_elements(
+        [400]
+      )
+    )
+  end
 end

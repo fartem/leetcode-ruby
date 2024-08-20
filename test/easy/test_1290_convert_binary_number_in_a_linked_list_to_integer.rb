@@ -21,7 +21,9 @@ class ConvertBinaryNumberInALinkedListToIntegerTest < ::Minitest::Test
     assert_equal(
       0,
       get_decimal_value(
-        ::ListNode.from_array([0])
+        ::ListNode.from_array(
+          [0]
+        )
       )
     )
   end
