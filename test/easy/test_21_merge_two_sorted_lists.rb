@@ -5,7 +5,7 @@ require_relative '../../lib/easy/21_merge_two_sorted_lists'
 require 'minitest/autorun'
 
 class MergeTwoSortedListsTest < ::Minitest::Test
-  def test_default
+  def test_default_one
     assert(
       ::ListNode.are_equals(
         ::ListNode.from_array(
