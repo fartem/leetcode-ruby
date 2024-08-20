@@ -2,6 +2,7 @@
 
 require_relative '../common/list_node_with_random'
 
+# https://leetcode.com/problems/copy-list-with-random-pointer/
 # @param {Node} node
 # @return {Node}
 def copy_random_list(head)
