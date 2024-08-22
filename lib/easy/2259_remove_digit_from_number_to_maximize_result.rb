@@ -1,4 +1,4 @@
-# rubocop:disable Style/FrozenStringLiteralComment, Style/DisableCopsWithinSourceCodeDirective
+# rubocop:disable Style/FrozenStringLiteralComment
 
 # https://leetcode.com/problems/remove-digit-from-number-to-maximize-result/
 # @param {String} number
@@ -18,4 +18,4 @@ def remove_digit(number, digit)
   result
 end
 
-# rubocop:enable Style/FrozenStringLiteralComment, Style/DisableCopsWithinSourceCodeDirective
+# rubocop:enable Style/FrozenStringLiteralComment

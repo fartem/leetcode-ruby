@@ -5,7 +5,7 @@ require_relative '../../lib/easy/1108_defanging_an_ip_address'
 require 'minitest/autorun'
 
 class DefangingAnIPAddressTest < ::Minitest::Test
-  # rubocop:disable Style/DisableCopsWithinSourceCodeDirective, Style/IpAddresses
+  # rubocop:disable Style/IpAddresses
   def test_default_one
     assert_equal(
       '1[.]1[.]1[.]1',
@@ -19,5 +19,5 @@ class DefangingAnIPAddressTest < ::Minitest::Test
       defang_i_paddr('255.100.50.0')
     )
   end
-  # rubocop:enable Style/DisableCopsWithinSourceCodeDirective, Style/IpAddresses
+  # rubocop:enable Style/IpAddresses
 end

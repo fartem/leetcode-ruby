@@ -1,4 +1,4 @@
-# rubocop:disable Style/FrozenStringLiteralComment, Style/DisableCopsWithinSourceCodeDirective
+# rubocop:disable Style/FrozenStringLiteralComment
 
 require_relative '../test_helper'
 require_relative '../../lib/easy/2259_remove_digit_from_number_to_maximize_result'
@@ -12,4 +12,4 @@ class RemoveDigitFromNumberToMaximizeResultTest < ::Minitest::Test
   def test_default_three = assert_equal('51', remove_digit('551', '5'))
 end
 
-# rubocop:enable Style/FrozenStringLiteralComment, Style/DisableCopsWithinSourceCodeDirective
+# rubocop:enable Style/FrozenStringLiteralComment

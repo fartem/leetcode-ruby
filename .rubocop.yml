@@ -18,6 +18,8 @@ Style/MethodCalledOnDoEndBlock:
   Enabled: false
 Style/MultilineMethodSignature:
   Enabled: false
+Style/DisableCopsWithinSourceCodeDirective:
+  Enabled: false
 
 Bundler/GemComment:
   Enabled: false

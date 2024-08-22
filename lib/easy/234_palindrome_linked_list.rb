@@ -23,6 +23,8 @@ def is_palindrome_ll(head)
   true
 end
 
+private
+
 # @param {ListNode} node
 # @return {ListNode}
 def reverse(node)

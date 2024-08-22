@@ -1,4 +1,4 @@
-# rubocop:disable Style/FrozenStringLiteralComment, Style/DisableCopsWithinSourceCodeDirective
+# rubocop:disable Style/FrozenStringLiteralComment
 
 # https://leetcode.com/problems/calculate-digit-sum-of-a-string/
 # @param {String} s
@@ -21,4 +21,4 @@ def digit_sum(s, k)
   s
 end
 
-# rubocop:enable Style/FrozenStringLiteralComment, Style/DisableCopsWithinSourceCodeDirective
+# rubocop:enable Style/FrozenStringLiteralComment
