@@ -5,7 +5,7 @@ require_relative '../../lib/easy/1619_mean_of_array_after_removing_some_elements
 require 'minitest/autorun'
 
 class MeanOfArrayAfterMovingSomeElementsTest < ::Minitest::Test
-  # rubocop:disable Style/DisableCopsWithinSourceCodeDirective, Layout/MultilineArrayLineBreaks
+  # rubocop:disable Layout/MultilineArrayLineBreaks
   def test_default_one
     assert_equal(
       2.00000,
@@ -44,5 +44,5 @@ class MeanOfArrayAfterMovingSomeElementsTest < ::Minitest::Test
     )
   end
 
-  # rubocop:enable Style/DisableCopsWithinSourceCodeDirective, Layout/MultilineArrayLineBreaks
+  # rubocop:enable Layout/MultilineArrayLineBreaks
 end
