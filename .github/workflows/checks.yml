@@ -19,7 +19,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Run tests checker
+      - name: Run TestsChecker
         run: ruby -r "./ci/tests_checker.rb" -e "::CI::TestsChecker.new.process"
 
   links_checker:
@@ -30,7 +30,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Run links checker
+      - name: Run LinksChecker
         run: ruby -r "./ci/links_checker.rb" -e "::CI::LinksChecker.new.process"
 
   version_checker:
@@ -43,10 +43,10 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Run version checker
+      - name: Run VersionChecker
         run: ruby -r "./ci/version_checker.rb" -e "::CI::VersionChecker.new.process"
 
-  readme_checker:
+  readme_duplicates_checker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -54,8 +54,19 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Run README checker
-        run: ruby -r "./ci/readme_checker.rb" -e "::CI::ReadmeChecker.new.process"
+      - name: Run ReadmeDuplicatesChecker
+        run: ruby -r "./ci/readme_duplicates_checker.rb" -e "::CI::ReadmeDuplicatesChecker.new.process"
+
+  readme_paths_checker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+      - name: Run ReadmePathsChecker
+        run: ruby -r "./ci/readme_paths_checker.rb" -e "::CI::ReadmePathsChecker.new.process"
 
   duplicate_links_checker:
     runs-on: ubuntu-latest
@@ -65,7 +76,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Run duplicate links checker
+      - name: Run DuplicateLinksChecker
         run: ruby -r "./ci/duplicate_links_checker.rb" -e "::CI::DuplicateLinksChecker.new.process"
 
   rubocop:
