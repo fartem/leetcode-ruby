@@ -5,7 +5,7 @@ require_relative '../../lib/common/linked_list'
 require_relative '../../lib/medium/147_insertion_sort_list'
 require 'minitest/autorun'
 
-class LRUCacheTest < ::Minitest::Test
+class InsertionSortListTest < ::Minitest::Test
   def test_default_one
     assert(
       ::ListNode.are_equals(
