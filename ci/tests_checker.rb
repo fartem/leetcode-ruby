@@ -9,6 +9,7 @@ module CI
     # @return {Void}
     def process
       check('easy')
+      check('medium')
     end
 
     private
