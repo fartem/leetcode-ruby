@@ -4,11 +4,12 @@ require_relative './ci_job'
 
 module CI
   # CI job that checks links in README.
-  class ReadmeChecker < ::CI::CIJob
-    # Process ReadmeChecker.
+  class ReadmeDuplicatesChecker < ::CI::CIJob
+    # Process ReadmeDuplicatesChecker.
     # @return {Void}
     def process
       check('easy')
+      check('medium')
     end
 
     private
@@ -23,7 +24,12 @@ module CI
       solutions.each do |file_name|
         links_count = readme.count { |line| line.include?(file_name) }
 
-        end_with_error(-> { puts("ReadmeChecker ends with an error from #{file_name}.") }) if links_count != 1
+        next if links_count == 1
+
+        error =
+          "ReadmeDuplicatesChecker ends with an error from #{file_name}."
+
+        end_with_error(-> { puts(error) })
       end
     end
   end

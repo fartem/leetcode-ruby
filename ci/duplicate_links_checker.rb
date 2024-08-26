@@ -30,6 +30,7 @@ module CI
       return if links.size == links.uniq.size
 
       error = "DuplicateLinksChecker ends with an error from. You have #{links.size - links.uniq.size} duplicates."
+
       end_with_error(-> { puts(error) })
     end
   end
