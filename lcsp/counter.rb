@@ -22,6 +22,8 @@ module LCSC
 
     private
 
-    def find_for_dir(dir) = ::Find.find(dir).count { |file| ::File.file?(file) }
+    def find_for_dir(dir)
+      ::Find.find(dir).count { |file| ::File.file?(file) }
+    end
   end
 end
