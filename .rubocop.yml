@@ -41,6 +41,8 @@ Naming/PredicateName:
   Enabled: false
 Naming/MethodParameterName:
   Enabled: false
+Naming/AccessorMethodName:
+  Enabled: false
 
 Lint/UnreachableLoop:
   Enabled: false
