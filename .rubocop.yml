@@ -20,6 +20,8 @@ Style/MultilineMethodSignature:
   Enabled: false
 Style/DisableCopsWithinSourceCodeDirective:
   Enabled: false
+Style/IpAddresses:
+  Enabled: false
 
 Bundler/GemComment:
   Enabled: false
