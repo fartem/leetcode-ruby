@@ -52,3 +52,5 @@ Lint/NumberConversion:
   Enabled: false
 Lint/DuplicateBranch:
   Enabled: false
+Lint/UselessSetterCall:
+  Enabled: false
