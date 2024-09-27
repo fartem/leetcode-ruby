@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/minimum-size-subarray-sum/
 # @param {Integer} target
 # @param {Integer[]} nums
 # @return {Integer}
