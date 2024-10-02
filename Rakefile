@@ -2,7 +2,7 @@
 
 require 'rake/clean'
 
-task default: %i[clean rubocop test]
+task default: %i[clean rubocop test ci]
 
 desc 'Run RuboCop'
 require 'rubocop/rake_task'
