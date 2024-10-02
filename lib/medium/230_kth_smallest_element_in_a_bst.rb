@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 # @param {TreeNode} root
 # @param {Integer} k
 # @return {Integer}
