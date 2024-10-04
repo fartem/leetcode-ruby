@@ -25,4 +25,12 @@ class TreeNode
     right_eq = are_equals(curr.right, other.right)
     curr_eq && left_eq && right_eq
   end
+
+  # @param {TreeNode} other
+  # @return {Boolean}
+  def ==(other)
+    return false unless other
+
+    val == other.val
+  end
 end
