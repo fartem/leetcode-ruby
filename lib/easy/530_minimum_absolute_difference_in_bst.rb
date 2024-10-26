@@ -6,7 +6,7 @@
 def get_minimum_difference(root)
   nums = []
   fill_nums(root, nums)
-  result = 1_000_000_000
+  result = ::Float::INFINITY
   (1...nums.length).each do |i|
     diff = nums[i] - nums[i - 1]
     result = diff if diff < result

@@ -6,7 +6,7 @@
 # @param {Integer} start_index
 # @return {Integer}
 def closet_target(words, target, start_index)
-  max = 1_000_000_000_000_000_000
+  max = ::Float::INFINITY
   result = max
 
   words.each_with_index do |word, i|

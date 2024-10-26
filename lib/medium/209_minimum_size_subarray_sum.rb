@@ -5,7 +5,7 @@
 # @param {Integer[]} nums
 # @return {Integer}
 def min_sub_array_len(target, nums)
-  max = 1_000_000_000_000_000
+  max = ::Float::INFINITY
   result = max
   l = 0
   sum = 0

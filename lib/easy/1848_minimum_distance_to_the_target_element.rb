@@ -6,7 +6,7 @@
 # @param {Integer} start
 # @return {Integer}
 def get_min_distance(nums, target, start)
-  result = 1_000_000_000_000
+  result = ::Float::INFINITY
   (0...nums.length).each do |i|
     num = nums[i]
 
