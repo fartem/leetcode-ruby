@@ -17,7 +17,7 @@ def largest_sum_after_k_negations(nums, k)
     i += 1
   end
 
-  min = 1_000_000_000_000
+  min = ::Float::INFINITY
   sum = 0
   nums.each do |n|
     sum += n

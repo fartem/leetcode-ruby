@@ -15,7 +15,7 @@ def most_frequent_even(nums)
 
   return -1 if max.zero?
 
-  result = 1_000_000_000_000_000
+  result = ::Float::INFINITY
   map.each { |key, value| result = [result, key].min if value == max }
 
   result

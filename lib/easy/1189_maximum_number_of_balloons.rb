@@ -7,10 +7,11 @@ def max_number_of_balloons(text)
   count = ::Array.new(128, 0)
   text.each_byte { |b| count[b] += 1 }
 
-  result = 1_000_000_000_000
+  result = ::Float::INFINITY
   (0...count.length).each do |i|
     c = i.chr
-    value = 1_000_000_000_000
+    value = ::Float::INFINITY
+
     case c
     when 'a', 'b', 'n'
       value = count[i]

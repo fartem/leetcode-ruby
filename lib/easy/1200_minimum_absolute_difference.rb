@@ -5,7 +5,7 @@
 # @return {Integer[][]}
 def minimum_abs_difference(arr)
   arr.sort!
-  diff = 1_000_000_000_000
+  diff = ::Float::INFINITY
   (0...(arr.length - 1)).each do |i|
     abs = (arr[i] - arr[i + 1]).abs
     diff = abs if diff > abs

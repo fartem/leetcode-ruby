@@ -7,7 +7,7 @@
 def find_restaurant(list1, list2)
   list1_map = {}
   list1.each_with_index { |val, index| list1_map[val] = index }
-  min = 1_000_000
+  min = ::Float::INFINITY
   result = []
   list2.each_with_index do |val, index|
     next unless list1_map.include?(val)

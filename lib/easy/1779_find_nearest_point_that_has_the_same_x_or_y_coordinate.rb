@@ -7,7 +7,7 @@
 # @return {Integer}
 def nearest_valid_point(x, y, points)
   result = -1
-  distance = 1_000_000_000_000_000
+  distance = ::Float::INFINITY
   (0...points.length).each do |i|
     point = points[i]
     p_x = point.first

@@ -11,7 +11,7 @@ def rearrange_characters(s, target)
   t_count = ::Array.new(26, 0)
   target.each_byte { |b| t_count[b - 97] += 1 }
 
-  result = 1_000_000_000_000_000
+  result = ::Float::INFINITY
   (0...t_count.length).each do |i|
     next if t_count[i].zero?
 
