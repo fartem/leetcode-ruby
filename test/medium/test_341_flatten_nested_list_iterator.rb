@@ -34,8 +34,6 @@ class FlattenNestedListIteratorTest < ::Minitest::Test
   end
 
   def test_default_two
-    # [1,[4,[6]]]
-
     nested_iterator = ::NestedIterator.new(
       [
         ::NestedInteger.new(1),
