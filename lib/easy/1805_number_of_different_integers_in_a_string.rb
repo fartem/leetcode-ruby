@@ -9,7 +9,7 @@ def num_different_integers(word)
   while p < word.length
     c = word[p]
 
-    unless _1805_is_digit?(c)
+    unless c =~ /\d/
       p += 1
 
       next
@@ -17,7 +17,7 @@ def num_different_integers(word)
 
     leading_zero = c == '0'
     num = []
-    while _1805_is_digit?(c)
+    while c =~ /\d/
       if !leading_zero
         num << c
       elsif c != '0'
@@ -37,12 +37,4 @@ def num_different_integers(word)
   end
 
   uniq.length
-end
-
-# @param {String} s
-# @return {Boolean}
-def _1805_is_digit?(s)
-  code = s.ord
-
-  code >= 48 && code <= 57
 end
