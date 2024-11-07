@@ -6,7 +6,7 @@
 def are_numbers_ascending(s)
   prev = -1
   s.split.each do |word|
-    next unless _2043_is_digit?(word[0])
+    next unless word[0] =~ /\d/
 
     num = word.to_i
 
@@ -16,12 +16,4 @@ def are_numbers_ascending(s)
   end
 
   true
-end
-
-# @param {String} s
-# @return {Boolean}
-def _2043_is_digit?(s)
-  code = s.ord
-
-  code >= 48 && code <= 57
 end
