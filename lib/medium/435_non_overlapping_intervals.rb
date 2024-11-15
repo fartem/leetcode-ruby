@@ -4,7 +4,7 @@
 # @param {Integer[][]} intervals
 # @return {Integer}
 def erase_overlap_intervals(intervals)
-  intervals.sort_by(&:first)
+  intervals.sort_by!(&:first)
   max = intervals.first.last
   result = 0
   intervals.each do |inter|
