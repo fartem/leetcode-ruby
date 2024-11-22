@@ -5,26 +5,42 @@
 # @param {ListNode} l2
 # @return {ListNode}
 def add_two_numbers445(l1, l2)
-  first_num = []
-  while l1
-    first_num << l1.val
-    l1 = l1.next
+  r1 = reverse_list_node(l1)
+  r2 = reverse_list_node(l2)
+  sum = ::ListNode.new(0)
+  p = sum
+  carry = 0
+  while r1 || r2
+    a = r1.nil? ? 0 : r1.val
+    b = r2.nil? ? 0 : r2.val
+    c = a + b + carry
+
+    p.next = ::ListNode.new(c % 10)
+    p = p.next
+    carry = c / 10
+
+    r1 = r1&.next
+    r2 = r2&.next
   end
 
-  second_num = []
-  while l2
-    second_num << l2.val
-    l2 = l2.next
+  p.next = ::ListNode.new(carry) unless carry.zero?
+
+  reverse_list_node(sum.next)
+end
+
+private
+
+# @param {ListNode} head
+# @return {ListNode}
+def reverse_list_node(head)
+  prev = nil
+  curr = head
+  while curr
+    nxt = curr.next
+    curr.next = prev
+    prev = curr
+    curr = nxt
   end
 
-  sum = (first_num.join.to_i + second_num.join.to_i).to_s
-
-  result = ::ListNode.new(0)
-  curr = result
-  sum.each_char do |c|
-    curr.next = ::ListNode.new(c.to_i)
-    curr = curr.next
-  end
-
-  result.next
+  prev
 end
