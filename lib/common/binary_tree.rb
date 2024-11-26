@@ -17,8 +17,8 @@ class TreeNode
   # @param {TreeNode} other
   # @return {Boolean}
   def self.are_equals(curr, other)
-    return true if curr.nil? && other.nil?
-    return false if curr.nil? || other.nil?
+    return true if !curr && !other
+    return false if !curr || !other
 
     curr_eq = curr.val == other.val
     left_eq = are_equals(curr.left, other.left)
