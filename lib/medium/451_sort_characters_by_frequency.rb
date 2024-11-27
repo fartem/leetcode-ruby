@@ -3,7 +3,7 @@
 # https://leetcode.com/problems/sort-characters-by-frequency/
 # @param {String} s
 # @return {String}
-def frequency_sort(s)
+def frequency_sort451(s)
   arr = s.split('').sort
   h = ::Hash.new { |v, k| v[k] = '' }
   p1 = 0

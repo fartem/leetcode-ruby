@@ -8,7 +8,7 @@ class SortCharactersByFrequencyTest < ::Minitest::Test
   def test_default_one
     assert_equal(
       'eert',
-      frequency_sort(
+      frequency_sort451(
         'tree'
       )
     )
@@ -17,7 +17,7 @@ class SortCharactersByFrequencyTest < ::Minitest::Test
   def test_default_two
     assert_equal(
       'aaaccc',
-      frequency_sort(
+      frequency_sort451(
         'cccaaa'
       )
     )
@@ -26,7 +26,7 @@ class SortCharactersByFrequencyTest < ::Minitest::Test
   def test_default_three
     assert_equal(
       'bbAa',
-      frequency_sort(
+      frequency_sort451(
         'bbAa'
       )
     )
