@@ -8,9 +8,7 @@
 def range_sum_bst(root, low, high)
   return 0 if root.nil?
 
-  if root.val >= low && root.val <= high
-    return root.val + range_sum_bst(root.left, low, high) + range_sum_bst(root.right, low, high)
-  end
+  return root.val + range_sum_bst(root.left, low, high) + range_sum_bst(root.right, low, high) if root.val >= low && root.val <= high
 
   return range_sum_bst(root.right, low, high) if root.val < low
 
