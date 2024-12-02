@@ -56,3 +56,6 @@ Lint/DuplicateBranch:
   Enabled: false
 Lint/UselessSetterCall:
   Enabled: false
+
+Layout/LineLength:
+  Enabled: false
