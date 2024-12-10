@@ -18,14 +18,3 @@ def subarray_sum(nums, k)
 
   result
 end
-
-# int result = 0;
-# int pre = 0;
-# Map<Integer, Integer> values = new HashMap<>();
-# values.put(0, 1);
-# for (int num : nums) {
-#     pre += num;
-#     result += values.getOrDefault(pre - k, 0);
-#     values.put(pre, values.getOrDefault(pre, 0) + 1);
-# }
-# return result;
