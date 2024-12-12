@@ -2,7 +2,7 @@
 
 require_relative '../test_helper'
 require_relative '../../lib/common/binary_tree'
-require_relative '../../lib/easy/606_construct_string_from_binary_tree'
+require_relative '../../lib/medium/606_construct_string_from_binary_tree'
 require 'minitest/autorun'
 
 class ConstructStringFromBinaryTreeTest < ::Minitest::Test
