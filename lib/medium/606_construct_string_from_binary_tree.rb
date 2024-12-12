@@ -10,6 +10,8 @@ def tree2str(root)
   result.join
 end
 
+private
+
 # @param {TreeNode} node
 # @param {String[]} str
 def tree_to_str(node, str)
