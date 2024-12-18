@@ -1,18 +1,16 @@
 # frozen_string_literal: true
 
-$freq = 0
-
 # https://leetcode.com/problems/most-frequent-subtree-sum/
 # @param {TreeNode} root
 # @return {Integer[]}
 def find_frequent_tree_sum(root)
-  $freq = 0
+  @freq = 0
 
   values = {}
   fill_values_from_sub_tree(root, values)
 
   most_freq = []
-  values.entries.each { |key, value| most_freq << key if value == $freq }
+  values.entries.each { |key, value| most_freq << key if value == @freq }
 
   most_freq
 end
@@ -30,7 +28,7 @@ def fill_values_from_sub_tree(node, values)
   sum = node.val + left + right
 
   values[sum] = values.fetch(sum, 0) + 1
-  $freq = [$freq, values[sum]].max
+  @freq = [@freq, values[sum]].max
 
   sum
 end

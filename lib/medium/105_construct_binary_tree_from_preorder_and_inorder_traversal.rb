@@ -2,18 +2,14 @@
 
 require_relative '../common/binary_tree'
 
-$pre_index = 0
-
 # https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 # @param {Integer[]} preorder
 # @param {Integer[]} inorder
 # @return {TreeNode}
 def build_tree(preorder, inorder)
-  $pre_index = 0
+  @pre_index = 0
   in_index = {}
-  (0...inorder.size).each do |i|
-    in_index[inorder[i]] = i
-  end
+  (0...inorder.size).each { |i| in_index[inorder[i]] = i }
 
   array_to_tree(preorder, 0, preorder.size - 1, in_index)
 end
@@ -27,8 +23,8 @@ private
 def array_to_tree(pre, l, r, in_index)
   return if l > r
 
-  val = pre[$pre_index]
-  $pre_index += 1
+  val = pre[@pre_index]
+  @pre_index += 1
 
   root = ::TreeNode.new(val)
   root.left = array_to_tree(pre, l, in_index[val] - 1, in_index)

@@ -7,13 +7,13 @@ require_relative '../common/binary_tree'
 # @return {TreeNode}
 def increasing_bst(root)
   result = ::TreeNode.new
-  $curr = result
+  @curr = result
   inorder_iost(root)
 
   result.right
 end
 
-$curr = nil
+private
 
 # @param {TreeNode} node
 def inorder_iost(node)
@@ -21,7 +21,7 @@ def inorder_iost(node)
 
   inorder_iost(node.left)
   node.left = nil
-  $curr.right = node
-  $curr = node
+  @curr.right = node
+  @curr = node
   inorder_iost(node.right)
 end
