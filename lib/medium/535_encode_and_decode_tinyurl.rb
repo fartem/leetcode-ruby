@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-$urls = {}
-
 # https://leetcode.com/problems/encode-and-decode-tinyurl/
 # @param {String} long_url
 # @return {String}
 def encode(long_url)
-  short_url = generate_short_url(long_url)
-  short_url = generate_short_url(long_url) while $urls.include?(short_url)
+  @urls = {}
 
-  $urls[short_url] = long_url
+  short_url = generate_short_url(long_url)
+  short_url = generate_short_url(long_url) while @urls.include?(short_url)
+
+  @urls[short_url] = long_url
 
   short_url
 end
@@ -27,4 +27,4 @@ end
 
 # @param {String} short_url
 # @return {String}
-def decode(short_url) = $urls[short_url]
+def decode(short_url) = @urls[short_url]

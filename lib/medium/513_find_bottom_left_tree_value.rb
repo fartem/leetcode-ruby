@@ -1,18 +1,15 @@
 # frozen_string_literal: true
 
-$path = -1
-$value = 0
-
 # https://leetcode.com/problems/find-bottom-left-tree-value/
 # @param {TreeNode} root
 # @return {Integer}
 def find_bottom_left_value(root)
-  $path = -1
-  $value = 0
+  @path = -1
+  @value = 0
 
   apply_to_find_bottom_left_value(root, 0)
 
-  $value
+  @value
 end
 
 private
@@ -23,9 +20,9 @@ private
 def apply_to_find_bottom_left_value(node, curr)
   return unless node
 
-  if $path < curr
-    $path = curr
-    $value = node.val
+  if @path < curr
+    @path = curr
+    @value = node.val
   end
 
   apply_to_find_bottom_left_value(node.left, curr + 1)
