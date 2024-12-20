@@ -5,7 +5,7 @@ require_relative '../../lib/common/binary_tree'
 require_relative '../../lib/medium/669_trim_a_binary_search_tree'
 require 'minitest/autorun'
 
-class MaximumWidthOfBinaryTreeTest < ::Minitest::Test
+class TrimABinarySearchTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       ::TreeNode.are_equals(
