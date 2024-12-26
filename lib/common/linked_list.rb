@@ -30,6 +30,7 @@ class ListNode
   # @return {Boolean}
   def self.are_equals(first, second)
     return true if first.nil? && second.nil?
+
     return false if first.nil? || second.nil?
 
     first.val == second.val && are_equals(first.next, second.next)
