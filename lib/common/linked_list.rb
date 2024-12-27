@@ -29,9 +29,9 @@ class ListNode
   # @param {ListNode} second
   # @return {Boolean}
   def self.are_equals(first, second)
-    return true if first.nil? && second.nil?
+    return true if !first && !second
 
-    return false if first.nil? || second.nil?
+    return false if !first || !second
 
     first.val == second.val && are_equals(first.next, second.next)
   end
