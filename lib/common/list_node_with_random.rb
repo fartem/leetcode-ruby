@@ -26,6 +26,6 @@ class ListNodeWithRandom
       l2 = l2.next
     end
 
-    l1.nil? && l2.nil?
+    !l1 && !l2
   end
 end

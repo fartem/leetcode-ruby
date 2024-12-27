@@ -15,7 +15,7 @@ class NodeWithNeighbors
   # @param {NodeWithNeighbors} n2
   # @return {Boolean}
   def self.are_equals(n1, n2)
-    if !n1.nil? && !n2.nil?
+    if n1 && n2
       return false unless n1.val == n2.val
 
       return false unless n1.neighbors.size == n2.neighbors.size
@@ -27,6 +27,6 @@ class NodeWithNeighbors
       return true
     end
 
-    n1.nil? && n2.nil?
+    !n1 && !n2
   end
 end

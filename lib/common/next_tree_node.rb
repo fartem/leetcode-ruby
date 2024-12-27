@@ -25,7 +25,7 @@ class NextTreeNode
       return are_equals(n1.left, n2.left) && are_equals(n1.right, n2.right)
     end
 
-    n1.nil? && n2.nil?
+    !n1 && !n2
   end
 
   # @param {NextTreeNode} other
@@ -40,7 +40,5 @@ class NextTreeNode
   end
 
   # @return {Integer}
-  def hash
-    [val, left, right, nxt].hash
-  end
+  def hash = [val, left, right, nxt].hash
 end
