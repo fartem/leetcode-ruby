@@ -10,6 +10,7 @@ module CI
     def process
       check('easy')
       check('medium')
+      check('hard')
     end
 
     private
