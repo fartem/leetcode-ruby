@@ -16,6 +16,7 @@ private
 # @param {Character[]} arr
 # @param {Integer} index
 # @param {String[]} result
+# @param {Void}
 def find_permutations(arr, index, result)
   if index == arr.size
     result << arr.join
