@@ -627,6 +627,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 
 ### Hard
 
-| Name                           | Link to LeetCode                                                   | Link to solution                                    | Link to tests                                             |
-| ------------------------------ | ------------------------------------------------------------------ | --------------------------------------------------- | --------------------------------------------------------- |
-| 4. Median of Two Sorted Arrays | [Link](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [Link](./lib/hard/4_median_of_two_sorted_arrays.rb) | [Link](./test/hard/test_4_median_of_two_sorted_arrays.rb) |
+| Name                            | Link to LeetCode                                                   | Link to solution                                     | Link to tests                                              |
+| ------------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------- | ---------------------------------------------------------- |
+| 4. Median of Two Sorted Arrays  | [Link](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [Link](./lib/hard/4_median_of_two_sorted_arrays.rb)  | [Link](./test/hard/test_4_median_of_two_sorted_arrays.rb)  |
+| 10. Regular Expression Matching | [Link](https://leetcode.com/problems/regular-expression-matching/) | [Link](./lib/hard/10_regular_expression_matching.rb) | [Link](./test/hard/test_10_regular_expression_matching.rb) |
