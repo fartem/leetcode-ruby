@@ -627,6 +627,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 823. Binary Trees With Factors                                  | [Link](https://leetcode.com/problems/binary-trees-with-factors/)                                  | [Link](./lib/medium/823_binary_trees_with_factors.rb)                                  | [Link](./test/medium/test_823_binary_trees_with_factors.rb)                                  |
 | 841. Keys and Rooms                                             | [Link](https://leetcode.com/problems/keys-and-rooms/)                                             | [Link](./lib/medium/841_keys_and_rooms.rb)                                             | [Link](./test/medium/test_841_keys_and_rooms.rb)                                             |
 | 852. Peak Index in a Mountain Array                             | [Link](https://leetcode.com/problems/peak-index-in-a-mountain-array/)                             | [Link](./lib/medium/852_peak_index_in_a_mountain_array.rb)                             | [Link](./test/medium/test_852_peak_index_in_a_mountain_array.rb)                             |
+| 856. Score of Parentheses                                       | [Link](https://leetcode.com/problems/score-of-parentheses/)                                       | [Link](./lib/medium/856_score_of_parentheses.rb)                                       | [Link](./test/medium/test_856_score_of_parentheses.rb)                                       |
 
 ### Hard
 
