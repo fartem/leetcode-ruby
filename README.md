@@ -626,6 +626,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 817. Linked List Components                                     | [Link](https://leetcode.com/problems/linked-list-components/)                                     | [Link](./lib/medium/817_linked_list_components.rb)                                     | [Link](./test/medium/test_817_linked_list_components.rb)                                     |
 | 823. Binary Trees With Factors                                  | [Link](https://leetcode.com/problems/binary-trees-with-factors/)                                  | [Link](./lib/medium/823_binary_trees_with_factors.rb)                                  | [Link](./test/medium/test_823_binary_trees_with_factors.rb)                                  |
 | 841. Keys and Rooms                                             | [Link](https://leetcode.com/problems/keys-and-rooms/)                                             | [Link](./lib/medium/841_keys_and_rooms.rb)                                             | [Link](./test/medium/test_841_keys_and_rooms.rb)                                             |
+| 852. Peak Index in a Mountain Array                             | [Link](https://leetcode.com/problems/peak-index-in-a-mountain-array/)                             | [Link](./lib/medium/852_peak_index_in_a_mountain_array.rb)                             | [Link](./test/medium/test_852_peak_index_in_a_mountain_array.rb)                             |
 
 ### Hard
 
