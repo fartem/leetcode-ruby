@@ -5,8 +5,7 @@
 # @param {Integer} k
 # @return {String}
 def kth_distinct(arr, k)
-  values = arr.each_with_object(::Hash.new(0)) { |elem, acc| acc[elem] += 1 }
-  values.each do |key, value|
+  arr.tally.each do |key, value|
     next unless value == 1
 
     return key if k == 1

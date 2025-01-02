@@ -5,7 +5,7 @@
 # @param {Integer} k
 # @return {String[]}
 def top_k_frequent_words(words, k)
-  values = words.each_with_object(::Hash.new(0)) { |e, total| total[e] += 1; }
+  values = words.tally
 
   to_sort = values.to_a
   to_sort.sort! do |a, b|
