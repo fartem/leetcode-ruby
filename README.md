@@ -624,6 +624,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 797. All Paths From Source to Target                            | [Link](https://leetcode.com/problems/all-paths-from-source-to-target/)                            | [Link](./lib/medium/797_all_paths_from_source_to_target.rb)                            | [Link](./test/medium/test_797_all_paths_from_source_to_target.rb)                            |
 | 814. Binary Tree Pruning                                        | [Link](https://leetcode.com/problems/binary-tree-pruning/)                                        | [Link](./lib/medium/814_binary_tree_pruning.rb)                                        | [Link](./test/medium/test_814_binary_tree_pruning.rb)                                        |
 | 817. Linked List Components                                     | [Link](https://leetcode.com/problems/linked-list-components/)                                     | [Link](./lib/medium/817_linked_list_components.rb)                                     | [Link](./test/medium/test_817_linked_list_components.rb)                                     |
+| 823. Binary Trees With Factors                                  | [Link](https://leetcode.com/problems/binary-trees-with-factors/)                                  | [Link](./lib/medium/823_binary_trees_with_factors.rb)                                  | [Link](./test/medium/test_823_binary_trees_with_factors.rb)                                  |
 
 ### Hard
 
