@@ -629,6 +629,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 852. Peak Index in a Mountain Array                             | [Link](https://leetcode.com/problems/peak-index-in-a-mountain-array/)                             | [Link](./lib/medium/852_peak_index_in_a_mountain_array.rb)                             | [Link](./test/medium/test_852_peak_index_in_a_mountain_array.rb)                             |
 | 856. Score of Parentheses                                       | [Link](https://leetcode.com/problems/score-of-parentheses/)                                       | [Link](./lib/medium/856_score_of_parentheses.rb)                                       | [Link](./test/medium/test_856_score_of_parentheses.rb)                                       |
 | 858. Mirror Reflection                                          | [Link](https://leetcode.com/problems/mirror-reflection/)                                          | [Link](./lib/medium/858_mirror_reflection.rb)                                          | [Link](./test/medium/test_858_mirror_reflection.rb)                                          |
+| 863. All Nodes Distance K in Binary Tree                        | [Link](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)                        | [Link](./lib/medium/863_all_nodes_distance_k_in_binary_tree.rb)                        | [Link](./test/medium/test_863_all_nodes_distance_k_in_binary_tree.rb)                        |
 
 ### Hard
 
