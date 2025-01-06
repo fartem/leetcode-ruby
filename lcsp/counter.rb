@@ -6,8 +6,8 @@ module LCSC
   # Solutions counter.
   class LCSCCounter
     # @param {String} path
-    def initialize
-      @path = './'
+    def initialize(path)
+      @path = path
     end
 
     # @return {Integer}
