@@ -631,6 +631,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 858. Mirror Reflection                                          | [Link](https://leetcode.com/problems/mirror-reflection/)                                          | [Link](./lib/medium/858_mirror_reflection.rb)                                          | [Link](./test/medium/test_858_mirror_reflection.rb)                                          |
 | 863. All Nodes Distance K in Binary Tree                        | [Link](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)                        | [Link](./lib/medium/863_all_nodes_distance_k_in_binary_tree.rb)                        | [Link](./test/medium/test_863_all_nodes_distance_k_in_binary_tree.rb)                        |
 | 865. Smallest Subtree with all the Deepest Nodes                | [Link](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/)                | [Link](./lib/medium/865_smallest_subtree_with_all_the_deepest_nodes.rb)                | [Link](./test/medium/test_865_smallest_subtree_with_all_the_deepest_nodes.rb)                |
+| 869. Reordered Power of 2                                       | [Link](https://leetcode.com/problems/reordered-power-of-2/)                                       | [Link](./lib/medium/869_reordered_power_of_2.rb)                                       | [Link](./test/medium/test_869_reordered_power_of_2.rb)                                       |
 
 ### Hard
 
