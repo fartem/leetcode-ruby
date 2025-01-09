@@ -634,6 +634,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 869. Reordered Power of 2                                        | [Link](https://leetcode.com/problems/reordered-power-of-2/)                                        | [Link](./lib/medium/869_reordered_power_of_2.rb)                                        | [Link](./test/medium/test_869_reordered_power_of_2.rb)                                        |
 | 880. Decoded String at Index                                     | [Link](https://leetcode.com/problems/decoded-string-at-index/)                                     | [Link](./lib/medium/880_decoded_string_at_index.rb)                                     | [Link](./test/medium/test_880_decoded_string_at_index.rb)                                     |
 | 889. Construct Binary Tree from Preorder and Postorder Traversal | [Link](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) | [Link](./lib/medium/889_construct_binary_tree_from_preorder_and_postorder_traversal.rb) | [Link](./test/medium/test_889_construct_binary_tree_from_preorder_and_postorder_traversal.rb) |
+| 890. Find and Replace Pattern                                    | [Link](https://leetcode.com/problems/find-and-replace-pattern/)                                    | [Link](./lib/medium/890_find_and_replace_pattern.rb)                                    | [Link](./test/medium/test_890_find_and_replace_pattern.rb)                                    |
 
 ### Hard
 
