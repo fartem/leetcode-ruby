@@ -636,6 +636,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 889. Construct Binary Tree from Preorder and Postorder Traversal | [Link](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) | [Link](./lib/medium/889_construct_binary_tree_from_preorder_and_postorder_traversal.rb) | [Link](./test/medium/test_889_construct_binary_tree_from_preorder_and_postorder_traversal.rb) |
 | 890. Find and Replace Pattern                                    | [Link](https://leetcode.com/problems/find-and-replace-pattern/)                                    | [Link](./lib/medium/890_find_and_replace_pattern.rb)                                    | [Link](./test/medium/test_890_find_and_replace_pattern.rb)                                    |
 | 894. All Possible Full Binary Trees                              | [Link](https://leetcode.com/problems/all-possible-full-binary-trees/)                              | [Link](./lib/medium/894_all_possible_full_binary_trees.rb)                              | [Link](./test/medium/test_894_all_possible_full_binary_trees.rb)                              |
+| 901. Online Stock Span                                           | [Link](https://leetcode.com/problems/online-stock-span/)                                           | [Link](./lib/medium/901_online_stock_span.rb)                                           | [Link](./test/medium/test_901_online_stock_span.rb)                                           |
 
 ### Hard
 
