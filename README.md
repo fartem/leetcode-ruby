@@ -638,6 +638,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 894. All Possible Full Binary Trees                              | [Link](https://leetcode.com/problems/all-possible-full-binary-trees/)                              | [Link](./lib/medium/894_all_possible_full_binary_trees.rb)                              | [Link](./test/medium/test_894_all_possible_full_binary_trees.rb)                              |
 | 901. Online Stock Span                                           | [Link](https://leetcode.com/problems/online-stock-span/)                                           | [Link](./lib/medium/901_online_stock_span.rb)                                           | [Link](./test/medium/test_901_online_stock_span.rb)                                           |
 | 916. Word Subsets                                                | [Link](https://leetcode.com/problems/word-subsets/)                                                | [Link](./lib/medium/916_word_subsets.rb)                                                | [Link](./test/medium/test_916_word_subsets.rb)                                                |
+| 1400. Construct K Palindrome Strings                             | [Link](https://leetcode.com/problems/construct-k-palindrome-strings/)                              | [Link](./lib/medium/1400_construct_k_palindrome_strings.rb)                             | [Link](./test/medium/test_1400_construct_k_palindrome_strings.rb)                             |
 
 ### Hard
 
