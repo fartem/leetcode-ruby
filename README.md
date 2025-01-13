@@ -642,6 +642,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 916. Word Subsets                                                | [Link](https://leetcode.com/problems/word-subsets/)                                                | [Link](./lib/medium/916_word_subsets.rb)                                                | [Link](./test/medium/test_916_word_subsets.rb)                                                |
 | 1400. Construct K Palindrome Strings                             | [Link](https://leetcode.com/problems/construct-k-palindrome-strings/)                              | [Link](./lib/medium/1400_construct_k_palindrome_strings.rb)                             | [Link](./test/medium/test_1400_construct_k_palindrome_strings.rb)                             |
 | 2116. Check if a Parentheses String Can Be Valid                 | [Link](https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/)                  | [Link](./lib/medium/2116_check_if_a_parentheses_string_can_be_valid.rb)                 | [Link](./test/medium/test_2116_check_if_a_parentheses_string_can_be_valid.rb)                 |
+| 3223. Minimum Length of String After Operations                  | [Link](https://leetcode.com/problems/minimum-length-of-string-after-operations/)                   | [Link](./lib/medium/3223_minimum_length_of_string_after_operations.rb)                  | [Link](./test/medium/test_3223_minimum_length_of_string_after_operations.rb)                  |
 
 ### Hard
 
