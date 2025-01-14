@@ -39,7 +39,4 @@ class TreeNode
   # @param {TreeNode} other
   # @return {Boolean}
   def eql?(other) = self == other
-
-  # @return {Integer}
-  def hash = [@val].hash
 end
