@@ -11,7 +11,8 @@ def is_cousins(root, x, y)
   queue << nil
   found = 0
   until queue.empty?
-    curr = queue.delete_at(0)
+    curr = queue.shift
+
     if curr.nil?
       queue << nil unless queue.empty?
       found = 0

@@ -11,7 +11,7 @@ def width_of_binary_tree(root)
     min = +1.0 / 0.0
     max = 0
     (0...size).each do |_i|
-      pair = nodes.delete_at(0)
+      pair = nodes.shift
       min = [min, pair.value].min
       max = [max, pair.value].max
 

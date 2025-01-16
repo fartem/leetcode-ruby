@@ -28,7 +28,7 @@ def remove_kdigits(num, k)
   result << stack.pop until stack.empty?
 
   result.reverse!
-  result.delete_at(0) while result.size > 1 && result[0] == '0'
+  result.shift while result.size > 1 && result[0] == '0'
 
   result.join
 end

@@ -17,7 +17,7 @@ def add_one_row(root, val, depth)
 
     if (level + 1) == depth
       until size.zero?
-        node = nodes.delete_at(0)
+        node = nodes.shift
         left = node.left
         right = node.right
         node.left = ::TreeNode.new(val, left, nil)
@@ -27,7 +27,7 @@ def add_one_row(root, val, depth)
       end
     else
       until size.zero?
-        node = nodes.delete_at(0)
+        node = nodes.shift
         nodes << node.left if node.left
         nodes << node.right if node.right
 

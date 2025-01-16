@@ -13,7 +13,7 @@ def level_order429(root)
     size = queue.size
 
     (0...size).each do |_|
-      node = queue.delete_at(0)
+      node = queue.shift
       level << node.val
 
       node.children&.each { |child| queue << child }
