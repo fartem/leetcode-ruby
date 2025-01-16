@@ -4,7 +4,7 @@ require_relative '../test_helper'
 require_relative '../../lib/medium/2425_bitwise_xor_of_all_pairings'
 require 'minitest/autorun'
 
-class MinimizeXORTest < ::Minitest::Test
+class BitwiseXOROfAllPairingsTest < ::Minitest::Test
   def test_default_one
     assert_equal(
       13,
