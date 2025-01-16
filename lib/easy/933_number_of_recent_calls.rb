@@ -11,7 +11,7 @@ class RecentCounter
   # @return {Integer}
   def ping(t)
     @requests << t
-    @requests.delete_at(0) while @requests.first < t - 3000
+    @requests.shift while @requests.first < t - 3000
 
     @requests.length
   end

@@ -12,7 +12,7 @@ def largest_values(root)
     size = nodes.size
     max = -::Float::INFINITY
     (0...size).each do |_|
-      node = nodes.delete_at(0)
+      node = nodes.shift
 
       max = node.val if node.val > max
 
