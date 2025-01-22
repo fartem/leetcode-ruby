@@ -13,7 +13,7 @@ end
 private
 
 # @param {TreeNode} root
-# @param {Array} curr
+# @param {String} curr
 # @return {Void}
 def find_smallest_string_staring_from_leaf(root, curr)
   return unless root
