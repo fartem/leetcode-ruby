@@ -17,7 +17,8 @@ def next_larger_nodes(head)
 
   nodes.each_with_index do |node, i|
     result[values.pop] = node while !values.empty? && node > nodes[values.last]
-    values.push(i)
+
+    values << i
   end
 
   result
