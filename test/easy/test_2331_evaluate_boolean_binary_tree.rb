@@ -9,20 +9,9 @@ class EvaluateBooleanBinaryTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       evaluate_tree(
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(1),
-          ::TreeNode.new(
-            3,
-            ::TreeNode.new(0),
-            ::TreeNode.new(1)
-          )
+        ::TreeNode.build_tree(
+          [2, 1, 3, nil, nil, 0, 1]
         )
-      )
-    )
-    assert(
-      !evaluate_tree(
-        ::TreeNode.new(0)
       )
     )
   end
@@ -30,7 +19,9 @@ class EvaluateBooleanBinaryTreeTest < ::Minitest::Test
   def test_default_two
     assert(
       !evaluate_tree(
-        ::TreeNode.new(0)
+        ::TreeNode.build_tree(
+          [0]
+        )
       )
     )
   end
@@ -38,10 +29,8 @@ class EvaluateBooleanBinaryTreeTest < ::Minitest::Test
   def test_additional_one
     assert(
       !evaluate_tree(
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(0),
-          ::TreeNode.new(1)
+        ::TreeNode.build_tree(
+          [3, 0, 1]
         )
       )
     )

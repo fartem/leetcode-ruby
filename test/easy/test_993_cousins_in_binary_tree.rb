@@ -9,13 +9,8 @@ class CousinsInBinaryTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       !is_cousins(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(4)
-          ),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [1, 2, 3, 4]
         ),
         4,
         3
@@ -26,18 +21,8 @@ class CousinsInBinaryTreeTest < ::Minitest::Test
   def test_default_two
     assert(
       is_cousins(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            nil,
-            ::TreeNode.new(4)
-          ),
-          ::TreeNode.new(
-            3,
-            nil,
-            ::TreeNode.new(5)
-          )
+        ::TreeNode.build_tree(
+          [1, 2, 3, nil, 4, nil, 5]
         ),
         5,
         4
@@ -48,14 +33,8 @@ class CousinsInBinaryTreeTest < ::Minitest::Test
   def test_default_three
     assert(
       !is_cousins(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            nil,
-            ::TreeNode.new(4)
-          ),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [1, 2, 3, nil, 4]
         ),
         2,
         3

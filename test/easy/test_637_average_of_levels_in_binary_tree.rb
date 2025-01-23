@@ -8,16 +8,14 @@ require 'minitest/autorun'
 class AverageOfLevelsInBinaryTreeTest < ::Minitest::Test
   def test_default_one
     assert_equal(
-      [3.00000, 14.50000, 11.00000],
+      [
+        3.00000,
+        14.50000,
+        11.00000
+      ],
       average_of_levels(
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(9),
-          ::TreeNode.new(
-            20,
-            ::TreeNode.new(15),
-            ::TreeNode.new(7)
-          )
+        ::TreeNode.build_tree(
+          [3, 9, 20, nil, nil, 15, 7]
         )
       )
     )
@@ -25,16 +23,14 @@ class AverageOfLevelsInBinaryTreeTest < ::Minitest::Test
 
   def test_default_two
     assert_equal(
-      [3.00000, 14.50000, 11.00000],
+      [
+        3.00000,
+        14.50000,
+        11.00000
+      ],
       average_of_levels(
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(
-            20,
-            ::TreeNode.new(15),
-            ::TreeNode.new(7)
-          ),
-          ::TreeNode.new(9)
+        ::TreeNode.build_tree(
+          [3, 9, 20, 15, 7]
         )
       )
     )

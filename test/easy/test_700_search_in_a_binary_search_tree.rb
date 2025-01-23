@@ -9,20 +9,12 @@ class SearchInABinarySearchTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(1),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [2, 1, 3]
         ),
         search_bst(
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(
-              2,
-              ::TreeNode.new(1),
-              ::TreeNode.new(3)
-            ),
-            ::TreeNode.new(7)
+          ::TreeNode.build_tree(
+            [4, 2, 7, 1, 3]
           ),
           2
         )
@@ -33,14 +25,8 @@ class SearchInABinarySearchTreeTest < ::Minitest::Test
   def test_default_two
     assert_nil(
       search_bst(
-        ::TreeNode.new(
-          4,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(1),
-            ::TreeNode.new(3)
-          ),
-          ::TreeNode.new(7)
+        ::TreeNode.build_tree(
+          [4, 2, 7, 1, 3]
         ),
         5
       )

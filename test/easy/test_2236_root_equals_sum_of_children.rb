@@ -9,10 +9,8 @@ class RootEqualsSumOfChildrenTest < ::Minitest::Test
   def test_default_one
     assert(
       check_tree(
-        ::TreeNode.new(
-          10,
-          ::TreeNode.new(4),
-          ::TreeNode.new(6)
+        ::TreeNode.build_tree(
+          [10, 4, 6]
         )
       )
     )
@@ -21,10 +19,8 @@ class RootEqualsSumOfChildrenTest < ::Minitest::Test
   def test_default_two
     assert(
       !check_tree(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(3),
-          ::TreeNode.new(1)
+        ::TreeNode.build_tree(
+          [5, 3, 1]
         )
       )
     )

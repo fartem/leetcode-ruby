@@ -10,18 +10,8 @@ class SumOfRootToLeafBinaryNumbersTest < ::Minitest::Test
     assert_equal(
       22,
       sum_root_to_leaf(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            0,
-            ::TreeNode.new(0),
-            ::TreeNode.new(1)
-          ),
-          ::TreeNode.new(
-            1,
-            ::TreeNode.new(0),
-            ::TreeNode.new(1)
-          )
+        ::TreeNode.build_tree(
+          [1, 0, 1, 0, 1, 0, 1]
         )
       )
     )
@@ -31,7 +21,9 @@ class SumOfRootToLeafBinaryNumbersTest < ::Minitest::Test
     assert_equal(
       0,
       sum_root_to_leaf(
-        ::TreeNode.new(0)
+        ::TreeNode.build_tree(
+          [0]
+        )
       )
     )
   end

@@ -9,39 +9,11 @@ class LeafSimilarTreesTest < ::Minitest::Test
   def test_default_one
     assert(
       leaf_similar(
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(
-            5,
-            ::TreeNode.new(6),
-            ::TreeNode.new(
-              2,
-              ::TreeNode.new(7),
-              ::TreeNode.new(4)
-            )
-          ),
-          ::TreeNode.new(
-            1,
-            ::TreeNode.new(9),
-            ::TreeNode.new(8)
-          )
+        ::TreeNode.build_tree(
+          [3, 5, 1, 6, 2, 9, 8, nil, nil, 7, 4]
         ),
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(
-            5,
-            ::TreeNode.new(6),
-            ::TreeNode.new(7)
-          ),
-          ::TreeNode.new(
-            1,
-            ::TreeNode.new(4),
-            ::TreeNode.new(
-              2,
-              ::TreeNode.new(9),
-              ::TreeNode.new(8)
-            )
-          )
+        ::TreeNode.build_tree(
+          [3, 5, 1, 6, 7, 4, 2, nil, nil, nil, nil, nil, nil, 9, 8]
         )
       )
     )
@@ -50,15 +22,11 @@ class LeafSimilarTreesTest < ::Minitest::Test
   def test_default_two
     assert(
       !leaf_similar(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(2),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [1, 2, 3]
         ),
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(3),
-          ::TreeNode.new(2)
+        ::TreeNode.build_tree(
+          [1, 3, 2]
         )
       )
     )
