@@ -8,70 +8,20 @@ require 'minitest/autorun'
 class AllPossibleFullBinaryTreesTest < ::Minitest::Test
   def test_default_one
     correct = [
-      ::TreeNode.new(
-        0,
-        ::TreeNode.new(0),
-        ::TreeNode.new(
-          0,
-          ::TreeNode.new(0),
-          ::TreeNode.new(
-            0,
-            ::TreeNode.new(0),
-            ::TreeNode.new(0)
-          )
-        )
+      ::TreeNode.build_tree(
+        [0, 0, 0, nil, nil, 0, 0, nil, nil, 0, 0]
       ),
-      ::TreeNode.new(
-        0,
-        ::TreeNode.new(0),
-        ::TreeNode.new(
-          0,
-          ::TreeNode.new(
-            0,
-            ::TreeNode.new(0),
-            ::TreeNode.new(0)
-          ),
-          ::TreeNode.new(0)
-        )
+      ::TreeNode.build_tree(
+        [0, 0, 0, nil, nil, 0, 0, 0, 0]
       ),
-      ::TreeNode.new(
-        0,
-        ::TreeNode.new(
-          0,
-          ::TreeNode.new(0),
-          ::TreeNode.new(0)
-        ),
-        ::TreeNode.new(
-          0,
-          ::TreeNode.new(0),
-          ::TreeNode.new(0)
-        )
+      ::TreeNode.build_tree(
+        [0, 0, 0, 0, 0, 0, 0]
       ),
-      ::TreeNode.new(
-        0,
-        ::TreeNode.new(
-          0,
-          ::TreeNode.new(0),
-          ::TreeNode.new(
-            0,
-            ::TreeNode.new(0),
-            ::TreeNode.new(0)
-          )
-        ),
-        ::TreeNode.new(0)
+      ::TreeNode.build_tree(
+        [0, 0, 0, 0, 0, nil, nil, nil, nil, 0, 0]
       ),
-      ::TreeNode.new(
-        0,
-        ::TreeNode.new(
-          0,
-          ::TreeNode.new(
-            0,
-            ::TreeNode.new(0),
-            ::TreeNode.new(0)
-          ),
-          ::TreeNode.new(0)
-        ),
-        ::TreeNode.new(0)
+      ::TreeNode.build_tree(
+        [0, 0, 0, 0, 0, nil, nil, 0, 0]
       )
     ]
 
@@ -91,10 +41,8 @@ class AllPossibleFullBinaryTreesTest < ::Minitest::Test
 
   def test_default_two
     correct = [
-      ::TreeNode.new(
-        0,
-        ::TreeNode.new(0),
-        ::TreeNode.new(0)
+      ::TreeNode.build_tree(
+        [0, 0, 0]
       )
     ]
 

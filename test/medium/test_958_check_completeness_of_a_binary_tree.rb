@@ -9,18 +9,8 @@ class CheckCompletenessOfABinaryTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       is_complete_tree(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(4),
-            ::TreeNode.new(5)
-          ),
-          ::TreeNode.new(
-            3,
-            ::TreeNode.new(6),
-            nil
-          )
+        ::TreeNode.build_tree(
+          [1, 2, 3, 4, 5, 6]
         )
       )
     )
@@ -29,18 +19,8 @@ class CheckCompletenessOfABinaryTreeTest < ::Minitest::Test
   def test_default_two
     assert(
       !is_complete_tree(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(4),
-            ::TreeNode.new(5)
-          ),
-          ::TreeNode.new(
-            3,
-            nil,
-            ::TreeNode.new(7)
-          )
+        ::TreeNode.build_tree(
+          [1, 2, 3, 4, 5, nil, 7]
         )
       )
     )

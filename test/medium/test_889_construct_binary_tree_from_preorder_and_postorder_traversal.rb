@@ -9,18 +9,8 @@ class ConstructBinaryTreeFromPreorderAndPostorderTraversalTest < ::Minitest::Tes
   def test_default_one
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(4),
-            ::TreeNode.new(5)
-          ),
-          ::TreeNode.new(
-            3,
-            ::TreeNode.new(6),
-            ::TreeNode.new(7)
-          )
+        ::TreeNode.build_tree(
+          [1, 2, 3, 4, 5, 6, 7]
         ),
         construct_from_pre_post(
           [1, 2, 4, 5, 3, 6, 7],
@@ -33,7 +23,9 @@ class ConstructBinaryTreeFromPreorderAndPostorderTraversalTest < ::Minitest::Tes
   def test_default_two
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(1),
+        ::TreeNode.build_tree(
+          [1]
+        ),
         construct_from_pre_post(
           [1],
           [1]

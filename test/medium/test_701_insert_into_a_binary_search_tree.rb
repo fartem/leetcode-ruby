@@ -9,28 +9,12 @@ class InsertIntoABinarySearchTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          4,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(1),
-            ::TreeNode.new(3)
-          ),
-          ::TreeNode.new(
-            7,
-            ::TreeNode.new(5),
-            nil
-          )
+        ::TreeNode.build_tree(
+          [4, 2, 7, 1, 3, 5]
         ),
         insert_into_bst(
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(
-              2,
-              ::TreeNode.new(1),
-              ::TreeNode.new(3)
-            ),
-            ::TreeNode.new(7)
+          ::TreeNode.build_tree(
+            [4, 2, 7, 1, 3]
           ),
           5
         )
@@ -41,38 +25,30 @@ class InsertIntoABinarySearchTreeTest < ::Minitest::Test
   def test_default_two
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          40,
-          ::TreeNode.new(
-            20,
-            ::TreeNode.new(10),
-            ::TreeNode.new(
-              30,
-              ::TreeNode.new(25),
-              nil
-            )
-          ),
-          ::TreeNode.new(
-            60,
-            ::TreeNode.new(50),
-            ::TreeNode.new(70)
-          )
+        ::TreeNode.build_tree(
+          [40, 20, 60, 10, 30, 50, 70, nil, nil, 25]
         ),
         insert_into_bst(
-          ::TreeNode.new(
-            40,
-            ::TreeNode.new(
-              20,
-              ::TreeNode.new(10),
-              ::TreeNode.new(30)
-            ),
-            ::TreeNode.new(
-              60,
-              ::TreeNode.new(50),
-              ::TreeNode.new(70)
-            )
+          ::TreeNode.build_tree(
+            [40, 20, 60, 10, 30, 50, 70]
           ),
           25
+        )
+      )
+    )
+  end
+
+  def test_default_three
+    assert(
+      ::TreeNode.are_equals(
+        ::TreeNode.build_tree(
+          [4, 2, 7, 1, 3, 5]
+        ),
+        insert_into_bst(
+          ::TreeNode.build_tree(
+            [4, 2, 7, 1, 3, nil, nil, nil, nil, nil, nil]
+          ),
+          5
         )
       )
     )
