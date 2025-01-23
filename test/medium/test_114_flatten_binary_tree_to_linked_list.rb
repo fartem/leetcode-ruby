@@ -7,43 +7,15 @@ require 'minitest/autorun'
 
 class FlattenBinaryTreeToLinkedListTest < ::Minitest::Test
   def test_default_one
-    input = ::TreeNode.new(
-      1,
-      ::TreeNode.new(
-        2,
-        ::TreeNode.new(3),
-        ::TreeNode.new(4)
-      ),
-      ::TreeNode.new(
-        5,
-        ::TreeNode.new(6),
-        nil
-      )
+    input = ::TreeNode.build_tree(
+      [1, 2, 5, 3, 4, nil, 6]
     )
     flatten(input)
 
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          1,
-          nil,
-          ::TreeNode.new(
-            2,
-            nil,
-            ::TreeNode.new(
-              3,
-              nil,
-              ::TreeNode.new(
-                4,
-                nil,
-                ::TreeNode.new(
-                  5,
-                  nil,
-                  ::TreeNode.new(6)
-                )
-              )
-            )
-          )
+        ::TreeNode.build_tree(
+          [1, nil, 2, nil, 3, nil, 4, nil, 5, nil, 6]
         ),
         input
       )
@@ -58,12 +30,16 @@ class FlattenBinaryTreeToLinkedListTest < ::Minitest::Test
   end
 
   def test_default_three
-    input = ::TreeNode.new(0)
+    input = ::TreeNode.build_tree(
+      [0]
+    )
     flatten(input)
 
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(0),
+        ::TreeNode.build_tree(
+          [0]
+        ),
         input
       )
     )
