@@ -9,32 +9,12 @@ class InvertBinaryTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          4,
-          ::TreeNode.new(
-            7,
-            ::TreeNode.new(9),
-            ::TreeNode.new(6)
-          ),
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(3),
-            ::TreeNode.new(1)
-          )
+        ::TreeNode.build_tree(
+          [4, 7, 2, 9, 6, 3, 1]
         ),
         invert_tree(
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(
-              2,
-              ::TreeNode.new(1),
-              ::TreeNode.new(3)
-            ),
-            ::TreeNode.new(
-              7,
-              ::TreeNode.new(6),
-              ::TreeNode.new(9)
-            )
+          ::TreeNode.build_tree(
+            [4, 2, 7, 1, 3, 6, 9]
           )
         )
       )
@@ -44,16 +24,12 @@ class InvertBinaryTreeTest < ::Minitest::Test
   def test_default_two
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(1),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [2, 3, 1]
         ),
         invert_tree(
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(3),
-            ::TreeNode.new(1)
+          ::TreeNode.build_tree(
+            [2, 1, 3]
           )
         )
       )

@@ -9,14 +9,8 @@ class BalancedBinaryTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       is_balanced(
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(9),
-          ::TreeNode.new(
-            20,
-            ::TreeNode.new(15),
-            ::TreeNode.new(7)
-          )
+        ::TreeNode.build_tree(
+          [3, 9, 20, nil, nil, 15, 7]
         )
       )
     )
@@ -25,18 +19,8 @@ class BalancedBinaryTreeTest < ::Minitest::Test
   def test_default_two
     assert(
       !is_balanced(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(
-              3,
-              ::TreeNode.new(4),
-              ::TreeNode.new(4)
-            ),
-            ::TreeNode.new(3)
-          ),
-          ::TreeNode.new(2)
+        ::TreeNode.build_tree(
+          [1, 2, 2, 3, 3, nil, nil, 4, 4]
         )
       )
     )

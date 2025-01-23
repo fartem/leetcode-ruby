@@ -9,19 +9,11 @@ class SubtreeOfAnotherTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       is_subtree(
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(1),
-            ::TreeNode.new(2)
-          ),
-          ::TreeNode.new(5)
+        ::TreeNode.build_tree(
+          [3, 4, 5, 1, 2]
         ),
-        ::TreeNode.new(
-          4,
-          ::TreeNode.new(1),
-          ::TreeNode.new(2)
+        ::TreeNode.build_tree(
+          [4, 1, 2]
         )
       )
     )
@@ -30,23 +22,11 @@ class SubtreeOfAnotherTreeTest < ::Minitest::Test
   def test_default_two
     assert(
       !is_subtree(
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(1),
-            ::TreeNode.new(
-              2,
-              nil,
-              ::TreeNode.new(0)
-            )
-          ),
-          ::TreeNode.new(5)
+        ::TreeNode.build_tree(
+          [3, 4, 5, 1, 2, nil, nil, nil, nil, 0]
         ),
-        ::TreeNode.new(
-          4,
-          ::TreeNode.new(1),
-          ::TreeNode.new(2)
+        ::TreeNode.build_tree(
+          [4, 1, 2]
         )
       )
     )

@@ -10,14 +10,8 @@ class BinaryTreePathsTest < ::Minitest::Test
     assert_equal(
       %w[1->2->5 1->3],
       binary_tree_paths(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            nil,
-            ::TreeNode.new(5)
-          ),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [1, 2, 3, nil, 5]
         )
       )
     )
@@ -27,7 +21,9 @@ class BinaryTreePathsTest < ::Minitest::Test
     assert_equal(
       ['1'],
       binary_tree_paths(
-        ::TreeNode.new(1)
+        ::TreeNode.build_tree(
+          [1]
+        )
       )
     )
   end

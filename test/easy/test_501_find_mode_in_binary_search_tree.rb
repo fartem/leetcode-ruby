@@ -10,14 +10,8 @@ class FindModeInBinarySearchTreeTest < ::Minitest::Test
     assert_equal(
       [2],
       find_mode(
-        ::TreeNode.new(
-          1,
-          nil,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(2),
-            nil
-          )
+        ::TreeNode.build_tree(
+          [1, nil, 2, 2]
         )
       )
     )
@@ -27,7 +21,9 @@ class FindModeInBinarySearchTreeTest < ::Minitest::Test
     assert_equal(
       [0],
       find_mode(
-        ::TreeNode.new(0)
+        ::TreeNode.build_tree(
+          [0]
+        )
       )
     )
   end

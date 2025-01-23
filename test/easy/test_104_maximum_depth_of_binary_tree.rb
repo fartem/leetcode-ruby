@@ -10,14 +10,8 @@ class MaximumDepthOfBinaryTreeTest < ::Minitest::Test
     assert_equal(
       3,
       max_depth(
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(9),
-          ::TreeNode.new(
-            20,
-            ::TreeNode.new(15),
-            ::TreeNode.new(7)
-          )
+        ::TreeNode.build_tree(
+          [3, 9, 20, nil, nil, 15, 7]
         )
       )
     )
@@ -27,10 +21,8 @@ class MaximumDepthOfBinaryTreeTest < ::Minitest::Test
     assert_equal(
       2,
       max_depth(
-        ::TreeNode.new(
-          1,
-          nil,
-          ::TreeNode.new(2)
+        ::TreeNode.build_tree(
+          [1, nil, 2]
         )
       )
     )

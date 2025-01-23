@@ -9,25 +9,8 @@ class PathSumTest < ::Minitest::Test
   def test_default_one
     assert(
       has_path_sum(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(
-              11,
-              ::TreeNode.new(7),
-              ::TreeNode.new(2)
-            )
-          ),
-          ::TreeNode.new(
-            8,
-            ::TreeNode.new(13),
-            ::TreeNode.new(
-              4,
-              nil,
-              ::TreeNode.new(1)
-            )
-          )
+        ::TreeNode.build_tree(
+          [5, 4, 8, 11, nil, 13, 4, 7, 2, nil, nil, nil, 1]
         ),
         22
       )
@@ -37,10 +20,8 @@ class PathSumTest < ::Minitest::Test
   def test_default_two
     assert(
       !has_path_sum(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(2),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [1, 2, 3]
         ),
         5
       )

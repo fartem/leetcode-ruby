@@ -9,18 +9,8 @@ class SymmetricTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       is_symmetric(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(3),
-            ::TreeNode.new(4)
-          ),
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(4),
-            ::TreeNode.new(3)
-          )
+        ::TreeNode.build_tree(
+          [1, 2, 2, 3, 4, 4, 3]
         )
       )
     )
@@ -29,18 +19,8 @@ class SymmetricTreeTest < ::Minitest::Test
   def test_default_two
     assert(
       !is_symmetric(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            nil,
-            ::TreeNode.new(3)
-          ),
-          ::TreeNode.new(
-            2,
-            nil,
-            ::TreeNode.new(3)
-          )
+        ::TreeNode.build_tree(
+          [1, 2, 2, nil, 3, nil, 3]
         )
       )
     )
