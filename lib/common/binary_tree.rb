@@ -28,6 +28,40 @@ class TreeNode
     curr_eq && left_eq && right_eq
   end
 
+  # @param {Integer[]} nodes
+  # @return {TreeNode}
+  def self.build_tree(nodes)
+    return if nodes.empty?
+
+    root = ::TreeNode.new(nodes[0])
+    queue = [root]
+    i = 1
+
+    while i < nodes.length
+      current = queue.shift
+      next unless current
+
+      # Left child
+      if i < nodes.length && !nodes[i].nil?
+        current.left = ::TreeNode.new(nodes[i])
+
+        queue << current.left
+      end
+
+      i += 1
+
+      if i < nodes.length && !nodes[i].nil?
+        current.right = ::TreeNode.new(nodes[i])
+
+        queue << current.right
+      end
+
+      i += 1
+    end
+
+    root
+  end
+
   # @param {TreeNode} other
   # @return {Boolean}
   def ==(other)
