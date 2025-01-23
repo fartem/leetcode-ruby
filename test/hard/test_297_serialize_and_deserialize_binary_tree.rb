@@ -9,25 +9,13 @@ class SerializeAndDeserializeBinaryTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(2),
-          ::TreeNode.new(
-            3,
-            ::TreeNode.new(4),
-            ::TreeNode.new(5)
-          )
+        ::TreeNode.build_tree(
+          [1, 2, 3, nil, nil, 4, 5]
         ),
         deserialize_binary_tree(
           serialize_binary_tree(
-            ::TreeNode.new(
-              1,
-              ::TreeNode.new(2),
-              ::TreeNode.new(
-                3,
-                ::TreeNode.new(4),
-                ::TreeNode.new(5)
-              )
+            ::TreeNode.build_tree(
+              [1, 2, 3, nil, nil, 4, 5]
             )
           )
         )
