@@ -10,14 +10,8 @@ class KthSmallestElementInABSTTest < ::Minitest::Test
     assert_equal(
       1,
       kth_smallest(
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(
-            1,
-            nil,
-            ::TreeNode.new(2)
-          ),
-          ::TreeNode.new(4)
+        ::TreeNode.build_tree(
+          [3, 1, 4, nil, 2]
         ),
         1
       )
@@ -28,18 +22,8 @@ class KthSmallestElementInABSTTest < ::Minitest::Test
     assert_equal(
       3,
       kth_smallest(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(
-            3,
-            ::TreeNode.new(
-              2,
-              ::TreeNode.new(1),
-              nil
-            ),
-            ::TreeNode.new(4)
-          ),
-          ::TreeNode.new(6)
+        ::TreeNode.build_tree(
+          [5, 3, 6, 2, 4, nil, nil, 1]
         ),
         3
       )

@@ -9,32 +9,12 @@ class DeleteNodeInABSTTest < ::Minitest::Test
   def test_default_one
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(2),
-            nil
-          ),
-          ::TreeNode.new(
-            6,
-            nil,
-            ::TreeNode.new(7)
-          )
+        ::TreeNode.build_tree(
+          [5, 4, 6, 2, nil, nil, 7]
         ),
         delete_node450(
-          ::TreeNode.new(
-            5,
-            ::TreeNode.new(
-              3,
-              ::TreeNode.new(2),
-              ::TreeNode.new(4)
-            ),
-            ::TreeNode.new(
-              6,
-              nil,
-              ::TreeNode.new(7)
-            )
+          ::TreeNode.build_tree(
+            [5, 3, 6, 2, 4, nil, 7]
           ),
           3
         )
@@ -45,32 +25,12 @@ class DeleteNodeInABSTTest < ::Minitest::Test
   def test_default_two
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(
-            2,
-            nil,
-            ::TreeNode.new(4)
-          ),
-          ::TreeNode.new(
-            6,
-            nil,
-            ::TreeNode.new(7)
-          )
+        ::TreeNode.build_tree(
+          [5, 3, 6, 2, 4, nil, 7]
         ),
         delete_node450(
-          ::TreeNode.new(
-            5,
-            ::TreeNode.new(
-              2,
-              nil,
-              ::TreeNode.new(4)
-            ),
-            ::TreeNode.new(
-              6,
-              nil,
-              ::TreeNode.new(7)
-            )
+          ::TreeNode.build_tree(
+            [5, 3, 6, 2, 4, nil, 7]
           ),
           0
         )
@@ -93,16 +53,12 @@ class DeleteNodeInABSTTest < ::Minitest::Test
   def test_additional_one
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          10,
-          ::TreeNode.new(10),
-          ::TreeNode.new(10)
+        ::TreeNode.build_tree(
+          [10, 10, 10]
         ),
         delete_node450(
-          ::TreeNode.new(
-            10,
-            ::TreeNode.new(10),
-            ::TreeNode.new(10)
+          ::TreeNode.build_tree(
+            [10, 10, 10]
           ),
           20
         )
@@ -113,12 +69,12 @@ class DeleteNodeInABSTTest < ::Minitest::Test
   def test_additional_two
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(10),
+        ::TreeNode.build_tree(
+          [10]
+        ),
         delete_node450(
-          ::TreeNode.new(
-            8,
-            ::TreeNode.new(10),
-            nil
+          ::TreeNode.build_tree(
+            [8, 10]
           ),
           8
         )

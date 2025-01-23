@@ -7,33 +7,29 @@ require 'minitest/autorun'
 
 class SerializeAndDeserializeBSTTest < ::Minitest::Test
   def test_default_one
-    node = ::TreeNode.new(
-      2,
-      ::TreeNode.new(1),
-      ::TreeNode.new(3)
+    node = ::TreeNode.build_tree(
+      [2, 1, 3]
     )
     result = serialize(node)
 
     assert(
       ::TreeNode.are_equals(
         deserialize(result),
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(1),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [2, 1, 3]
         )
       )
     )
   end
 
   def test_default_two
-    node = ::TreeNode.new
+    node = ::TreeNode.build_tree([])
     result = serialize(node)
 
     assert(
       ::TreeNode.are_equals(
         deserialize(result),
-        ::TreeNode.new
+        ::TreeNode.build_tree([])
       )
     )
   end

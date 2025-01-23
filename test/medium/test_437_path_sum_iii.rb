@@ -10,26 +10,8 @@ class PathSumIIITest < ::Minitest::Test
     assert_equal(
       3,
       path_sum437(
-        ::TreeNode.new(
-          10,
-          ::TreeNode.new(
-            5,
-            ::TreeNode.new(
-              3,
-              ::TreeNode.new(3),
-              ::TreeNode.new(-2)
-            ),
-            ::TreeNode.new(
-              2,
-              nil,
-              ::TreeNode.new(1)
-            )
-          ),
-          ::TreeNode.new(
-            -3,
-            ::TreeNode.new(11),
-            nil
-          )
+        ::TreeNode.build_tree(
+          [10, 5, -3, 3, 2, nil, 11, 3, -2, nil, 1]
         ),
         8
       )
@@ -40,26 +22,8 @@ class PathSumIIITest < ::Minitest::Test
     assert_equal(
       3,
       path_sum437(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(
-              11,
-              ::TreeNode.new(7),
-              ::TreeNode.new(2)
-            ),
-            nil
-          ),
-          ::TreeNode.new(
-            8,
-            ::TreeNode.new(13),
-            ::TreeNode.new(
-              4,
-              ::TreeNode.new(5),
-              ::TreeNode.new(1)
-            )
-          )
+        ::TreeNode.build_tree(
+          [5, 4, 8, 11, nil, 13, 4, 7, 2, nil, nil, 5, 1]
         ),
         22
       )

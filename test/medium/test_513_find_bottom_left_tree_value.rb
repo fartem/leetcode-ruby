@@ -10,10 +10,8 @@ class FindBottomLeftTreeValueTest < ::Minitest::Test
     assert_equal(
       1,
       find_bottom_left_value(
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(1),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [2, 1, 3]
         )
       )
     )
@@ -23,22 +21,8 @@ class FindBottomLeftTreeValueTest < ::Minitest::Test
     assert_equal(
       7,
       find_bottom_left_value(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(4),
-            nil
-          ),
-          ::TreeNode.new(
-            3,
-            ::TreeNode.new(
-              5,
-              ::TreeNode.new(7),
-              nil
-            ),
-            ::TreeNode.new(6)
-          )
+        ::TreeNode.build_tree(
+          [1, 2, 3, 4, nil, 5, 6, nil, nil, 7]
         )
       )
     )

@@ -10,18 +10,8 @@ class FindLargestValueInEachTreeRowTest < ::Minitest::Test
     assert_equal(
       [1, 3, 9],
       largest_values(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            3,
-            ::TreeNode.new(5),
-            ::TreeNode.new(3)
-          ),
-          ::TreeNode.new(
-            2,
-            nil,
-            ::TreeNode.new(9)
-          )
+        ::TreeNode.build_tree(
+          [1, 3, 2, 5, 3, nil, 9]
         )
       )
     )
@@ -31,10 +21,8 @@ class FindLargestValueInEachTreeRowTest < ::Minitest::Test
     assert_equal(
       [1, 3],
       largest_values(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(2),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [1, 2, 3]
         )
       )
     )

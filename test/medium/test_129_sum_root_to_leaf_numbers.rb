@@ -10,10 +10,8 @@ class SumRootToLeafNumbersTest < ::Minitest::Test
     assert_equal(
       25,
       sum_numbers(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(2),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [1, 2, 3]
         )
       )
     )
@@ -23,14 +21,8 @@ class SumRootToLeafNumbersTest < ::Minitest::Test
     assert_equal(
       1026,
       sum_numbers(
-        ::TreeNode.new(
-          4,
-          ::TreeNode.new(
-            9,
-            ::TreeNode.new(5),
-            ::TreeNode.new(1)
-          ),
-          ::TreeNode.new(0)
+        ::TreeNode.build_tree(
+          [4, 9, 0, 5, 1]
         )
       )
     )
