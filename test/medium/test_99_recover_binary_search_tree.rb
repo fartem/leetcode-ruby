@@ -7,27 +7,15 @@ require 'minitest/autorun'
 
 class RecoverBinarySearchTreeTest < ::Minitest::Test
   def test_default_one
-    input = ::TreeNode.new(
-      1,
-      ::TreeNode.new(
-        3,
-        nil,
-        ::TreeNode.new(2)
-      ),
-      nil
+    input = ::TreeNode.build_tree(
+      [1, 3, nil, nil, 2]
     )
     recover_tree(input)
 
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(
-            1,
-            nil,
-            ::TreeNode.new(2)
-          ),
-          nil
+        ::TreeNode.build_tree(
+          [3, 1, nil, nil, 2]
         ),
         input
       )
@@ -35,27 +23,15 @@ class RecoverBinarySearchTreeTest < ::Minitest::Test
   end
 
   def test_default_two
-    input = ::TreeNode.new(
-      3,
-      ::TreeNode.new(1),
-      ::TreeNode.new(
-        4,
-        ::TreeNode.new(2),
-        nil
-      )
+    input = ::TreeNode.build_tree(
+      [3, 1, 4, nil, nil, 2]
     )
     recover_tree(input)
 
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(1),
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(3),
-            nil
-          )
+        ::TreeNode.build_tree(
+          [2, 1, 4, nil, nil, 3]
         ),
         input
       )

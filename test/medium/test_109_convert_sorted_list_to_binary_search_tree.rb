@@ -10,18 +10,8 @@ class ConvertSortedListToBinarySearchTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          0,
-          ::TreeNode.new(
-            -3,
-            ::TreeNode.new(-10),
-            nil
-          ),
-          ::TreeNode.new(
-            9,
-            ::TreeNode.new(5),
-            nil
-          )
+        ::TreeNode.build_tree(
+          [0, -3, 9, -10, nil, 5]
         ),
         sorted_list_to_bst(
           ::ListNode.from_array(

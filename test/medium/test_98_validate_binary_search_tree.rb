@@ -9,10 +9,8 @@ class ValidateBinarySearchTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       is_valid_bst(
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(1),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [2, 1, 3]
         )
       )
     )
@@ -21,14 +19,8 @@ class ValidateBinarySearchTreeTest < ::Minitest::Test
   def test_default_two
     assert(
       !is_valid_bst(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(1),
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(3),
-            ::TreeNode.new(6)
-          )
+        ::TreeNode.build_tree(
+          [5, 1, 4, nil, nil, 3, 6]
         )
       )
     )

@@ -8,51 +8,26 @@ require 'minitest/autorun'
 class UniqueBinarySearchTreesIITest < ::Minitest::Test
   def test_default_one
     input = [
-      ::TreeNode.new(
-        1,
-        nil,
-        ::TreeNode.new(
-          2,
-          nil,
-          ::TreeNode.new(3)
-        )
+      ::TreeNode.build_tree(
+        [1, nil, 2, nil, 3]
       ),
-      ::TreeNode.new(
-        1,
-        nil,
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(2),
-          nil
-        )
+      ::TreeNode.build_tree(
+        [1, nil, 3, 2]
       ),
-      ::TreeNode.new(
-        2,
-        ::TreeNode.new(1),
-        ::TreeNode.new(3)
+      ::TreeNode.build_tree(
+        [2, 1, 3]
       ),
-      ::TreeNode.new(
-        3,
-        ::TreeNode.new(
-          1,
-          nil,
-          ::TreeNode.new(2)
-        ),
-        nil
+      ::TreeNode.build_tree(
+        [3, 1, nil, nil, 2]
       ),
-      ::TreeNode.new(
-        3,
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(1),
-          nil
-        ),
-        nil
+      ::TreeNode.build_tree(
+        [3, 2, nil, 1]
       )
     ]
     output = generate_trees(3)
 
     assert_equal(input.length, output.length)
+
     (0..input.length).each do |i|
       assert(
         ::TreeNode.are_equals(
@@ -64,10 +39,15 @@ class UniqueBinarySearchTreesIITest < ::Minitest::Test
   end
 
   def test_default_two
-    input = [::TreeNode.new(1)]
+    input = [
+      ::TreeNode.build_tree(
+        [1]
+      )
+    ]
     output = generate_trees(1)
 
     assert_equal(input.length, output.length)
+
     (0..input.length).each do |i|
       assert(
         ::TreeNode.are_equals(
