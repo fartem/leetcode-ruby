@@ -4,7 +4,7 @@ require_relative '../test_helper'
 require_relative '../../lib/medium/34_find_first_and_last_position_of_element_in_sorted_array'
 require 'minitest/autorun'
 
-class SearchInRotatedSortedArrayTest < ::Minitest::Test
+class FindFirstAndLastPositionOfElementInSortedArrayTest < ::Minitest::Test
   def test_default_one
     assert_equal(
       [3, 4],
