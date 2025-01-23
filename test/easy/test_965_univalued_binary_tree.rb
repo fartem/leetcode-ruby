@@ -9,18 +9,8 @@ class UnivaluedBinaryTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       is_unival_tree(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            1,
-            ::TreeNode.new(1),
-            ::TreeNode.new(1)
-          ),
-          ::TreeNode.new(
-            1,
-            nil,
-            ::TreeNode.new(1)
-          )
+        ::TreeNode.build_tree(
+          [1, 1, 1, 1, 1, nil, 1]
         )
       )
     )
@@ -29,14 +19,8 @@ class UnivaluedBinaryTreeTest < ::Minitest::Test
   def test_default_two
     assert(
       !is_unival_tree(
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(5),
-            ::TreeNode.new(2)
-          ),
-          ::TreeNode.new(2)
+        ::TreeNode.build_tree(
+          [2, 2, 2, 5, 2]
         )
       )
     )

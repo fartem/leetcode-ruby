@@ -9,41 +9,15 @@ class MergeTwoBinaryTreesTest < ::Minitest::Test
   def test_default_one
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(5),
-            ::TreeNode.new(4)
-          ),
-          ::TreeNode.new(
-            5,
-            nil,
-            ::TreeNode.new(7)
-          )
+        ::TreeNode.build_tree(
+          [3, 4, 5, 5, 4, nil, 7]
         ),
         merge_trees(
-          ::TreeNode.new(
-            1,
-            ::TreeNode.new(
-              3,
-              ::TreeNode.new(5),
-              nil
-            ),
-            ::TreeNode.new(2)
+          ::TreeNode.build_tree(
+            [1, 3, 2, 5]
           ),
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(
-              1,
-              nil,
-              ::TreeNode.new(4)
-            ),
-            ::TreeNode.new(
-              3,
-              nil,
-              ::TreeNode.new(7)
-            )
+          ::TreeNode.build_tree(
+            [2, 1, 3, nil, 4, nil, 7]
           )
         )
       )
@@ -53,17 +27,15 @@ class MergeTwoBinaryTreesTest < ::Minitest::Test
   def test_default_two
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(2),
-          nil
+        ::TreeNode.build_tree(
+          [2, 2]
         ),
         merge_trees(
-          ::TreeNode.new(1),
-          ::TreeNode.new(
-            1,
-            ::TreeNode.new(2),
-            nil
+          ::TreeNode.build_tree(
+            [1]
+          ),
+          ::TreeNode.build_tree(
+            [1, 2]
           )
         )
       )

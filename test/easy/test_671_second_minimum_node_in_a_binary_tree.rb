@@ -10,14 +10,8 @@ class SecondMinimumNodeInABinaryTreeTest < ::Minitest::Test
     assert_equal(
       5,
       find_second_minimum_value(
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(2),
-          ::TreeNode.new(
-            5,
-            ::TreeNode.new(5),
-            ::TreeNode.new(7)
-          )
+        ::TreeNode.build_tree(
+          [2, 2, 5, nil, nil, 5, 7]
         )
       )
     )
@@ -27,10 +21,8 @@ class SecondMinimumNodeInABinaryTreeTest < ::Minitest::Test
     assert_equal(
       -1,
       find_second_minimum_value(
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(2),
-          ::TreeNode.new(2)
+        ::TreeNode.build_tree(
+          [2, 2, 2]
         )
       )
     )

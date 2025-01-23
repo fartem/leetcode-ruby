@@ -9,18 +9,8 @@ class TwoSumIVInputIsABSTTest < ::Minitest::Test
   def test_default_one
     assert(
       find_target(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(
-            3,
-            ::TreeNode.new(2),
-            ::TreeNode.new(4)
-          ),
-          ::TreeNode.new(
-            6,
-            nil,
-            ::TreeNode.new(7)
-          )
+        ::TreeNode.build_tree(
+          [5, 3, 6, 2, 4, nil, 7]
         ),
         9
       )
@@ -30,18 +20,8 @@ class TwoSumIVInputIsABSTTest < ::Minitest::Test
   def test_default_two
     assert(
       !find_target(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(
-            3,
-            ::TreeNode.new(2),
-            ::TreeNode.new(4)
-          ),
-          ::TreeNode.new(
-            6,
-            nil,
-            ::TreeNode.new(7)
-          )
+        ::TreeNode.build_tree(
+          [5, 3, 6, 2, 4, nil, 7]
         ),
         28
       )
