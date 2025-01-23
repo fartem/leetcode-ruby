@@ -21,11 +21,12 @@ class TreeNode
 
     return false if !curr || !other
 
-    curr_eq = curr.val == other.val
+    return false unless curr.val == other.val
+
     left_eq = are_equals(curr.left, other.left)
     right_eq = are_equals(curr.right, other.right)
 
-    curr_eq && left_eq && right_eq
+    left_eq && right_eq
   end
 
   # @param {Integer[]} nodes
@@ -39,9 +40,9 @@ class TreeNode
 
     while i < nodes.length
       current = queue.shift
+
       next unless current
 
-      # Left child
       if i < nodes.length && !nodes[i].nil?
         current.left = ::TreeNode.new(nodes[i])
 
