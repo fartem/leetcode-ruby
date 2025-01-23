@@ -10,14 +10,8 @@ class BinaryTreeCamerasTest < ::Minitest::Test
     assert_equal(
       1,
       min_camera_cover(
-        ::TreeNode.new(
-          0,
-          ::TreeNode.new(
-            0,
-            ::TreeNode.new(0),
-            ::TreeNode.new(0)
-          ),
-          nil
+        ::TreeNode.build_tree(
+          [0, 0, nil, 0, 0]
         )
       )
     )
@@ -27,22 +21,8 @@ class BinaryTreeCamerasTest < ::Minitest::Test
     assert_equal(
       2,
       min_camera_cover(
-        ::TreeNode.new(
-          0,
-          ::TreeNode.new(
-            0,
-            ::TreeNode.new(
-              0,
-              ::TreeNode.new(
-                0,
-                nil,
-                ::TreeNode.new(0)
-              ),
-              nil
-            ),
-            nil
-          ),
-          nil
+        ::TreeNode.build_tree(
+          [0, 0, nil, 0, nil, 0, nil, nil, 0]
         )
       )
     )
