@@ -9,39 +9,11 @@ class FlipEquivalentBinaryTreesTest < ::Minitest::Test
   def test_default_one
     assert(
       flip_equiv(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(4),
-            ::TreeNode.new(
-              5,
-              ::TreeNode.new(7),
-              ::TreeNode.new(8)
-            )
-          ),
-          ::TreeNode.new(
-            3,
-            ::TreeNode.new(6),
-            nil
-          )
+        ::TreeNode.build_tree(
+          [1, 2, 3, 4, 5, 6, nil, nil, nil, 7, 8]
         ),
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            3,
-            nil,
-            ::TreeNode.new(6)
-          ),
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(4),
-            ::TreeNode.new(
-              5,
-              ::TreeNode.new(8),
-              ::TreeNode.new(7)
-            )
-          )
+        ::TreeNode.build_tree(
+          [1, 3, 2, nil, 6, 4, 5, nil, nil, nil, nil, 8, 7]
         )
       )
     )
@@ -53,7 +25,9 @@ class FlipEquivalentBinaryTreesTest < ::Minitest::Test
     assert(
       !flip_equiv(
         nil,
-        ::TreeNode.new(1)
+        ::TreeNode.build_tree(
+          [1]
+        )
       )
     )
   end

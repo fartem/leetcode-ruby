@@ -10,18 +10,8 @@ class SmallestStringStartingFromLeafTest < ::Minitest::Test
     assert_equal(
       'dba',
       smallest_from_leaf(
-        ::TreeNode.new(
-          0,
-          ::TreeNode.new(
-            1,
-            ::TreeNode.new(3),
-            ::TreeNode.new(4)
-          ),
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(3),
-            ::TreeNode.new(4)
-          )
+        ::TreeNode.build_tree(
+          [0, 1, 2, 3, 4, 3, 4]
         )
       )
     )
@@ -31,18 +21,8 @@ class SmallestStringStartingFromLeafTest < ::Minitest::Test
     assert_equal(
       'adz',
       smallest_from_leaf(
-        ::TreeNode.new(
-          25,
-          ::TreeNode.new(
-            1,
-            ::TreeNode.new(1),
-            ::TreeNode.new(3)
-          ),
-          ::TreeNode.new(
-            3,
-            ::TreeNode.new(0),
-            ::TreeNode.new(2)
-          )
+        ::TreeNode.build_tree(
+          [25, 1, 3, 1, 3, 0, 2]
         )
       )
     )
@@ -52,22 +32,8 @@ class SmallestStringStartingFromLeafTest < ::Minitest::Test
     assert_equal(
       'abc',
       smallest_from_leaf(
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(
-            2,
-            nil,
-            ::TreeNode.new(
-              1,
-              ::TreeNode.new(0),
-              nil
-            )
-          ),
-          ::TreeNode.new(
-            1,
-            ::TreeNode.new(0),
-            nil
-          )
+        ::TreeNode.build_tree(
+          [2, 2, 1, nil, 1, 0, nil, 0]
         )
       )
     )

@@ -10,10 +10,8 @@ class DistributeCoinsToBinaryTreeTest < ::Minitest::Test
     assert_equal(
       2,
       distribute_coins(
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(0),
-          ::TreeNode.new(0)
+        ::TreeNode.build_tree(
+          [3, 0, 0]
         )
       )
     )
@@ -23,10 +21,8 @@ class DistributeCoinsToBinaryTreeTest < ::Minitest::Test
     assert_equal(
       3,
       distribute_coins(
-        ::TreeNode.new(
-          0,
-          ::TreeNode.new(3),
-          ::TreeNode.new(0)
+        ::TreeNode.build_tree(
+          [0, 3, 0]
         )
       )
     )

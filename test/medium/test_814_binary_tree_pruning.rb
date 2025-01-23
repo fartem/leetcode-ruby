@@ -9,24 +9,12 @@ class BinaryTreePruningTest < ::Minitest::Test
   def test_default_one
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          1,
-          nil,
-          ::TreeNode.new(
-            0,
-            nil,
-            ::TreeNode.new(1)
-          )
+        ::TreeNode.build_tree(
+          [1, nil, 0, nil, 1]
         ),
         prune_tree(
-          ::TreeNode.new(
-            1,
-            nil,
-            ::TreeNode.new(
-              0,
-              ::TreeNode.new(0),
-              ::TreeNode.new(1)
-            )
+          ::TreeNode.build_tree(
+            [1, nil, 0, 0, 1]
           )
         )
       )
@@ -36,28 +24,12 @@ class BinaryTreePruningTest < ::Minitest::Test
   def test_default_two
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          1,
-          nil,
-          ::TreeNode.new(
-            1,
-            nil,
-            ::TreeNode.new(1)
-          )
+        ::TreeNode.build_tree(
+          [1, nil, 1, nil, 1]
         ),
         prune_tree(
-          ::TreeNode.new(
-            1,
-            ::TreeNode.new(
-              0,
-              ::TreeNode.new(0),
-              ::TreeNode.new(0)
-            ),
-            ::TreeNode.new(
-              1,
-              ::TreeNode.new(0),
-              ::TreeNode.new(1)
-            )
+          ::TreeNode.build_tree(
+            [1, 0, 1, 0, 0, 0, 1]
           )
         )
       )
@@ -67,42 +39,12 @@ class BinaryTreePruningTest < ::Minitest::Test
   def test_default_three
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            1,
-            ::TreeNode.new(
-              1,
-              ::TreeNode.new(1),
-              ::TreeNode.new(1)
-            )
-          ),
-          ::TreeNode.new(
-            0,
-            nil,
-            ::TreeNode.new(1)
-          )
+        ::TreeNode.build_tree(
+          [1, 1, 0, 1, 1, nil, 1]
         ),
         prune_tree(
-          ::TreeNode.new(
-            1,
-            ::TreeNode.new(
-              1,
-              ::TreeNode.new(
-                1,
-                ::TreeNode.new(
-                  1,
-                  ::TreeNode.new(0),
-                  nil
-                ),
-                ::TreeNode.new(1)
-              )
-            ),
-            ::TreeNode.new(
-              0,
-              ::TreeNode.new(0),
-              ::TreeNode.new(1)
-            )
+          ::TreeNode.build_tree(
+            [1, 1, 0, 1, 1, 0, 1, 0]
           )
         )
       )

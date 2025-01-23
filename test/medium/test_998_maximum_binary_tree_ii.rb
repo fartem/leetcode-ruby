@@ -9,28 +9,12 @@ class MaximumBinaryTreeIITest < ::Minitest::Test
   def test_default_one
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(1),
-            ::TreeNode.new(
-              3,
-              ::TreeNode.new(2),
-              nil
-            )
-          ),
-          nil
+        ::TreeNode.build_tree(
+          [5, 4, nil, 1, 3, nil, nil, 2]
         ),
         insert_into_max_tree(
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(1),
-            ::TreeNode.new(
-              3,
-              ::TreeNode.new(2),
-              nil
-            )
+          ::TreeNode.build_tree(
+            [4, 1, 3, nil, nil, 2]
           ),
           5
         )
@@ -41,28 +25,12 @@ class MaximumBinaryTreeIITest < ::Minitest::Test
   def test_default_two
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(
-            2,
-            nil,
-            ::TreeNode.new(1)
-          ),
-          ::TreeNode.new(
-            4,
-            nil,
-            ::TreeNode.new(3)
-          )
+        ::TreeNode.build_tree(
+          [5, 2, 4, nil, 1, nil, 3]
         ),
         insert_into_max_tree(
-          ::TreeNode.new(
-            5,
-            ::TreeNode.new(
-              2,
-              nil,
-              ::TreeNode.new(1)
-            ),
-            ::TreeNode.new(4)
+          ::TreeNode.build_tree(
+            [5, 2, 4, nil, 1]
           ),
           3
         )
@@ -73,28 +41,12 @@ class MaximumBinaryTreeIITest < ::Minitest::Test
   def test_default_three
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(
-            2,
-            nil,
-            ::TreeNode.new(1)
-          ),
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(3),
-            nil
-          )
+        ::TreeNode.build_tree(
+          [5, 2, 4, nil, 1, 3]
         ),
         insert_into_max_tree(
-          ::TreeNode.new(
-            5,
-            ::TreeNode.new(
-              2,
-              nil,
-              ::TreeNode.new(1)
-            ),
-            ::TreeNode.new(3)
+          ::TreeNode.build_tree(
+            [5, 2, 3, nil, 1]
           ),
           4
         )

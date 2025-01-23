@@ -8,10 +8,8 @@ require 'minitest/autorun'
 class CompleteBinaryTreeInserterTest < ::Minitest::Test
   def test_default_one
     cbt_inserter = ::CBTInserter.new(
-      ::TreeNode.new(
-        1,
-        ::TreeNode.new(2),
-        nil
+      ::TreeNode.build_tree(
+        [1, 2]
       )
     )
 
@@ -20,14 +18,8 @@ class CompleteBinaryTreeInserterTest < ::Minitest::Test
 
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(4),
-            nil
-          ),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [1, 2, 3, 4]
         ),
         cbt_inserter.get_root
       )
