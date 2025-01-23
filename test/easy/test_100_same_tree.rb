@@ -9,15 +9,11 @@ class SameTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       is_same_tree(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(2),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [1, 2, 3]
         ),
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(2),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [1, 2, 3]
         )
       )
     )
@@ -26,12 +22,11 @@ class SameTreeTest < ::Minitest::Test
   def test_default_two
     assert(
       !is_same_tree(
-        ::TreeNode.new(
-          ::TreeNode.new(2)
+        ::TreeNode.build_tree(
+          [1, 2]
         ),
-        ::TreeNode.new(
-          nil,
-          ::TreeNode.new(2)
+        ::TreeNode.build_tree(
+          [1, nil, 2]
         )
       )
     )
@@ -40,15 +35,11 @@ class SameTreeTest < ::Minitest::Test
   def test_default_three
     assert(
       !is_same_tree(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(2),
-          ::TreeNode.new(1)
+        ::TreeNode.build_tree(
+          [1, 2, 1]
         ),
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(1),
-          ::TreeNode.new(2)
+        ::TreeNode.build_tree(
+          [1, 1, 2]
         )
       )
     )

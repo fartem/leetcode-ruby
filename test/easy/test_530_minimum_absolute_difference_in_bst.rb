@@ -10,14 +10,8 @@ class MinimumAbsoluteDifferenceInBSTTest < ::Minitest::Test
     assert_equal(
       1,
       get_minimum_difference(
-        ::TreeNode.new(
-          4,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(1),
-            ::TreeNode.new(3)
-          ),
-          ::TreeNode.new(6)
+        ::TreeNode.build_tree(
+          [4, 2, 6, 1, 3]
         )
       )
     )
@@ -27,14 +21,8 @@ class MinimumAbsoluteDifferenceInBSTTest < ::Minitest::Test
     assert_equal(
       1,
       get_minimum_difference(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(0),
-          ::TreeNode.new(
-            48,
-            ::TreeNode.new(12),
-            ::TreeNode.new(49)
-          )
+        ::TreeNode.build_tree(
+          [1, 0, 48, nil, nil, 12, 49]
         )
       )
     )

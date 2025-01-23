@@ -10,13 +10,8 @@ class BinaryTreePreorderTraversalTest < ::Minitest::Test
     assert_equal(
       [1, 2, 3],
       preorder_traversal(
-        ::TreeNode.new(
-          1,
-          nil,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(3)
-          )
+        ::TreeNode.build_tree(
+          [1, nil, 2, 3]
         )
       )
     )
@@ -33,7 +28,9 @@ class BinaryTreePreorderTraversalTest < ::Minitest::Test
     assert_equal(
       [1],
       preorder_traversal(
-        ::TreeNode.new(1)
+        ::TreeNode.build_tree(
+          [1]
+        )
       )
     )
   end

@@ -10,14 +10,8 @@ class DiameterOfBinaryTreeTest < ::Minitest::Test
     assert_equal(
       3,
       diameter_of_binary_tree(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(4),
-            ::TreeNode.new(5)
-          ),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [1, 2, 3, 4, 5]
         )
       )
     )
@@ -27,10 +21,8 @@ class DiameterOfBinaryTreeTest < ::Minitest::Test
     assert_equal(
       1,
       diameter_of_binary_tree(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(2),
-          nil
+        ::TreeNode.build_tree(
+          [1, 2]
         )
       )
     )
