@@ -10,25 +10,15 @@ class LowestCommonAncestorOfABinaryTreeTest < ::Minitest::Test
     assert_equal(
       3,
       lowest_common_ancestor236(
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(
-            5,
-            ::TreeNode.new(6),
-            ::TreeNode.new(
-              2,
-              ::TreeNode.new(7),
-              ::TreeNode.new(4)
-            )
-          ),
-          ::TreeNode.new(
-            1,
-            ::TreeNode.new(0),
-            ::TreeNode.new(8)
-          )
+        ::TreeNode.build_tree(
+          [3, 5, 1, 6, 2, 0, 8, nil, nil, 7, 4]
         ),
-        ::TreeNode.new(5),
-        ::TreeNode.new(1)
+        ::TreeNode.build_tree(
+          [5]
+        ),
+        ::TreeNode.build_tree(
+          [1]
+        )
       ).val
     )
   end
@@ -37,25 +27,15 @@ class LowestCommonAncestorOfABinaryTreeTest < ::Minitest::Test
     assert_equal(
       5,
       lowest_common_ancestor236(
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(
-            5,
-            ::TreeNode.new(6),
-            ::TreeNode.new(
-              2,
-              ::TreeNode.new(7),
-              ::TreeNode.new(4)
-            )
-          ),
-          ::TreeNode.new(
-            1,
-            ::TreeNode.new(0),
-            ::TreeNode.new(8)
-          )
+        ::TreeNode.build_tree(
+          [3, 5, 1, 6, 2, 0, 8, nil, nil, 7, 4]
         ),
-        ::TreeNode.new(5),
-        ::TreeNode.new(4)
+        ::TreeNode.build_tree(
+          [5]
+        ),
+        ::TreeNode.build_tree(
+          [4]
+        )
       ).val
     )
   end
@@ -64,13 +44,15 @@ class LowestCommonAncestorOfABinaryTreeTest < ::Minitest::Test
     assert_equal(
       1,
       lowest_common_ancestor236(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(2),
-          nil
+        ::TreeNode.build_tree(
+          [1, 2]
         ),
-        ::TreeNode.new(1),
-        ::TreeNode.new(2)
+        ::TreeNode.build_tree(
+          [1]
+        ),
+        ::TreeNode.build_tree(
+          [2]
+        )
       ).val
     )
   end

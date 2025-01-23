@@ -10,10 +10,8 @@ class MostFrequentSubtreeSumTest < ::Minitest::Test
     assert_equal(
       [2, -3, 4],
       find_frequent_tree_sum(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(2),
-          ::TreeNode.new(-3)
+        ::TreeNode.build_tree(
+          [5, 2, -3]
         )
       )
     )
@@ -23,10 +21,8 @@ class MostFrequentSubtreeSumTest < ::Minitest::Test
     assert_equal(
       [2],
       find_frequent_tree_sum(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(2),
-          ::TreeNode.new(-5)
+        ::TreeNode.build_tree(
+          [5, 2, -5]
         )
       )
     )

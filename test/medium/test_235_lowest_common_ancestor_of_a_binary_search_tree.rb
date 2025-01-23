@@ -10,25 +10,15 @@ class LowestCommonAncestorOfABinarySearchTreeTest < ::Minitest::Test
     assert_equal(
       6,
       lowest_common_ancestor(
-        ::TreeNode.new(
-          6,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(0),
-            ::TreeNode.new(
-              4,
-              ::TreeNode.new(3),
-              ::TreeNode.new(5)
-            )
-          ),
-          ::TreeNode.new(
-            8,
-            ::TreeNode.new(7),
-            ::TreeNode.new(9)
-          )
+        ::TreeNode.build_tree(
+          [6, 2, 8, 0, 4, 7, 9, nil, nil, 3, 5]
         ),
-        ::TreeNode.new(2),
-        ::TreeNode.new(8)
+        ::TreeNode.build_tree(
+          [2]
+        ),
+        ::TreeNode.build_tree(
+          [8]
+        )
       ).val
     )
   end
@@ -37,25 +27,15 @@ class LowestCommonAncestorOfABinarySearchTreeTest < ::Minitest::Test
     assert_equal(
       2,
       lowest_common_ancestor(
-        ::TreeNode.new(
-          6,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(0),
-            ::TreeNode.new(
-              4,
-              ::TreeNode.new(3),
-              ::TreeNode.new(5)
-            )
-          ),
-          ::TreeNode.new(
-            8,
-            ::TreeNode.new(7),
-            ::TreeNode.new(9)
-          )
+        ::TreeNode.build_tree(
+          [6, 2, 8, 0, 4, 7, 9, nil, nil, 3, 5]
         ),
-        ::TreeNode.new(2),
-        ::TreeNode.new(4)
+        ::TreeNode.build_tree(
+          [2]
+        ),
+        ::TreeNode.build_tree(
+          [4]
+        )
       ).val
     )
   end
@@ -64,13 +44,15 @@ class LowestCommonAncestorOfABinarySearchTreeTest < ::Minitest::Test
     assert_equal(
       2,
       lowest_common_ancestor(
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(1),
-          nil
+        ::TreeNode.build_tree(
+          [2, 1]
         ),
-        ::TreeNode.new(2),
-        ::TreeNode.new(1)
+        ::TreeNode.build_tree(
+          [2]
+        ),
+        ::TreeNode.build_tree(
+          [1]
+        )
       ).val
     )
   end
@@ -79,25 +61,15 @@ class LowestCommonAncestorOfABinarySearchTreeTest < ::Minitest::Test
     assert_equal(
       4,
       lowest_common_ancestor(
-        ::TreeNode.new(
-          6,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(0),
-            ::TreeNode.new(
-              4,
-              ::TreeNode.new(3),
-              ::TreeNode.new(5)
-            )
-          ),
-          ::TreeNode.new(
-            8,
-            ::TreeNode.new(7),
-            ::TreeNode.new(9)
-          )
+        ::TreeNode.build_tree(
+          [6, 2, 8, 0, 4, 7, 9, nil, nil, 3, 5]
         ),
-        ::TreeNode.new(3),
-        ::TreeNode.new(5)
+        ::TreeNode.build_tree(
+          [3]
+        ),
+        ::TreeNode.build_tree(
+          [5]
+        )
       ).val
     )
   end

@@ -10,18 +10,8 @@ class MaximumWidthOfBinaryTreeTest < ::Minitest::Test
     assert_equal(
       4,
       width_of_binary_tree(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            3,
-            ::TreeNode.new(5),
-            ::TreeNode.new(3)
-          ),
-          ::TreeNode.new(
-            2,
-            nil,
-            ::TreeNode.new(9)
-          )
+        ::TreeNode.build_tree(
+          [1, 3, 2, 5, 3, nil, 9]
         )
       )
     )
@@ -31,26 +21,8 @@ class MaximumWidthOfBinaryTreeTest < ::Minitest::Test
     assert_equal(
       7,
       width_of_binary_tree(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            3,
-            ::TreeNode.new(
-              5,
-              ::TreeNode.new(6),
-              nil
-            ),
-            nil
-          ),
-          ::TreeNode.new(
-            2,
-            nil,
-            ::TreeNode.new(
-              9,
-              ::TreeNode.new(7),
-              nil
-            )
-          )
+        ::TreeNode.build_tree(
+          [1, 3, 2, 5, nil, nil, 9, 6, nil, 7]
         )
       )
     )
@@ -60,14 +32,8 @@ class MaximumWidthOfBinaryTreeTest < ::Minitest::Test
     assert_equal(
       2,
       width_of_binary_tree(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            3,
-            ::TreeNode.new(5),
-            nil
-          ),
-          ::TreeNode.new(2)
+        ::TreeNode.build_tree(
+          [1, 3, 2, 5]
         )
       )
     )

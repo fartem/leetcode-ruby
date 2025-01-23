@@ -8,14 +8,8 @@ require 'minitest/autorun'
 class BinarySearchTreeIndicatorTest < ::Minitest::Test
   def test_default_one
     bst_iterator = ::BSTIterator.new(
-      ::TreeNode.new(
-        7,
-        ::TreeNode.new(3),
-        ::TreeNode.new(
-          15,
-          ::TreeNode.new(9),
-          ::TreeNode.new(20)
-        )
+      ::TreeNode.build_tree(
+        [7, 3, 15, nil, nil, 9, 20]
       )
     )
 

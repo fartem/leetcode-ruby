@@ -9,16 +9,12 @@ class TrimABinarySearchTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          1,
-          nil,
-          ::TreeNode.new(2)
+        ::TreeNode.build_tree(
+          [1, nil, 2]
         ),
         trim_bst(
-          ::TreeNode.new(
-            1,
-            ::TreeNode.new(0),
-            ::TreeNode.new(2)
+          ::TreeNode.build_tree(
+            [1, 0, 2]
           ),
           1,
           2
@@ -30,28 +26,12 @@ class TrimABinarySearchTreeTest < ::Minitest::Test
   def test_default_two
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(1),
-            nil
-          ),
-          nil
+        ::TreeNode.build_tree(
+          [3, 2, nil, 1]
         ),
         trim_bst(
-          ::TreeNode.new(
-            3,
-            ::TreeNode.new(
-              0,
-              nil,
-              ::TreeNode.new(
-                2,
-                ::TreeNode.new(1),
-                nil
-              )
-            ),
-            ::TreeNode.new(4)
+          ::TreeNode.build_tree(
+            [3, 0, 4, nil, 2, nil, nil, 1]
           ),
           1,
           3

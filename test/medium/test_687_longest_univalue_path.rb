@@ -10,18 +10,8 @@ class ValidParenthesisStringTest < ::Minitest::Test
     assert_equal(
       2,
       longest_univalue_path(
-        ::TreeNode.new(
-          5,
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(1),
-            ::TreeNode.new(1)
-          ),
-          ::TreeNode.new(
-            5,
-            nil,
-            ::TreeNode.new(5)
-          )
+        ::TreeNode.build_tree(
+          [5, 4, 5, 1, 1, nil, 5]
         )
       )
     )
@@ -31,18 +21,8 @@ class ValidParenthesisStringTest < ::Minitest::Test
     assert_equal(
       2,
       longest_univalue_path(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(4),
-            ::TreeNode.new(4)
-          ),
-          ::TreeNode.new(
-            5,
-            nil,
-            ::TreeNode.new(5)
-          )
+        ::TreeNode.build_tree(
+          [1, 4, 5, 4, 4, nil, 5]
         )
       )
     )

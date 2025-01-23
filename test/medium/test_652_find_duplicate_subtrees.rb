@@ -8,31 +8,17 @@ require 'minitest/autorun'
 class FindDuplicateSubtreesTest < ::Minitest::Test
   def test_default_one
     result = find_duplicate_subtrees(
-      ::TreeNode.new(
-        1,
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(4),
-          nil
-        ),
-        ::TreeNode.new(
-          3,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(4),
-            nil
-          ),
-          ::TreeNode.new(4)
-        )
+      ::TreeNode.build_tree(
+        [1, 2, 3, 4, nil, 2, 4, nil, nil, 4]
       )
     )
 
     [
-      ::TreeNode.new(4),
-      ::TreeNode.new(
-        2,
-        ::TreeNode.new(4),
-        nil
+      ::TreeNode.build_tree(
+        [4]
+      ),
+      ::TreeNode.build_tree(
+        [2, 4]
       )
     ].each_with_index do |node, index|
       assert(
@@ -46,15 +32,15 @@ class FindDuplicateSubtreesTest < ::Minitest::Test
 
   def test_default_two
     result = find_duplicate_subtrees(
-      ::TreeNode.new(
-        2,
-        ::TreeNode.new(1),
-        ::TreeNode.new(1)
+      ::TreeNode.build_tree(
+        [2, 1, 1]
       )
     )
 
     [
-      ::TreeNode.new(1)
+      ::TreeNode.build_tree(
+        [1]
+      )
     ].each_with_index do |node, index|
       assert(
         ::TreeNode.are_equals(
@@ -67,27 +53,17 @@ class FindDuplicateSubtreesTest < ::Minitest::Test
 
   def test_default_three
     result = find_duplicate_subtrees(
-      ::TreeNode.new(
-        2,
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(3),
-          nil
-        ),
-        ::TreeNode.new(
-          2,
-          ::TreeNode.new(3),
-          nil
-        )
+      ::TreeNode.build_tree(
+        [2, 2, 2, 3, nil, 3, nil]
       )
     )
 
     [
-      ::TreeNode.new(3),
-      ::TreeNode.new(
-        2,
-        ::TreeNode.new(3),
-        nil
+      ::TreeNode.build_tree(
+        [3]
+      ),
+      ::TreeNode.build_tree(
+        [2, 3]
       )
     ].each_with_index do |node, index|
       assert(

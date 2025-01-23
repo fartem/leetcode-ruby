@@ -10,14 +10,8 @@ class ConstructStringFromBinaryTreeTest < ::Minitest::Test
     assert_equal(
       '1(2(4))(3)',
       tree2str(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            ::TreeNode.new(4),
-            nil
-          ),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [1, 2, 3, 4]
         )
       )
     )
@@ -27,14 +21,8 @@ class ConstructStringFromBinaryTreeTest < ::Minitest::Test
     assert_equal(
       '1(2()(4))(3)',
       tree2str(
-        ::TreeNode.new(
-          1,
-          ::TreeNode.new(
-            2,
-            nil,
-            ::TreeNode.new(4)
-          ),
-          ::TreeNode.new(3)
+        ::TreeNode.build_tree(
+          [1, 2, 3, nil, 4]
         )
       )
     )

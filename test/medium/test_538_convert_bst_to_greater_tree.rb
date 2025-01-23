@@ -9,48 +9,12 @@ class ConvertBstToGreaterTreeTest < ::Minitest::Test
   def test_default_one
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          30,
-          ::TreeNode.new(
-            36,
-            ::TreeNode.new(36),
-            ::TreeNode.new(
-              35,
-              nil,
-              ::TreeNode.new(33)
-            )
-          ),
-          ::TreeNode.new(
-            21,
-            ::TreeNode.new(26),
-            ::TreeNode.new(
-              15,
-              nil,
-              ::TreeNode.new(8)
-            )
-          )
+        ::TreeNode.build_tree(
+          [30, 36, 21, 36, 35, 26, 15, nil, nil, nil, 33, nil, nil, nil, 8]
         ),
         convert_bst(
-          ::TreeNode.new(
-            4,
-            ::TreeNode.new(
-              1,
-              ::TreeNode.new(0),
-              ::TreeNode.new(
-                2,
-                nil,
-                ::TreeNode.new(3)
-              )
-            ),
-            ::TreeNode.new(
-              6,
-              ::TreeNode.new(5),
-              ::TreeNode.new(
-                7,
-                nil,
-                ::TreeNode.new(8)
-              )
-            )
+          ::TreeNode.build_tree(
+            [4, 1, 6, 0, 2, 5, 7, nil, nil, nil, 3, nil, nil, nil, 8]
           )
         )
       )
@@ -60,16 +24,12 @@ class ConvertBstToGreaterTreeTest < ::Minitest::Test
   def test_default_two
     assert(
       ::TreeNode.are_equals(
-        ::TreeNode.new(
-          1,
-          nil,
-          ::TreeNode.new(1)
+        ::TreeNode.build_tree(
+          [1, nil, 1]
         ),
         convert_bst(
-          ::TreeNode.new(
-            0,
-            nil,
-            ::TreeNode.new(1)
+          ::TreeNode.build_tree(
+            [0, nil, 1]
           )
         )
       )
