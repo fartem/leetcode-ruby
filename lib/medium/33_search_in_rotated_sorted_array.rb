@@ -4,11 +4,12 @@
 # @param {Integer[]} nums
 # @param {Integer} target
 # @return {Integer}
-def search33(nums, target)
+def search_in_rotated_sorted_array(nums, target)
   return 0 if nums.first == target
 
   s = 0
   e = nums.length - 1
+
   while s <= e
     m = (s + e) / 2
     f = nums.first
