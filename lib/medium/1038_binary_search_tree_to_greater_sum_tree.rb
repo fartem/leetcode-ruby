@@ -1,23 +1,26 @@
 # frozen_string_literal: true
 
 # https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/
-# @param {Integer[]} arr
-# @param {Integer} k
-# @return {Integer}
-def max_sum_after_partitioning(arr, k)
-  partitioned = ::Array.new(arr.size + 1, 0)
+# @param {TreeNode} root
+# @return {TreeNode}
+def bst_to_gst(root)
+  @sum = 0
+  transform_tree(root)
 
-  (1..arr.size).each do |i|
-    max = 0
-    val = 0
+  root
+end
 
-    [i, k].min.times do |j|
-      max = [max, arr[i - j - 1]].max
-      val = [partitioned[i - j - 1] + max * (j + 1), val].max
-    end
+private
 
-    partitioned[i] = val
-  end
+# @param {TreeNode} node
+# @return {Void}
+def transform_tree(node)
+  return unless node
 
-  partitioned[arr.size]
+  transform_tree(node.right)
+
+  @sum += node.val
+  node.val = @sum
+
+  transform_tree(node.left)
 end
