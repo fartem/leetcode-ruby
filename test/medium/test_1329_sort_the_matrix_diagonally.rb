@@ -5,7 +5,7 @@ require_relative '../../lib/medium/1329_sort_the_matrix_diagonally'
 require 'minitest/autorun'
 
 class SortTheMatrixDiagonallyTest < ::Minitest::Test
-  def test_diagonal_sort_small_matrix
+  def test_default_one
     assert_equal(
       [
         [1, 1, 1, 1],
@@ -22,7 +22,7 @@ class SortTheMatrixDiagonallyTest < ::Minitest::Test
     )
   end
 
-  def test_diagonal_sort_large_matrix
+  def test_default_two
     assert_equal(
       [
         [5, 17, 4, 1, 52, 7],
