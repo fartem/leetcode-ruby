@@ -11,7 +11,7 @@ class ListNode
     @next = nxt
   end
 
-  # @param {Array} values
+  # @param {ListNode} values
   def self.from_array(values)
     return if values.empty?
 
