@@ -22,6 +22,8 @@ Style/DisableCopsWithinSourceCodeDirective:
   Enabled: false
 Style/IpAddresses:
   Enabled: false
+Style/NestedModifier:
+  Enabled: false
 
 Bundler/GemComment:
   Enabled: false
