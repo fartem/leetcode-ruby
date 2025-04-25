@@ -20,7 +20,7 @@ module CI
     end
 
     # Use this method in your realization when task completed with error.
-    # @param {String} details
+    # @param {Proc} details
     # @return {Void}
     def end_with_error(details)
       details.call

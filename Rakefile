@@ -25,6 +25,7 @@ require_relative './ci/readme_paths_checker'
 require_relative './ci/tests_checker'
 require_relative './ci/version_checker'
 require_relative './ci/duplicate_links_checker'
+require_relative './ci/stage_checker'
 task :ci do
   [
     ::CI::LinksChecker.new,
@@ -32,6 +33,7 @@ task :ci do
     ::CI::ReadmePathsChecker.new,
     ::CI::TestsChecker.new,
     ::CI::VersionChecker.new,
-    ::CI::DuplicateLinksChecker.new
+    ::CI::DuplicateLinksChecker.new,
+    ::CI::StageChecker.new
   ].each(&:process)
 end
