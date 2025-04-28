@@ -41,3 +41,6 @@ Gemfile.lock
 
 # Version checker
 *.remote
+
+# Cursor
+.cursor
