@@ -5,7 +5,7 @@ require 'English'
 ::Gem::Specification.new do |s|
   s.required_ruby_version = '>= 3.0'
   s.name = 'leetcode-ruby'
-  s.version = '9.3.5.1'
+  s.version = '9.3.6'
   s.license = 'MIT'
   s.files = ::Dir['lib/**/*.rb'] + %w[README.md]
   s.executable = 'leetcode-ruby'
@@ -14,7 +14,6 @@ require 'English'
   s.authors = ['Artem Fomchenkov']
   s.email = 'artem.fomchenkov@outlook.com'
   s.homepage = 'https://github.com/fartem/leetcode-ruby'
-  s.test_files = s.files.grep(%r{^(test)/})
   s.extra_rdoc_files = ['README.md']
 
   s.add_development_dependency('minitest', '5.18.0')
@@ -22,4 +21,5 @@ require 'English'
   s.add_development_dependency('rake', '12.3.3')
   s.add_development_dependency('rubocop', '1.7.0')
   s.add_development_dependency('simplecov', '0.22.0')
+  s.metadata['rubygems_mfa_required'] = 'true'
 end
