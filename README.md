@@ -467,6 +467,7 @@ Profile on LeetCode: [fartem](https://leetcode.com/fartem/).
 | 3210. Find the Encrypted String                                    | [Link](https://leetcode.com/problems/find-the-encrypted-string/)                                    | [Link](./lib/easy/3210_find_the_encrypted_string.rb)                                    | [Link](./test/easy/test_3210_find_the_encrypted_string.rb)                                    |
 | 3280. Convert Date to Binary                                       | [Link](https://leetcode.com/problems/convert-date-to-binary/)                                       | [Link](./lib/easy/3280_convert_date_to_binary.rb)                                       | [Link](./test/easy/test_3280_convert_date_to_binary.rb)                                       |
 | 3498. Reverse Degree of a String                                   | [Link](https://leetcode.com/problems/reverse-degree-of-a-string/)                                   | [Link](./lib/easy/3498_reverse_degree_of_a_string.rb)                                   | [Link](./test/easy/test_3498_reverse_degree_of_a_string.rb)                                   |
+| 3516. Find Closest Person                                          | [Link](https://leetcode.com/problems/find-closest-person/)                                          | [Link](./lib/easy/3516_find_closest_person.rb)                                          | [Link](./test/easy/test_3516_find_closest_person.rb)                                          |
 
 ### Medium
 
