@@ -16,8 +16,9 @@ module LCSC
 
       easy = find_for_dir("#{dir_sub}/easy")
       medium = find_for_dir("#{dir_sub}/medium")
+      hard = find_for_dir("#{dir_sub}/hard")
 
-      easy + medium
+      easy + medium + hard
     end
 
     private
